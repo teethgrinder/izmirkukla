@@ -1,0 +1,29 @@
+body{background-image:url('../img/bg.jpg');}
+.mrttext {text-align:justify;}
+ 
+.mrtvideo  ul {list-style:none;
+
+ }
+.mrtvideo ul   {
+display:block;
+ }
+ .mrtvideo li {
+ float:left;}
+ .icons {
+ list-style-type:none;}
+ 
+  .icons li{
+ display:inline;}
+ 
+.navbar .divider-vertical {margin-left: 0; margin-right: 0}
+.galleries  {list-style:none;}
+.imghover_gallery {
+position: absolute;
+background-color: transparent;
+background-repeat: no-repeat;
+background-position: center center;
+width: 168px;
+height: 128px;
+float: left;
+display: block;
+}
