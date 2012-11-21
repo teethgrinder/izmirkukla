@@ -1,50 +1,50 @@
+
+RAWFORKNEW
 <?php
-
 class Authority_add_authority_tables {
-
 	public function up()
 	{
-		Schema::create('users', function($table)
+Schema::create('users', function($table)
 		{
 			$table->increments('id');
+			$table->string('username');
 			$table->string('email');
+			$table->string('first_name');
+			$table->string('last_name');
 			$table->string('password');
-			$table->string('name');
+			$table->date('last_login');
+			$table->integer('active');
+			$table->integer('is_admin');
+			$table->integer('is_superadmin');
 			$table->timestamps();
 		});
-
 		User::create(array(
 			'id' => 1,
 			'email' => 'admin@domain.com',
 			'password' => Hash::make('admin'),
-			'name' => 'Mr. Administrator',
+			'username' => 'Mr. Administrator',
 		));
-
 		User::create(array(
 			'id' => 2,
 			'email' => 'moderator@domain.com',
 			'password' => Hash::make('moderator'),
-			'name' => 'Mr. Moderator',
+			'username' => 'Mr. Moderator',
 		));
-
-
+		
 		Schema::create('roles', function($table)
 		{
 			$table->increments('id');
 			$table->string('name');
 			$table->timestamps();
 		});
-
 		Role::create(array(
 			'id' => 1,
 			'name' => 'administrator'
 		));
-
 		Role::create(array(
 			'id' => 2,
 			'name' => 'moderator'
 		));
-
 		Schema::create('role_user', function($table)
 		{
 			$table->increments('id');
@@ -52,21 +52,18 @@ class Authority_add_authority_tables {
 			$table->integer('role_id');
 			$table->timestamps();
 		});
-
 		User::find(1)
 			->roles()
 			->attach(1);
-
 		User::find(2)
 			->roles()
 			->attach(2);
 	}
-
 	public function down()
 	{
 		Schema::drop('users');
 		Schema::drop('roles');
 		Schema::drop('role_user');
 	}
-
-}
+	
+	}
