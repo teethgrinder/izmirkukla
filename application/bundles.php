@@ -37,5 +37,6 @@ return array(
 
 	'docs' => array('handles' => 'docs'),
 	'bootstrapper' => array('auto' => true),
+	'authority' => array('auto' => true),
 
 );

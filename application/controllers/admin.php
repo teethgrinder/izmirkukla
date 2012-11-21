@@ -7,8 +7,8 @@ class Admin_Controller extends Base_Controller {
         // Make sure that the 'auth' function is run before ANYTHING else happens
         // With the exception of our login page (to actually login) this will
         // prevent any un-authorised use of the admin areas
-    	$this->filter('before', 'auth')->except(array('login','setup'));
-
+    	//$this->filter('before', 'auth')->except(array('login','setup'));
+				$this->filter('before', 'auth');
         // Default variable set for CRUD usage.
     	$this->data['create'] = false;
 
@@ -21,7 +21,7 @@ class Admin_Controller extends Base_Controller {
      * @return header redirect
      */
 	public function auth(){
-    	if (Auth::guest()) return Redirect::to('admin/login');
+    	if (Auth::guest()) return Redirect::to('user/login');
     }
 
 }

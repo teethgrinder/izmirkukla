@@ -9,13 +9,14 @@ Route::controller('admin.images');
 Route::controller('admin.pages');
 Route::controller('admin.help');
 
-Route::get('admin/dashboard', 'admin.dash@index');
-Route::any('admin/(:any?)', array('defaults' => 'index', 'uses' => 'admin.dash@(:1)'));
-
+//Route::get('admin/dashboard', 'admin.dash@index');
+//Route::any('admin/(:any?)', array('defaults' => 'index', 'uses' => 'admin.dash@(:1)'));
+Route::get('admin', 'admin.user@dashboard');
+Route::get('admin/login', 'admin.user@login');
 // Frontend routing
 //Route::any('(:any)', array('uses' => 'page@home'));
 Route::any('/', 'pages@home');
-
+Route::get('/', 'home.page@homepage');
 /*
 |--------------------------------------------------------------------------
 | Application 404 & 500 Error Handlers
