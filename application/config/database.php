@@ -70,7 +70,7 @@ return array(
 		'mysql' => array(
 			'driver'   => 'mysql',
 			'host'     => 'localhost',
-			'database' => 'izmirkukla',
+			'database' => 'izmirkuklav2',
 			'username' => 'root',
 			'password' => 'never',
 			'charset'  => 'utf8',

@@ -61,7 +61,9 @@ Laravel\Autoloader::$aliases = $aliases;
 Autoloader::map(array(
 	'Base_Controller' => path('app').'controllers/base.php',
 ));
-
+Autoloader::map(array(
+	'ExampleForm'   => path('app').'models/forms',
+));
 /*
 |--------------------------------------------------------------------------
 | Auto-Loader Directories
@@ -75,6 +77,7 @@ Autoloader::map(array(
 
 Autoloader::directories(array(
 	path('app').'models',
+	path('app').'models/forms',
 	path('app').'libraries',
 ));
 

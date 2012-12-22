@@ -1,22 +1,16 @@
 <?php
+Route::controller(array('home.user','home.pages','admin.groups' ));
+//views home
+Route::get('/', 'home.pages@homepage');
+Route::any('user/login','home.users@login');
+ 
 
-Route::controller('admin.news');
-Route::controller('admin.users');
-Route::controller('admin.roles');
-Route::controller('admin.sections');
-Route::controller('admin.gallery');
-Route::controller('admin.images');
-Route::controller('admin.pages');
-Route::controller('admin.help');
-
-//Route::get('admin/dashboard', 'admin.dash@index');
-//Route::any('admin/(:any?)', array('defaults' => 'index', 'uses' => 'admin.dash@(:1)'));
-//Route::get('admin', 'admin.user@dashboard');
-//Route::get('admin/login', 'admin.user@login');
-// Frontend routing
-//Route::any('(:any)', array('uses' => 'page@home'));
-//Route::any('/', 'pages@home');
-Route::get('/', 'home.page@homepage');
+Route::any('newgroup', 'admin.groups@add');
+ 
+Route::get('reviewform/(:any)', 'admin.groups@review');
+Route::get('edit/(:any)', 'admin.groups@edit');
+Route::put('edit/(:any)', 'admin.groups@edit');
+ 
 /*
 |--------------------------------------------------------------------------
 | Application 404 & 500 Error Handlers
@@ -87,5 +81,5 @@ Route::filter('csrf', function()
 
 Route::filter('auth', function()
 {
-	if (Auth::guest()) return Redirect::to('admin.login');
+	if (Auth::guest()) return Redirect::to('login');
 });

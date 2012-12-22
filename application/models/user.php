@@ -1,51 +1,8 @@
 <?php
-class User extends Eloquent {
-	public static $timestamps = true;
 
-	public function roles()
-	{
-		return $this->has_many_and_belongs_to('Role');
-	}
-	public function set_password($password)
-	{
-		$this->set_attribute('password', Hash::make($password));
-	}
-	public function get_fullname(){
-		return $this->get_attribute('first_name').' '.$this->get_attribute('last_name');
-	}
-	public function get_is_admin(){
-		return ( $this->get_attribute('admin') === 1 ? true : false );
-	}
-	  public function has_role($key)
-    {
-        foreach($this->roles as $role)
-        {
-            if($role->name == $key)
-            {
-                return true;
-            }
-        }
+class User extends Eloquent
+{
 
-        return false;
-    }
 
-    public function has_any_role($keys)
-    {
-        if( ! is_array($keys))
-        {
-            $keys = func_get_args();
-        }
 
-        foreach($this->roles as $role)
-        {
-            if(in_array($role->name, $keys))
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
 }
-
-

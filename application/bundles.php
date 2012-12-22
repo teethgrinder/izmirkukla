@@ -36,7 +36,7 @@
 return array(
 
 	'docs' => array('handles' => 'docs'),
-	'bootstrapper' => array('auto' => true),
-	'authority' => array('auto' => true),
+	'form-base-model' => array( 'auto' => true ),
+	'eloquent-base-model' => array( 'auto' => true ),
 
 );

@@ -1,93 +1,75 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>@yield('title')</title>
-	<meta name="viewport" content="width=device-width">
-	
-		
-		
-	{{Asset::container('bootstrapper')->styles();}}
-	{{Asset::container('bootstrapper')->scripts();}}
-
-		{{ HTML::style('laravel/css/style1.css') }}
-
-
-</head>
-<body>
+<!DOCTYPE html>
+<html lang="tr">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
  
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1; charset=ISO-8859-9">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        
+        <!-- if you need normalize.css -->
+        {{-- HTML::style('css/foundation/normalize.min.css') }}
+        {{ HTML::style('css/foundation/foundation.css') }}  
+        {{ HTML::style('css/foundation/app.css') }}  
+        {{ HTML::style('js/redactor/redactor.css') }}
+        {{ HTML::style('css/foundation/custom.css') }}
+       
+        
+        <!-- begin javascript -->
+        {{ HTML::script('js/foundation/modernizr.foundation.js') }}
+      
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+        
+        <!-- begin content -->
+        <div class="wrapper">
 
-	
-<div class="navbar navbar-inverse">
-	<div class="navbar-inner">
-		<div class="container-fluid">
-			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</a>
-			<a class="brand" href="<?php echo URL::to('/'); ?>" name="top">PUPPETSIDE</a>
+						@include('partials.navigation')
+            @yield('content')
+            @include('partials.sidebar')
+            @include('partials.footer')
+        </div>
+        <!-- end content -->
+         <!-- Use Googles online jQuery lib -->
+       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>  
+        <!-- Use local jQuery lib -->
+      <!--  {{ HTML::script('js/foundation/jquery.js') }}-->
+        <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script> -->
+        {{ HTML::script('js/redactor/redactor.js') }}
+        {{ HTML::script('js/foundation/foundation.min.js') }}
  
-			<div class="nav-collapse collapse">
-				<ul class="nav pull-right">
-					<li><a href="<?php echo URL::to('/'); ?>"><i class="icon-home icon-white"></i> Home</a></li>
-					<li class="divider-vertical"></li>
-					<li ><a href="<?php echo URL::to('video'); ?>"><i class="icon-file icon-white"></i> video</a></li>
-					<li class="divider-vertical"></li>
-					<li><a href="<?php echo URL::to('gallery'); ?>"><i class="icon-file icon-white"></i> Gallery</a></li>
-					<li class="divider-vertical"></li>
-				
-				<!--	<li><a href="<?php echo URL::to('comments'); ?>"><i class="icon-user icon-white "></i> {{Lang::line('audiostuff.comment')->get()}}</a></li>
-					<li class="divider-vertical"></li>-->
-					<li><a href="<?php echo URL::to('contact'); ?>"><i class="icon-envelope icon-white"></i> {{Lang::line('audiostuff.contact')->get()}}</a></li>
-					<li class="divider-vertical"></li>
+        {{ HTML::script('js/foundation/app.js') }}
+        
+        {{ HTML::script('js/plugins.js') }}
+        {{ HTML::script('js/main.js') }}
+        
+        
+     <!--   <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+        <!-- Put this above your </body> tag -->
 		 
-					<li><ul class="nav nav-tabs">
-  <li class="dropdown">
-    <a class="dropdown-toggle"
-       data-toggle="dropdown"
-       href="#">
-       settings
-        <b class="caret"></b>
-      </a>
-			<ul class="dropdown-menu">
-				<li><a href="<?php echo URL::to('upload'); ?>"><i class="icon-envelope icon-pencil"></i> {{Lang::line('audiostuff.all')->get()}}</a></li>
-			
-			
-				<li><a href="<?php echo URL::to('logout'); ?>"><i class="icon-envelope icon-road"></i> {{Lang::line('audiostuff.logout')->get()}}</a></li>			 
-			</ul>
-  </li>
-</ul></li>
-				</ul>	
-				
- 
-			 <form class="navbar-form form-search pull-right" method="POST" action="http://bootsnipp.com/search" accept-charset="UTF-8">
-          <div class="input-append">
-            <input type="text" name="q" class="span2 search-query" placeholder="Search">
-            <button type="submit" class="btn">Search</button>
-          </div>
-        </form> 
-			</div>
-			<!--/.nav-collapse -->
-		</div>
-		<!--/.container-fluid -->
-	</div>
-	<!--/.navbar-inner -->
-</div>
-<!--/.navbar -->
-</div>
-	<div class="container">
-	<div class="wrapper">
- 
-
- 
- @yield('content')
- 
-	
-	</div>
-</div>
- 
-</body>
+			 <script type="text/javascript">
+				$(document).ready(function()
+				{$('#editfield').redactor({ imageUpload: '/home/page/photo_upload/1', lang: 'tr' });});
+			</script>
+        <!-- end javascript -->
+        <!-- Put this above your </body> tag -->
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('#slider').orbit();
+			});
+		</script>
+    </body>
 </html>
