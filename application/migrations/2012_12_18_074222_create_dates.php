@@ -5,12 +5,29 @@ class Create_Dates {
 //date 
 	public function up()
 	{
-		Schema::create('dates',function($table)
-		{
-			$table->increments('id');
-			$table->date('schedule');
-			$table->timestamps();
-		});
+	Schema::table('showingdates',function($table)
+        {	
+			
+			$table->engine = 'InnoDB';
+			$table->create();
+            $table->increments('id');
+            $table->date('showdate');
+            $table->timestamps();
+        });
+        $starting_date = new DateTime('2013-03-06 00:00');
+        $ending_date = new DateTime('2013-04-07 23:59:59');
+        // to use without times $ending_date->add(new DateInterval('P1D'));
+        $interval = new DateInterval('P1D');
+		
+   
+        
+        $period = new  DatePeriod($starting_date , $interval, $ending_date);
+        foreach($period as $dt)
+        {
+        DB::table('showingdates')->insert(array(
+        'showdate' => $dt
+        ));
+        }
 	}
 
 	/**
@@ -20,7 +37,7 @@ class Create_Dates {
 	 */
 	public function down()
 	{
-		Schema::drop('dates');
+		Schema::drop('showingdates');
 	}
 
 }

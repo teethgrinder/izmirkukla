@@ -38,5 +38,7 @@ return array(
 	'docs' => array('handles' => 'docs'),
 	'form-base-model' => array( 'auto' => true ),
 	'eloquent-base-model' => array( 'auto' => true ),
-
+	'presentable' => array( 'auto' => true ),
+	'resizer' => array( 'auto' => true ),
+	'date' => array('auto' => true),
 );

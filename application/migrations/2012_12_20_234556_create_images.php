@@ -6,7 +6,10 @@ class Create_Images {
 	{
 		Schema::create('images', function($table) {
 		$table->increments('id');
+		$table->string('title', 128);
 		$table->string('name', 128);
+		$table->string('tag', 128);
+		$table->string('meta_tag', 128);
 		$table->integer('group_id')->unsigned();
 		$table->integer('show_id')->unsigned();
 		$table->integer('theater_id')->unsigned();

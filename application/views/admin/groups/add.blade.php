@@ -1,4 +1,8 @@
 @layout('layouts.main')
+@section('navigation')
+	@include('partials.dashnav')
+@endsection
+
 @section('content')
  <div class="row">    
 
@@ -6,14 +10,14 @@
     
     <!-- Main Content Section -->
     <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
-    <div class="six columns push-four">
+    <div class="twelve columns">
 
       
-      <h3>GRUP EKLE<small>Page subtitle</small></h3>
+      <h3>YENİ GRUP</h3>
  
 
 {{ Form::open(URL::to_action('admin.groups@add_one')) }}
-
+{{Form::token()}}
 	<p>
 		Grup Adı: {{ Form::text( 'name', CreateGroupForm::old( 'name' ) ) }}
 		{{ $errors->has( 'name' ) ? $errors->first( 'name' ) : '' }}
@@ -23,10 +27,15 @@
 		Ülke: {{ Form::select( 'country', CreateGroupForm::$country, CreateGroupForm::old( 'country' ) ) }}
 		{{ $errors->has( 'country' ) ? $errors->first( 'country' ) : '' }}
 	</p>
-
-
-	{{ Form::submit( 'Ekle' ) }}
+	<br />
+	<p>
+	Hakkında: {{ Form::textarea( 'information', CreateGroupForm::old( 'information' ),array()) }}
+	{{ $errors->has( 'information' ) ? $errors->first( 'information' ) : '' }}
+	 
+	</p>
+	{{ Form::submit( 'Ekle' ,array('class'=>'button radius')) }}
 
 {{ Form::close() }}
+ 
 </div>
 @endsection 

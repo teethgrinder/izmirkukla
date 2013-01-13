@@ -14,8 +14,8 @@ class Home_Users_Controller extends Base_Controller {
 		{
 			Auth::logout();
 		}
-		
-		return View::make('home.login');	
+        $images = DB::table('images')->order_by('id','desc')->take(8)->get();
+		return View::make('home.login')->with('images',$images);
 	}
 	
 	public function post_login() 
@@ -31,7 +31,7 @@ class Home_Users_Controller extends Base_Controller {
             {
                 return Redirect::to('admin'); 
             }
-            return Redirect::to_action('admin.groups@add');
+            return Redirect::to_action('admin.dashboard@index');
         }
 	    return Redirect::to('user/login');
     }

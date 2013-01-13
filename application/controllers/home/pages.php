@@ -5,34 +5,42 @@ class Home_Pages_Controller extends Base_Controller {
 	{
 		parent::__construct();
 		$this->filter('before', 'csrf')->on('post');
-		$this->filter('before', 'csrf')->on('subject');
+ 
 	}
 	public function get_homepage()
 	
 	{	
+		Auth::logout();
 		//$links = DB::table('links')->where('type', '=', '1')->get();
 		//$posts = Post::all();
 		$page = DB::table('pages')->where('template', '=', 'homepage')->first();
-		//$types = Type::lists('title', 'id');
+        $images = DB::table('images')->where('show_id','>',0)->order_by(DB::raw(''),DB::raw('RAND()'))->get();
+
+
+        //$types = Type::lists('title', 'id');
 		Section::inject('title', $page->meta_title);
 		Section::inject('description', $page->meta_description);
 		Section::inject('keywords', $page->meta_keywords);
-	 
-		return View::make('home.pages.homepage')->with('page', $page);
+	 	 
+		return View::make('home.pages.homepage')->with('page', $page)->with('images',$images);
 						//->with('page', $page)->with('posts',$posts)->with('links',$links);
 						//->with('types', $types);
 	}
+
 	public function get_view($slug)
 	
-	{	$links = DB::table('links')->where('type', '=', '1')->get();
+	{	
+		
+	//	$links = DB::table('links')->where('type', '=', '1')->get();
 		$page = DB::table('pages')->where('slug', '=', $slug)->first();
+        $images = DB::table('images')->where('show_id','>',0)->order_by(DB::raw(''),DB::raw('RAND()'))->get();
 		$subject = DB::table('subjects')->where('slug', '=', $slug)->first();
 		if (! is_object($page))
 			return Response::error('404'); 
 		Section::inject('title', $page->meta_title);
-		if (is_file(path('app').'views/home/page/'.$page->template.'.blade.php'))
+		if (is_file(path('app').'views/home/pages/'.$page->template.'.blade.php'))
 		{
-			return View::make('home.page.'.$page->template)->with('page', $page)->with('subject', $subject)->with('links',$links);
+			return View::make('home.pages.'.$page->template)->with('page', $page)->with('subject', $subject)->with('images',$images);
 		}
 		else
 		{

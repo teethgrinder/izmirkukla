@@ -11,6 +11,8 @@ class Create_Subjects {
 	{
 		Schema::create('subjects',function($table){
 				$table->increments('id');
+				$table->string('author_id')->unsigned();
+				$table->string('page_id')->unsigned();
 				$table->string('title');
 				$table->string('content');
 				$table->string('slug');

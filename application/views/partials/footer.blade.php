@@ -5,7 +5,7 @@
       <hr />
       <div class="row">
         <div class="six columns">
-          <p>&copy; Copyright no one at all. Go to town.</p>
+          <p>&copy; DTBA was here.</p>
         </div>
         <div class="six columns">
           <ul class="link-list right">

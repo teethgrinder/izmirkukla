@@ -1,0 +1,14 @@
+<ytsejam_> I sent you the mail
+<ipalaus> ok ytsejam_  now,
+<ipalaus> we have to do a ssh tunnel and install a SOCKS proxy
+<ipalaus> ssh -ND 17337 tunneluser@jesse.ipalaus.net
+<ipalaus> then you've to configure a proxy on chrome (or firefox) 
+<ipalaus> with type "SOCKS" and pointing to localhost: 17337
+<ipalaus> then if you go to what is my ip you should see a different ip
+<ipalaus> localhost:17337
+<ipalaus> :)
+<ipalaus> i know you can start it like
+<ipalaus> chromium-browser --proxy-server="socks5://localhost:17337"
+<ipalaus> but probably you can do it via GUI
+<ytsejam_> ok thanks , I am looking settings now 
+<ytsejam_> I am missing something I need to restart 1 minute

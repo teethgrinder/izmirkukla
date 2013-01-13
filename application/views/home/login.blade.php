@@ -1,4 +1,10 @@
 @layout('layouts.main')
+@section('navigation')
+	@include('partials.navigation')
+@endsection
+@section('sidebar')
+  @include('partials.sidebar2')
+@endsection
 @section('content')
  <div class="row">    
 
@@ -25,7 +31,7 @@
         <p>{{ Form::label('password', 'Password') }}</p>
         <p>{{ Form::password('password',array('placeholder'=>'Password')) }}</p>
         <!-- submit button -->
-        <p>{{ Form::submit('Login', array('class' => 'btn-large')) }}</p>
+        <p>{{ Form::submit('Login', array('class' => 'button radius')) }}</p>
     {{ Form::close() }}
       
     </article>

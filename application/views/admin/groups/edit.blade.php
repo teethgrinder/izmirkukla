@@ -1,22 +1,38 @@
-<h1>GRUP Düzenle</h1> 
+@layout('layouts.main')
+@section('navigation')
+	@include('partials.dashnav')
+@endsection
+@section('content')
+ <div class="row">    
 
-{{ Form::open('edit/'.$id, 'PUT') }}
+     
+    
+    <!-- Main Content Section -->
+    <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
+    <div class="eight columns push-two">
+
+      
+      <h3>Grup Bilgilerini Düzenle</h3>
+{{ Form::open(URL::to_action('admin.groups@edit',array($group->id)), 'PUT') }}
+ 
 	<input type="hidden" name="_method" value="PUT">
+	{{Form::token()}}
 	<p>
-		Grup Adı: {{ Form::text( 'name', CreateGroupForm::old( 'name' ) ) }}
+		Grup Adı: {{ Form::text( 'name', (Input::old('name') ?  Input::old('name') : $group->name)) }}
 		{{ $errors->has( 'name' ) ? $errors->first( 'name' ) : '' }}
 	</p>
 
 	<p>
-		Last Name: {{ Form::text( 'last_name', CreateGroupForm::old( 'last_name' ) ) }}
-		{{ $errors->has( 'last_name' ) ? $errors->first( 'last_name' ) : '' }}
-	</p>
-
-	<p>
-		Ülke: {{ Form::select( 'country', CreateGroupForm::$country, CreateGroupForm::old( 'country' ) ) }}
+		Ülke: {{ Form::select( 'country', (CreateGroupForm::$country ? CreateGroupForm::$country : $group->country )) }}
 		{{ $errors->has( 'country' ) ? $errors->first( 'country' ) : '' }}
 	</p>
-
-	{{ Form::submit( 'Submit' ) }}
-
+	<p>
+		Grup Adı: {{ Form::textarea( 'information', (Input::old('information') ?  Input::old('information') : $group->information)) }}
+		{{ $errors->has( 'information' ) ? $errors->first( 'information' ) : '' }}
+	</p>
+	{{ Form::submit( 'Değiştir' ,array('class'=>'button radius') ) }}
+{{HTML::link_to_action('admin.groups@index','Gruplara Dön',array(),array('class' => 'button radius'))}}
 {{ Form::close() }}
+ 
+</div>
+@endsection

@@ -78,6 +78,7 @@ Autoloader::map(array(
 Autoloader::directories(array(
 	path('app').'models',
 	path('app').'models/forms',
+	path('app').'models/presenters',
 	path('app').'libraries',
 ));
 

@@ -6,23 +6,20 @@
     
     <!-- Main Content Section -->
     <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
-    <div class="six columns push-four">
+    <div class="eight columns push-four">
 
       
       <h3>GRUP Bilgileri<small>Page subtitle</small></h3>
  
 
-{{ Form::open_for_files(URL::to_action('admin.groups@edit')) }}
+{{ Form::open_for_files(URL::to_action('admin.groups@add_two')) }}
+{{Form::token()}}
 
-	<p>
-	Hakkında: {{ Form::textarea( 'information', CreateGroupForm::old( 'information' ) ) }}
-	{{ $errors->has( 'information' ) ? $errors->first( 'information' ) : '' }}
-	</p>
 	<p>{{ Form::text('name', Input::old('name')) }}
 	{{  Form::file('picture') }}
 	</p>
  
-	{{ Form::submit( 'Ekle' ) }}
+	{{ Form::submit( 'Ekle',array('class'=>'button radius'))  }}
 
 {{ Form::close() }}
 </div>

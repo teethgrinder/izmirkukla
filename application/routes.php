@@ -1,15 +1,40 @@
 <?php
-Route::controller(array('home.user','home.pages','admin.groups' ));
+Route::controller(array('home.user','home.pages','home.groups','home.showings',
+                  'admin.dashboard','admin.groups','admin.shows', 'admin.theaters', 'admin.showings' ));
 //views home
 Route::get('/', 'home.pages@homepage');
-Route::any('user/login','home.users@login');
- 
-
+Route::any('login','home.users@login');
+Route::any('groups','home.groups@index');
+Route::get('show/(:any)', array('as' => 'show', 'uses' => 'home.shows@show'));
+Route::get('view/(:any)', array('as' => 'view', 'uses' => 'home.pages@view'));
+Route::get('shows', array('as' => 'shows', 'uses' => 'home.shows@index'));
+Route::get('showings', array('as' => 'schedule', 'uses' => 'home.showings@index'));
+//admin.groups 
+/*Route::any('groupslist', 'admin.groups@index');
 Route::any('newgroup', 'admin.groups@add');
- 
-Route::get('reviewform/(:any)', 'admin.groups@review');
-Route::get('edit/(:any)', 'admin.groups@edit');
-Route::put('edit/(:any)', 'admin.groups@edit');
+Route::any('photogroup/(:any)',	'admin.groups@add_photo');
+Route::any('editgroup/(:any)',	'admin.groups@edit');
+Route::get('deletegroup/(:any)',	'admin.groups@delete');
+Route::get('deletegroupimage/(:any)',	'admin.groups@delete_photo');*/
+Route::any('editgroup/(:any)',	'admin.groups@edit');
+Route::any('showgroup/(:any)', 'admin.groups@show');
+//admin.shows
+/*Route::any('showslist', 'admin.shows@index');
+Route::any('newshow/(:num)', 'admin.shows@add');
+Route::any('photoshowgroup/(:any)',	'admin.shows@add_photo');
+Route::any('show/(:any)', 'admin.shows@show');
+Route::any('editshow/(:any)',	'admin.shows@edit');
+Route::get('deleteshow/(:any)',	'admin.shows@delete');
+Route::get('deleteshowimage/(:any)','admin.shows@delete_photo');
+*/
+//admin.theaters
+Route::any('theaters', 'admin.theaters@index'); 
+Route::any('newtheater', 'admin.theaters@add');
+//admin.program
+
+Route::any('programs', 'admin.showings@index');
+
+
  
 /*
 |--------------------------------------------------------------------------

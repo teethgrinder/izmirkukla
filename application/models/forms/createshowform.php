@@ -4,8 +4,13 @@
 	{
 		public static $rules = array(
 				'name'     		=> 	'required',
-				'age'        	=> 	'required|min:3',
-				'language'		=> 	'required'		
+				'age'        	=> 	'required',
+				'language'		=> 	'required',
+				'duration'		=> 	'required',
+				'information'		
 		);	
-
+    public static function theater_options()
+    {
+        return array('' => 'Choose a Theater') + Theater::lists('name', 'id');
+    }
 	}
