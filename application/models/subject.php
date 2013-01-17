@@ -3,8 +3,13 @@
 class Subject extends \EloquentBaseModel\Base
 {
 
-    public static $accessible = array('title','content','page_id', 'user_id','slug');
-
+    public static $accessible = array('title','content','slug');
+	
+	static function find_by_slug($slug)
+	{
+	return static::where_slug($slug)->first();
+	}
+	
     public function page()
     {
         return $this->belongs_to('Page');

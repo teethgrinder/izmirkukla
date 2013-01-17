@@ -31,7 +31,8 @@
  
 	{{ Form::select( 'theater_id', CreateShowingForm::theater_options(),CreateShowingForm::old('theater_id') )  }}
 	{{ $errors->has( 'theater_id' ) ? $errors->first( 'theater_id' ) : '' }}
- 
+	
+
 	</p>
  <!--{{ Form::date('performance_date', Input::old('performance_date') )   }} -->
 	<div class="row">

@@ -30,15 +30,16 @@
   
 	{{ HTML::style('js/spacegallery/css/spacegallery.css') }}
 	{{ HTML::style('js/spacegallery/css/custom.css') }}
-    {{ HTML::style('css/foundation/custom.css') }}
-       @if( Auth::check() ) 
+    
+     
 	  {{ HTML::style('laravel/css/jquery-ui.css') }} 
-	   @endif
+ 
 	  {{ HTML::style('css/foundation/webicons.css') }}  
 	  {{ HTML::style('js/nivo-slider/nivo-slider.css') }}  
 	  {{ HTML::style('js/nivo-slider/themes/light/light.css') }}  
 	{{ HTML::style('js/hallo/examples/fontawesome/css/font-awesome.css') }}  
-	{{ HTML::style('js/thickbox.css') }}  
+	{{ HTML::style('js/thickbox.css') }} 
+	{{ HTML::style('css/foundation/custom.css') }} 
 	{{ HTML::style('js/calendar/css/common.css') }}  
 	
     </head>
@@ -70,8 +71,8 @@
 				
         {{ HTML::script('js/foundation/app.js') }}
         
-        {{ HTML::script('js/accordion/jquery.accordion.2.0.js') }}
-        {{HTML::script('js/hallo/examples/hallo.js')}}
+       
+    
         {{HTML::script('js/accordionGallery.js')}}
          {{HTML::script('js/nivo-slider/jquery.nivo.slider.pack.js')}}
 		{{HTML::script('js/spacegallery/js/eye.js')}}  
@@ -86,7 +87,7 @@
         {{ HTML::script('js/jquery-ui.js') }}
 		{{ HTML::script('js/jquery-ui-timepicker-addon.js') }}
 		{{ HTML::script('js/jquery.ui.datepicker-tr.js') }}
- 
+		 {{ HTML::script('js/accordion/jquery.accordion.2.0.js') }}
         <script type="text/javascript">
             $('#example2').accordion({
                 canToggle: true
@@ -155,8 +156,36 @@
   
 		</script> 
 		<script>
-                CKEDITOR.replace( 'information' );
+                CKEDITOR.replace( 'information',{
+                    toolbar: 'Full',
+                    enterMode : CKEDITOR.ENTER_BR,
+                    shiftEnterMode: CKEDITOR.ENTER_P
+
+                } );
+               
         </script>
-        <script> $('#datepicker').datetimepicker(); </script>
+        <script>
+            CKEDITOR.replace( 'information_english',{
+                toolbar: 'Full',
+                enterMode : CKEDITOR.ENTER_BR,
+                shiftEnterMode: CKEDITOR.ENTER_P
+            } );
+
+        </script>
+        	<script>
+                CKEDITOR.replace( 'content',{
+                    toolbar: 'Full',
+                    enterMode : CKEDITOR.ENTER_BR,
+                    shiftEnterMode: CKEDITOR.ENTER_P
+                } );
+               
+        </script>
+        <script> $('#datepicker').datetimepicker({
+			 
+			timeFormat: 'H:mm'
+			});
+			var dateFormat = $( "#datepicker" ).datetimepicker( "option", "dateFormat" );
+			$( "#datepicker" ).datetimepicker( "option", "dateFormat", 'yy-mm-dd' );
+			 </script>
     </body>
 </html>

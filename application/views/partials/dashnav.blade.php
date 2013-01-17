@@ -75,7 +75,7 @@
           <!--Oyunlar-->
            <li class="divider"></li>
           <li>
-              {{ HTML::link_to_action('admin.shows@index','Oyunlar') }}
+              {{ HTML::link_to_action('admin.shows@index','Gösteriler') }}
           </li>
           <li class="divider hide-for-small"></li>
           <!-- Salonlar -->
@@ -88,24 +88,31 @@
              <!-- Programlar -->
            <li class="divider"></li>
           <li class="has-dropdown">
-            <a class="active" href="/programs">Program</a>
+            <li>{{ HTML::link_to_action('admin.showings@index', 'Program') }}</li>
 
           </li>
           <li class="divider hide-for-small"></li>
           <!-- end of program -->
           <!-- Makaleler -->
            <li class="divider"></li>
-          <li class="has-dropdown">
-            <a class="active" href="#">Makaleler</a>
- 
-          </li>
+       <li class="has-dropdown">  {{ HTML::link_to_action('admin.subjects@index','Makaleler',array(),array('class'=>'active')) }}
+         <ul class="dropdown">
+              <li><label>Düzenlemeler</label></li>
+              <li class="has-dropdown">
+             <li>{{ HTML::link_to_action('admin.subjects@show', 'Sunuş', array('$slug'=>'sunum')) }}</li>
+             <li>{{ HTML::link_to_action('admin.subjects@show', 'Manifesto', array('$slug'=>'manifesto')) }}</li>
+             <li>{{ HTML::link_to_action('admin.subjects@show', 'Makaleler', array('$slug'=>'makaleler')) }}</li>
+             <li>{{ HTML::link_to_action('admin.subjects@show', 'Ekip', array('$slug'=>'ekip')) }}</li>
+             <li>{{ HTML::link_to_action('admin.subjects@show', 'Basında', array('$slug'=>'basın')) }}</li>
+            </ul>
+       </li>
           <li class="divider hide-for-small"></li>
         </ul>
 
         <!-- Right Nav Section -->
         <ul class="right">
-          
-          
+
+
          <li>{{HTML::link_to_action('home.pages@homepage','Sayfaya Dön',array(),array('class'=>'button'))}}</li>
         </ul>
       </section>

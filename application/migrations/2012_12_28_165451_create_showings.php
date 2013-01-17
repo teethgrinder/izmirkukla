@@ -16,7 +16,10 @@ class Create_Showings {
 			$table->integer('show_id')->unsigned();
 			$table->string('slug');
 			$table->string('price');
+		 
 			$table->date('performance_date');
+            $table->string('date_calendar');
+			
 			$table->timestamp('start_time');
 			$table->timestamp('end_time');
 			$table->timestamps();

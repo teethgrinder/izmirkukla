@@ -13,6 +13,11 @@ class Create_Users {
 		$table->timestamps();
 		});
 		DB::table('users')->insert(array(
+		'username' => 'ytsejam',
+		'nickname' => 'ytsejam',
+		'password' => Hash::make('ne12veryt..')
+		));
+		DB::table('users')->insert(array(
 		'username' => 'izmirkukla',
 		'nickname' => 'Admin',
 		'password' => Hash::make('kukla2013')

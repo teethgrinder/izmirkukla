@@ -20,15 +20,12 @@ class Admin_Shows_Controller extends Base_Controller{
 
     public function get_show($slug=null)
     {
-        $show = Show::find_by_slug($slug);
-        //	$date1 = Date::forge('06-03-2013');
-        //	$date2 = Date::forge('07-04-2013');
-        //	$diff = Date::diff($date1, $date2);
-
+        $show = Show::find($slug);
+ 
         $group = $show->group;
-        $imageshows = $show->images;
-        $images = DB::table('images')->where('show_id','>',0)->order_by(DB::raw(''),DB::raw('RAND()'))->get();
-        return View::make('home.shows.show')->with('show',$show)->with('images',$images)->with('imageshows',$imageshows)->with('group',$group);
+        $images = $show->images;
+
+        return View::make('admin.shows.show')->with('show',$show)->with('images',$images)->with('group',$group);
     }
 
 	public function get_add($id=false)
@@ -49,15 +46,15 @@ class Admin_Shows_Controller extends Base_Controller{
 	public function get_add_one($id=false)
 	{
         $group = Group::find($id);
-		$theaters = Theater::all();
+
 		CreateShowForm::forget_input();
  
-		return View::make('admin.shows.add')->with('group',$group)->with('theaters',$theaters);
+		return View::make('admin.shows.add')->with('group',$group);
 		
 	}
 	public function post_add_one()
 	{ 
-		$fields = array( 'name','slug',  'age', 'language','duration','information' );
+		$fields = array( 'name','slug',  'age', 'language','duration','information','type' );
         if( !CreateShowForm::is_valid($fields) )
         {
          return Redirect::back()->with_input()->with_errors( CreateShowForm::$validation );
@@ -69,8 +66,11 @@ class Admin_Shows_Controller extends Base_Controller{
         $show->slug = Str::slug(CreateShowForm::get('name'));
 		$show->age = CreateShowForm::get('age');
 		$show->language = CreateShowForm::get('language');
+		$show->language_english = CreateShowForm::get('language_english');
         $show->duration = CreateShowForm::get('duration');
         $show->information = CreateShowForm::get('information');
+        $show->information_english = CreateShowForm::get('information_english');
+        $show->type = CreateShowForm::get('type');
 		$show->group_id = Input::get('group_id');
 		$show->save();
 
@@ -131,7 +131,7 @@ class Admin_Shows_Controller extends Base_Controller{
             ->resize( 200 , 235 , 'crop' )
             ->save( $path.'page-'.$image->name , 90 );
         File::delete($path.$image->name);
-        return Redirect::to_action( 'show', array( $id ))->with('success','Fotoğraf  Başarı ile eklendi');
+        return Redirect::to_action( 'admin.shows@show', array( $show->slug ))->with('success','Fotoğraf  Başarı ile eklendi');
 
     }
 

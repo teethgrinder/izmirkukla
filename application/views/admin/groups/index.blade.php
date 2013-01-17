@@ -19,7 +19,7 @@
 				<th>Grup Adı</th>
 				<th>Ülkesi</th>
 				<th>Hakkında</th>
-				<th>Listeden Kaldır</th>
+				<th>Durum</th>
 			
 			</tr>
 		</thead>
@@ -31,8 +31,8 @@
       <td><a href="<?php echo URL::to('showgroup/'.$group->id); ?>">{{$group->name}}</a></td>
       <td><a href="<?php echo URL::to('showgroup/'.$group->id); ?>">{{$group->country}}</a></td>
       <td><a href="<?php echo URL::to('showgroup/'.$group->id); ?>">{{$group->information}}</a></td>
-      <td>{{HTML::link_to_action('admin.groups@edit', 'Düzenle',array($group->id),array('class'=>'button radius'))}} </td>
-	  <td><a class="alert button" href="<?php echo URL::to('deletegroup/'.$group->id); ?>" onclick="return confirm('Silmek için onaylayın')">Sil</a></td>
+      <td>{{HTML::link_to_action('admin.groups@edit', 'Düzenle',array($group->id),array('class'=>'button small radius'))}} {{HTML::link_to_action('admin.groups@delete', 'Sil',array($group->id),array('class'=>'button alert small radius',"onclick"=>"return confirm('Silmek için onaylayın')"))}}</td>
+
     </tr>
 		@endforeach
  

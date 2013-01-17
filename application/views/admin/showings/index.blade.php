@@ -23,18 +23,25 @@
 			
 			</tr>
 		</thead>
-   
+
 
     <tbody>
-		@foreach($showings as $showing)
+		@foreach(Showing::all() as $showing)
+       <?php $theater = $showing->theater;
+              $show = Show::find($showing->show_id);
+              $group = $show->group;
+              $date = $showing->publish_date;
+              $performance = $showing->get_language( $date );?>
         <tr>
-          <td>{{ HTML::link_to_action('admin.groups@show',$group->name,array($group->id)) }}</td>
-          <td>{{ HTML::link_to_action('admin.shows@show',$show->name,array($show->id)) }}</td>
-          <td>{{ HTML::link_to_action('admin.shows@show',$showing->performance_date,array($show->id)) }}</td>
-          <td>{{ HTML::link_to_action('admin.theaters@show',$theater->name,array($theater->id)) }}</td>
-          <td>{{ HTML::link_to_action('admin.shows@show',$showing->price , array($show->id)) }}</td>
-          <td>{{ HTML::link_to_action('admin.showings@edit','Düzenle',array($showing->id),array('class'=>'small  round button')) }}</td>
-          <td>{{ HTML::link_to_action('admin.showings@delete','Sil',array($showing->id),array('class'=>'small alert round button',"onclick"=>"Silmek için Onaylayın")) }}</td>
+
+             <td>{{ HTML::link_to_action('admin.groups@show',$group->name,array($showing->show->id)) }}</td>
+            <td>{{ HTML::link_to_action('admin.shows@show',$show->name,array($show->id)) }}</td>
+           <!--  <td>{{ HTML::link_to_action('admin.shows@show',$showing->publish_date,array($show->id)) }}</td> -->
+           <td>{{ HTML::link_to_action('admin.shows@show',$performance,array($show->id)) }}</td>
+           <td>{{ HTML::link_to_action('admin.theaters@show',$theater->name,array($theater->id)) }}</td>
+           <td>{{ HTML::link_to_action('admin.shows@show',$showing->price , array($show->id)) }}</td>
+           <td>{{ HTML::link_to_action('admin.showings@edit','Düzenle',array($showing->id),array('class'=>'small  round button')) }}</td>
+           <td>{{ HTML::link_to_action('admin.showings@delete','Sil',array($showing->id),array('class'=>'small alert round button',"onclick"=>"Silmek için Onaylayın")) }}</td>
 
         </tr>
 		@endforeach

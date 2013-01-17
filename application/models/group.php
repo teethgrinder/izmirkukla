@@ -2,12 +2,13 @@
 
 	class Group extends \EloquentBaseModel\Base
 	{
-		public static $accessible = array('name', 'country', 'information');
+		public static $accessible = array('name', 'country', 'information','information_english');
 		
 		public static $rules = array(
-			'name'			=> 'required',
-			'country'		=> 'required',
-			'information'  => 'required'		
+			'name'			        => 'required',
+			'country'		        => 'required',
+			'information'           => 'required',
+            'information_english'   =>'required'
 		);
 		
 		public function shows()

@@ -18,13 +18,8 @@ class Admin_Showings_Controller extends Base_Controller{
         if(!($showings)){
             return Redirect::to_action('admin.showings@add');
         }
-        foreach ($showings as $showing) {
-            $theater = $showing->theater;
-            $show = Show::find($showing->show_id);
-            $group = $show->group;
-        }
 
-        return View::make('admin.showings.index')->with('showings',$showings)->with('theater',$theater)->with('group',$group)->with('show',$show);
+        return View::make('admin.showings.index') ;
 
     }
 
@@ -51,8 +46,12 @@ class Admin_Showings_Controller extends Base_Controller{
         $showing = new Showing;
         $showing->theater_id= CreateShowingForm::get('theater_id');
         $showing->show_id= CreateShowingForm::get('show_id');
+        //$showing->slug = CreateShowingForm::get('slug');
         $showing->price = CreateShowingForm::get('price');
+
         $showing->performance_date = Input::get('performance_date');
+		$date_showing = $showing->performance_date;
+		$showing->date_calendar = $showing->query_date;
         $showing->start_time = Input::get('start_time');
         if(!$showing->is_valid())
         {
@@ -83,29 +82,38 @@ class Admin_Showings_Controller extends Base_Controller{
     public function put_edit($id=false)
     {
 
-            {
-            if( !CreateShowingForm::is_valid() )
-            {
-                return Redirect::back()->with_input()->with_errors( CreateShowingForm::$validation );
-            }
-
-            CreateShowingForm::save_input();
-
-            $showing = Showing::find($id);
-            $showing->theater_id= CreateShowingForm::get('theater_id');
-            $showing->show_id= CreateShowingForm::get('show_id');
-            $showing->price = CreateShowingForm::get('price');
-            $showing->performance_date = Input::get('performance_date');
-            $showing->start_time = Input::get('start_time');
-            if(!$showing->is_valid())
-            {
-                return Redirect::back()->with_input()->with_errors($showing->validation);
-            }
-
-            $showing->save();
-
-            return Redirect::to_action('admin.showings@index');
+        {
+        if( !CreateShowingForm::is_valid() )
+        {
+            return Redirect::back()->with_input()->with_errors( CreateShowingForm::$validation );
         }
+
+        CreateShowingForm::save_input();
+
+        $showing = Showing::find($id);
+        $showing->theater_id= CreateShowingForm::get('theater_id');
+        $showing->show_id= CreateShowingForm::get('show_id');
+        $showing->price = CreateShowingForm::get('price');
+        $showing->performance_date = Input::get('performance_date');
+        $showing->start_time = Input::get('start_time');
+        if(!$showing->is_valid())
+        {
+            return Redirect::back()->with_input()->with_errors($showing->validation);
+        }
+
+        $showing->save();
+
+        return Redirect::to_action('admin.showings@index');
+        }
+
+    }
+
+    public function get_delete($id)
+    {
+
+        $showing = Showing::find($id);
+        $showing->delete();
+        return Redirect::to_action( 'admin.showings@index')->with('success','Gösteri başarı ile kaldırıldı');
 
     }
 }

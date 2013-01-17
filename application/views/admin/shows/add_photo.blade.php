@@ -17,7 +17,7 @@
  
 
 
-{{ Form::open_for_files('photoshowgroup/'.$id,'POST') }}
+{{ Form::open_for_files(URL::to_action('admin.shows@add_photo',array($show->id),'POST')) }}
 {{Form::token()}}
 
 	<p>

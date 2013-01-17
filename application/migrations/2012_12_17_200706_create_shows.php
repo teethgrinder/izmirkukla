@@ -10,10 +10,13 @@ class Create_Shows {
 			$table->increments('id');
 			$table->string('name');
 			$table->string('slug');
+            $table->string('type');
 			$table->string('age');
 			$table->string('language');
+            $table->string('language_english');
 			$table->string('duration');
 			$table->text('information');
+            $table->text('information_english');
 			$table->string('meta_title',255);
 			$table->string('meta_description',255);
 			$table->string('meta_keywords',255);

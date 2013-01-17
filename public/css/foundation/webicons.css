@@ -34,7 +34,12 @@
 .no-svg .fc-webicon.evernote.large { background: url("../images/fairhead-icons/fc-webicon-evernote.png"); }
 .no-svg .fc-webicon.evernote.small { background: url("../images/fairhead-icons/fc-webicon-evernote-s.png"); }
 .svg .fc-webicon.evernote { background: url("../images/fairhead-icons/fc-webicon-evernote.svg"); }
-
+/* English */
+ 
+.no-svg .fc-webicon.evernote { background: url("../images/fairhead-icons/fc-webicon-evernote-m.png"); }
+.no-svg .fc-webicon.evernote.large { background: url("../images/fairhead-icons/fc-webicon-evernote.png"); }
+.no-svg .fc-webicon.english.small { background: url("../images/fairhead-icons/english.png"); }
+.svg .fc-webicon.english { background: url("../images/fairhead-icons/english.svg"); background-repeat:no-repeat;}
 /* Facebook */
 .no-svg .fc-webicon.facebook { background: url("../images/fairhead-icons/fc-webicon-facebook-m.png"); }
 .no-svg .fc-webicon.facebook.large { background: url("../images/fairhead-icons/fc-webicon-facebook.png"); }
@@ -75,7 +80,7 @@
 .no-svg .fc-webicon.mail { background: url("../images/fairhead-icons/fc-webicon-mail-m.png"); }
 .no-svg .fc-webicon.mail.large { background: url("../images/fairhead-icons/fc-webicon-mail.png"); }
 .no-svg .fc-webicon.mail.small { background: url("../images/fairhead-icons/fc-webicon-mail-s.png"); }
-.svg .fc-webicon.mail { background: url("../images/fairhead-icons/fc-webicon-mail.svg"); }
+.svg .fc-webicon.mail { background: url("../images/fairhead-icons/fc-webicon-mail.svg"); background-repeat: no-repeat;}
 
 /* MSN */
 .no-svg .fc-webicon.msn { background: url("../images/fairhead-icons/fc-webicon-msn-m.png"); }

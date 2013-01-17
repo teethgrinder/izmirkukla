@@ -75,13 +75,18 @@
 
 
         <!-- Right Nav Section -->
-        <div id="header">
+      <!--  <div id="header">
         <p>(new class)</p>
-        </div>
-         <!--  <ul class="right">
+        </div> -->
+     <ul class="right">
             <li><a href="#" class="fc-webicon facebook small">Like us on Facebook</a></li>
             <li><a href="#" class="fc-webicon twitter small">Like us on Twitter</a></li>
-
+            <li><a href="#" class="fc-webicon mail small">Mail us</a></li>
+         @if (Config::get('application.language') == 'tr')
+            <li><a href="/en" class="small" >{{HTML::image('laravel/img/english.png')}}</a></li>
+         @elseif (Config::get('application.language') == 'en')
+            <li><a href="/" class="small" >{{HTML::image('laravel/img/turkey.png')}}</a></li>
+         @endif
           <!--   <li class="has-dropdown">
            <li> <a href="#">Program</a>
       <ul class="dropdown">

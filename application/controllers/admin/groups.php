@@ -45,7 +45,7 @@ class Admin_Groups_Controller extends Base_Controller{
     }
 	public function post_add_one()
 	{
-		$fields = array( 'name',  'country','information' );
+		$fields = array( 'name',  'country','information' ,'country_english','information_english' );
 
         if( !CreateGroupForm::is_valid($fields) )
         {
@@ -57,7 +57,9 @@ class Admin_Groups_Controller extends Base_Controller{
 		$group = new Group;
 		$group->name= CreateGroupForm::get('name');
 		$group->country = CreateGroupForm::get('country');
+        $group->country_english = CreateGroupForm::get('country_english');
 		$group->information = CreateGroupForm::get('information');
+        $group->information_english = CreateGroupForm::get('information_english');
 
 		if(!$group->is_valid())
 		{
@@ -228,7 +230,7 @@ class Admin_Groups_Controller extends Base_Controller{
 
 		$group = Group::find($id);
 		$group->delete();
-		return Redirect::to_action( 'admin.groups@index')->with('success','Grup Başarı ile silindi');
+		return Redirect::to_action( 'admin.groups@index')->with('success','Grup başarı ile kaldırıldı');
 
 	}
 }

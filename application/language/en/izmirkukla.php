@@ -1,0 +1,31 @@
+<?php
+
+    return array(
+        'home'          =>  'Home',
+        'presentation'  =>  'Presentation',
+        'shows'         =>  'Shows',
+        'program'       =>  'Program',
+        'exhibitions'   =>  'Exhibitions',
+        'workshops'     =>  'Workshops',
+        'conferences'   =>  'Conferences',
+        'documents'     =>  'Documents',
+        'manifest'      =>  'Manifest',
+        'archieve'      =>  'Archieve',
+        'articles'      =>  'Articles',
+        'press'         =>  'Press',
+        'crew'          =>  'Crew',
+        'places'        =>  'Places',
+        'supporters'    =>  'Supporters',
+        'contact'       =>  'Contact',
+        'groups'        =>  'Groups',
+        'group_name'    =>  'Group Name',
+        'show_name'     =>  'Show Name',
+        'language'      =>  'Language',
+        'age'           =>  'Age',
+        'duration'      =>  'Duration',
+        'about'         =>  'About',
+        'type'          =>  'Type',
+        'delete'        =>  'Delete',
+        'edit'          =>  'Edit',
+
+    );

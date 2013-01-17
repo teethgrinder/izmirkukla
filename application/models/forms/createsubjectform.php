@@ -6,10 +6,11 @@ class CreateSubjectForm extends FormBaseModel\Base
     public static $rules = array(
         'title' 		=> 'required',
         'content' 		=> 'required',
-        'page_id'       => 'required',
+
     );
-    public static function theater_options()
+
+    public static function page_options()
     {
-        return array('' => 'Bir Sayfa Seçin') + Page::lists('slug', 'id');
+        return array('' => 'Hangi Sayfada Yayınlansın') + Page::lists('slug', 'id');
     }
 }

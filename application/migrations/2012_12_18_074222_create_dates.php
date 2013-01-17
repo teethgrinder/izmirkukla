@@ -12,6 +12,7 @@ class Create_Dates {
 			$table->create();
             $table->increments('id');
             $table->date('showdate');
+         
             $table->timestamps();
         });
         $starting_date = new DateTime('2013-03-06 00:00');

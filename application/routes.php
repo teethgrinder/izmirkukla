@@ -1,12 +1,13 @@
 <?php
 Route::controller(array('home.user','home.pages','home.groups','home.showings',
-                  'admin.dashboard','admin.groups','admin.shows', 'admin.theaters', 'admin.showings' ));
+                  'admin.dashboard','admin.groups','admin.shows', 'admin.theaters', 'admin.showings','admin.subjects' ));
 //views home
 Route::get('/', 'home.pages@homepage');
 Route::any('login','home.users@login');
 Route::any('groups','home.groups@index');
-Route::get('show/(:any)', array('as' => 'show', 'uses' => 'home.shows@show'));
-Route::get('view/(:any)', array('as' => 'view', 'uses' => 'home.pages@view'));
+
+Route::get('/(:any)', array('as' => 'show', 'uses' => 'home.shows@show'));
+Route::get('/(:any)', array('as' => 'view', 'uses' => 'home.pages@view'));
 Route::get('shows', array('as' => 'shows', 'uses' => 'home.shows@index'));
 Route::get('showings', array('as' => 'schedule', 'uses' => 'home.showings@index'));
 //admin.groups 

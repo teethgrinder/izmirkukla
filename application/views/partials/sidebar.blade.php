@@ -6,9 +6,10 @@
 <div class="three columns pull-nine">
 <div class="shadowblockmenu-v">
 	<hr>
+
 <ul id="example2">
  
-<li class="yt"><h5>{{HTML::link_to_action('home.pages@homepage','Anasayfa',array(),array('class'=>'yt'))}}</h5></li>
+<li class="yt"><h5 class="yt">{{HTML::link_to_action('home.pages@homepage',Lang::line('izmirkukla.home')->get(),array(),array('class'=>'yt'))}}</h5></li>
  <li>
 	<!-- <div class="arrow-down"></div>-->
        <h6>Festival </h6>   
@@ -17,28 +18,28 @@
 		<ul  class="panel loading">
 		<!--	<li> <a href="/groups">Gruplar</a></li>-->
 
-			<li> {{HTML::link_to_action('home.pages@view','Sunuş',array('presentation'))}}</li>
-			<li> {{HTML::link_to_action('home.shows@index','Oyunlar')}}</li>
-			<li> {{HTML::link_to_action('home.showings@index','Program')}}</li>
-			<li> <a href="#">Sergiler</a></li>
-			<li> <a href="#">Workshoplar</a></li>
-			<li> <a href="#">Konferanslar</a></li>
+			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.presentation')->get(),array(Lang::line('izmirkukla.presentation')->get()))}}</li>
+			<li> {{HTML::link_to_action('home.shows@index',Lang::line('izmirkukla.shows')->get())}}</li>
+			<li> {{HTML::link_to_action('home.showings@index',Lang::line('izmirkukla.program')->get())}}</li>
+			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.exhibitions')->get(),array(Lang::line('izmirkukla.exhibitions')->get()))}}</li>
+			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.workshops')->get(),array(Lang::line('izmirkukla.workshops')->get()))}}</li>
+			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.conferences')->get(),array(Lang::line('izmirkukla.conferences')->get()))}}</li>
 		</ul>
   </li>
   <li>
-  <h6>Dökümanlar  </h6>  
+  <h6>{{ Lang::line('izmirkukla.documents') }}  </h6>
 		<ul class="panel loading">
-			<li> <a href="#">Manifesto</a></li>
+			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.manifest')->get(),array(Lang::line('izmirkukla.manifest')->get()))}}</li>
 			<li> <a href="#">Arşiv</a></li>
-			<li> <a href="#">Makaleler</a></li>
-			<li> <a href="#">Basında</a></li>
-			<li> <a href="#">Ekip</a></li>
-			<li> <a href="#">Mekanlar</a></li>
+			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.articles')->get(),array(Lang::line('izmirkukla.articles')->get()))}}</li>
+			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.press')->get(),array(Lang::line('izmirkukla.press')->get()))}}</li>
+			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.crew')->get(),array(Lang::line('izmirkukla.crew')->get()))}}</li>
+			<li>{{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.places')->get(),array(Lang::line('izmirkukla.places')->get()))}}</li>
 		</ul>
   </li>
-        <li><h5><a class="yt" href="#">Destekleyenler</a></h5></li>
+        <li><h5>{{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.supporters')->get(),array(Lang::line('izmirkukla.supporters')->get()),array('class'=>'yt')) }}</h5></li>
  
-        <li><h5><a class="yt" href="#">İletişim</a></h5></li>
+        <li><h5>{{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.contact')->get(),array(Lang::line('izmirkukla.contact')->get()),array('class'=>'yt')) }}</h5></li>
 
       </ul>
       

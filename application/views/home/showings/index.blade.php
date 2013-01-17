@@ -30,11 +30,11 @@
 				@foreach($showingdates as $date)
                 <li class="active color1">
                     <a href="#day<?php echo $date->schedule_date ;?>">
-                        <span class="day"><strong><?php echo $date->schedule_date ;?></strong><span>&nbsp;</span></span>
+                        <span class="day"><strong><?php echo $date->schedule_date;?></strong><span>&nbsp;</span></span>
                         <span class="content">
-                            <small><?php echo $date->schedule_date ;?></small>
+                            <small><?php $day=$date->show_date;echo $date->get_language($day) ;?></small>
                             <img src="js/calendar/images/yeni.jpg" width="126" height="91" alt=""/>
-                            <strong>Day <?php echo $date->schedule_date ;?></strong>
+
                         </span>
                     </a>
                 </li>
@@ -52,17 +52,24 @@
         <div id="daydetail">
             <ul id="daydetail-list">
                 @foreach($showingdates as $date)
+
                 <li>
                     <section>
                         <h1>Day 1</h1>
                         <div id="day<?php echo $date->schedule_date ;?>" class="daydetail-content">
                             <div class="right">
                                 <hgroup>
-                                    <h2>December 1st</h2>
-                                    <h3>Feature Title</h3>
+                                    <h2><?php $day=$date->show_date;  echo $date->get_language($day) ;?></h2>
+                                    <h3>Program</h3>
                                 </hgroup>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada, libero at lacinia ornare, tellus tellus fermentum est, ac iaculis libero leo eget diam.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada, libero at lacinia ornare, tellus tellus fermentum est, ac iaculis libero leo eget diam.</p>
+
+                                <ul>
+                                @foreach ($showings as $showing)
+
+                                   <li>{{ $showing->show->name }}</li>
+
+                                @endforeach
+                               </ul>
                             </div>
                             <div class="left">
                                 <a href="#" target="_blank"><img src="js/calendar/images/temp2.jpg" width="356" height="430" alt=""/></a>
@@ -71,6 +78,7 @@
                     </section>
                     <p class="top"><a href="#container">Back to Top</a></p>
                 </li>
+
                @endforeach 
            
            

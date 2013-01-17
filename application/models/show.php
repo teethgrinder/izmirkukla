@@ -3,7 +3,7 @@
 class Show extends \EloquentBaseModel\Base
 {
 	 
-	public static $accessible = array('name', 'age', 'language','duration','information');
+	public static $accessible = array('name', 'age', 'language','duration','information','type');
 	 
 	static function find_by_slug($slug)
 	{
@@ -24,5 +24,7 @@ class Show extends \EloquentBaseModel\Base
 	{
 			return $this->has_many('Image');
 	}
+	
+	
 	
 }

@@ -9,11 +9,15 @@ class Home_Pages_Controller extends Base_Controller {
 	}
 	public function get_homepage()
 	
-	{	
+	{
+
 		Auth::logout();
 		//$links = DB::table('links')->where('type', '=', '1')->get();
 		//$posts = Post::all();
-		$page = DB::table('pages')->where('template', '=', 'homepage')->first();
+        if (Config::get('application.language') == 'tr')
+		$page = DB::table('pages')->where('template', '=', 'anasayfa')->first();
+        else
+        $page = DB::table('pages')->where('template', '=', 'homepage')->first();
         $images = DB::table('images')->where('show_id','>',0)->order_by(DB::raw(''),DB::raw('RAND()'))->get();
 
 
@@ -27,6 +31,8 @@ class Home_Pages_Controller extends Base_Controller {
 						//->with('types', $types);
 	}
 
+
+
 	public function get_view($slug)
 	
 	{	
@@ -35,18 +41,20 @@ class Home_Pages_Controller extends Base_Controller {
 		$page = DB::table('pages')->where('slug', '=', $slug)->first();
         $images = DB::table('images')->where('show_id','>',0)->order_by(DB::raw(''),DB::raw('RAND()'))->get();
 		$subject = DB::table('subjects')->where('slug', '=', $slug)->first();
+        $shows = DB::table('shows')->where('type','=',$slug)->get();
+        $showings = DB::table('showings')->where('slug', '=', $slug)->first();
 		if (! is_object($page))
 			return Response::error('404'); 
 		Section::inject('title', $page->meta_title);
 		if (is_file(path('app').'views/home/pages/'.$page->template.'.blade.php'))
 		{
-			return View::make('home.pages.'.$page->template)->with('page', $page)->with('subject', $subject)->with('images',$images);
+			return View::make('home.pages.'.$page->template)->with('page', $page)->with('subject', $subject)->with('images',$images)->with('showings',$showings)->with('shows',$shows);
 		}
 		else
 		{
 			if (is_file(path('app').'views/home/page/default.blade.php'))
 			{
-				return View::make('home.page.default')->with('page', $page);
+				return View::make('home.page.default')->with('page', $page)->with('subject',$subject);
 			}
 			else
 			{
@@ -77,6 +85,7 @@ class Home_Pages_Controller extends Base_Controller {
 			}
 		}
 	}
+
 	public function put_edit($slug){
 	 
 		$subject = Subject::where('slug', '=', $slug)->first();

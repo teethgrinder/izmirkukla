@@ -18,7 +18,10 @@
 		Oyun Adı: {{ Form::text( 'name', CreateShowForm::old( 'name' ) ) }}
 		{{ $errors->has( 'name' ) ? $errors->first( 'name' ) : '' }}
 	</p>
- 
+    <p>
+        Gösteri türü: {{ Form::select( 'type', CreateShowForm::$event, CreateShowForm::old( 'type' ) ) }}
+        {{ $errors->has( 'type' ) ? $errors->first( 'type' ) : '' }}
+    </p>
 </div>
 <div class="row">
 	<div class="three columns">
@@ -35,6 +38,13 @@
 {{ Form::text( 'language', CreateShowForm::old( 'language' ) ) }}
 {{ $errors->has( 'language' ) ? $errors->first( 'language' ) : '' }}
     </div>
+    <div class="three columns">
+       Language:
+
+
+        {{ Form::text( 'language_english', CreateShowForm::old( 'language_english' ) ) }}
+        {{ $errors->has( 'language_english' ) ? $errors->first( 'language_english' ) : '' }}
+    </div>
      <div class="three columns">
 			 Süre: {{ Form::text( 'duration', CreateShowForm::old( 'duration' ) ) }}
 		{{ $errors->has( 'duration' ) ? $errors->first( 'duration' ) : '' }}
@@ -46,15 +56,7 @@
 	{{ $errors->has( 'information' ) ? $errors->first( 'information' ) : '' }}
 	</p>
 	
-	<!-- <p>
-	
-	Salon:
- 
- 
-	{{ Form::select( 'theater_id', CreateShowForm::theater_options(),CreateShowForm::old('theater_id') )  }}
-	{{ $errors->has( 'theater' ) ? $errors->first( 'theater' ) : '' }}
- 
-	</p>-->
+
 
 	{{ Form::submit( 'Ekle' ,array('class'=>'button radius')) }}
  

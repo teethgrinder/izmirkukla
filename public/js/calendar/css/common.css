@@ -18,7 +18,7 @@ table, th, td { margin:0; }
 #calendar a img { border:0; }
 
 /* HEADLINES */
-h1 { margin:0 0 10px; color:#b2b2b2; font:bold 30px/30px helvetica,sans-serif; text-shadow:1px 1px 4px #000; }
+ /*h1 { margin:0 0 10px; color:#b2b2b2; font:bold 30px/30px helvetica,sans-serif; text-shadow:1px 1px 4px #000; }
 h1.headline { margin:0 0 3px; }
 h1.headline span { display:inline-block; }
 h2 { margin:0 0 2px; color:#000; font:normal 18px/20px helvetica,sans-serif; }

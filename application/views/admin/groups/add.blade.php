@@ -27,12 +27,22 @@
 		Ülke: {{ Form::select( 'country', CreateGroupForm::$country, CreateGroupForm::old( 'country' ) ) }}
 		{{ $errors->has( 'country' ) ? $errors->first( 'country' ) : '' }}
 	</p>
+
+        <p>
+            Country: {{ Form::select( 'country_english', CreateGroupForm::$country_english, CreateGroupForm::old( 'country_english' ) ) }}
+            {{ $errors->has( 'country_english' ) ? $errors->first( 'country_english' ) : '' }}
+        </p>
 	<br />
 	<p>
 	Hakkında: {{ Form::textarea( 'information', CreateGroupForm::old( 'information' ),array()) }}
 	{{ $errors->has( 'information' ) ? $errors->first( 'information' ) : '' }}
 	 
 	</p>
+        <p>
+            About: {{ Form::textarea( 'information_english', CreateGroupForm::old( 'information_english' ),array()) }}
+            {{ $errors->has( 'information_english' ) ? $errors->first( 'information_english' ) : '' }}
+
+        </p>
 	{{ Form::submit( 'Ekle' ,array('class'=>'button radius')) }}
 
 {{ Form::close() }}

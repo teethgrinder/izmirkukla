@@ -14,7 +14,7 @@ class Create_Subjects {
 				$table->string('author_id')->unsigned();
 				$table->string('page_id')->unsigned();
 				$table->string('title');
-				$table->string('content');
+				$table->text('content');
 				$table->string('slug');
 				$table->timestamps();
 			

@@ -31,7 +31,8 @@
 			<td> {{$show->age}} </td>
 			<td> {{$show->language}} </td>
 			<td>{{$show->information}}</a></td>
-			<td> {{HTML::link_to_action('admin.groups@delete', 'Sil',array($show->id),array('class'=>'alert button radius'))}} </td>
+			<td> {{HTML::link_to_action('admin.shows@edit', 'Düzenle',array($show->id),array('class'=>'button small radius'))}} </td>
+			<td> {{HTML::link_to_action('admin.groups@delete', 'Sil',array($show->id),array('class'=>'alert small button radius'))}} </td>
 		</tr>
 	 
     </tbody>
@@ -60,17 +61,12 @@
 @endforeach
     </tbody>
  </table>
-<div class="button-bar">
- <ul class="button-group radius">
+	<div class="button-bar">
+		<ul class="button-group radius">
 			<li>{{HTML::link_to_action('admin.shows@add', 'Yeni Oyun Ekle',array($group->id),array('class'=>'button radius'))}}</li>
-			<li>{{HTML::link_to_action('admin.shows@add_photo', 'Foto Ekle',array($show->id),array('class'=>'button radius'))}}</li>
-			<li>{{HTML::link_to_action('admin.shows@edit', 'Bilgileri Düzenle',array($show->id),array('class'=>'button radius'))}}</li>
-			
-			<!--<li><a class="button radius" href="<?php echo URL::to('newshow'); ?>">Yeni Oyun Ekle</a></li>-->
-
-			<li><a class="button radius" href="<?php echo URL::to('groupslist'); ?>">Tüm Gruplar</a></li>
-			
-			</ul>
-			</div>
+			<li>{{HTML::link_to_action('admin.shows@add_photo', 'oyun fotoğrafları',array($show->id),array('class'=>'button radius'))}}</li>
+			<li>{{HTML::link_to_action('admin.groups@index', 'Tüm gruplar',array(),array('class'=>'button radius'))}}</li>
+		</ul>
+		</div>
 	</div>
 @endsection 
