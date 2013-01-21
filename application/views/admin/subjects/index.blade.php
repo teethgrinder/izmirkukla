@@ -32,19 +32,15 @@
         <td>{{ $page-> title }}</td>
         @endif
        <td>{{ $subject-> title }}</td>
-        <td>{{ $subject-> content }}</td>
+       <td>{{ $subject-> content }}</td>
+       <td>{{ HTML::link_to_action('admin.subjects@edit','Düzenle',array($subject->id),array('class'=>'button small radius')) }}
+           {{HTML::link_to_action('admin.subjects@delete','Sil',array($subject->id),array('class'=>'alert small radius button',"onclick"=>"return confirm('Silmek için onaylayın')"))}}</td>
  
     </tr>
 		@endforeach
  
     </tbody>
  </table>
- 
-	<div class="button-bar">
-	 <ul class="button-group radius">
-		 <!--<a class="button radius"href="<?php echo URL::to('newgroup'); ?>">Grup Ekle</a>--> 
-		 {{HTML::link_to_action('admin.subjects@add', 'Yeni Konu',array(),array('class'=>'button radius'))}} 
-		</ul>
-	</div>	
+
 </div>
 @endsection 

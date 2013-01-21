@@ -43,18 +43,19 @@ class Admin_Shows_Controller extends Base_Controller{
     }
 
  
-	public function get_add_one($id=false)
+	public function get_add_one($slug=null)
 	{
-        $group = Group::find($id);
+
 
 		CreateShowForm::forget_input();
  
-		return View::make('admin.shows.add')->with('group',$group);
+		return View::make('admin.shows.add')->with('slug',$slug);
 		
 	}
+
 	public function post_add_one()
 	{ 
-		$fields = array( 'name','slug',  'age', 'language','duration','information','type' );
+		$fields = array( 'name','name_english','slug',  'age', 'language','language_english','duration','information','information_english' );
         if( !CreateShowForm::is_valid($fields) )
         {
          return Redirect::back()->with_input()->with_errors( CreateShowForm::$validation );
@@ -63,6 +64,7 @@ class Admin_Shows_Controller extends Base_Controller{
 		CreateShowForm::save_input($fields);
 		$show = new Show;
 		$show->name = CreateShowForm::get('name');
+        $show->name_english = CreateShowForm::get('name_english');
         $show->slug = Str::slug(CreateShowForm::get('name'));
 		$show->age = CreateShowForm::get('age');
 		$show->language = CreateShowForm::get('language');
@@ -70,12 +72,15 @@ class Admin_Shows_Controller extends Base_Controller{
         $show->duration = CreateShowForm::get('duration');
         $show->information = CreateShowForm::get('information');
         $show->information_english = CreateShowForm::get('information_english');
-        $show->type = CreateShowForm::get('type');
+
 		$show->group_id = Input::get('group_id');
 		$show->save();
 
-		return Redirect::to_action( 'showgroup', array( $show->group_id ));
+		return Redirect::to_action( 'admin.shows@index');
 	}
+
+
+
     public function get_add_photo($id=null)
     {
 
@@ -146,6 +151,7 @@ class Admin_Shows_Controller extends Base_Controller{
 
 	public function get_edit($id)
 	{
+        CreateShowForm::forget_input();
 		$show = Show::find($id);
 		return View::make('admin.shows.edit')->with('show',$show)->with('id',$id);
 	}
@@ -161,11 +167,16 @@ class Admin_Shows_Controller extends Base_Controller{
 
 		CreateShowForm::save_input();
 		$show = Show::find($id);
-		$show-> name = CreateShowForm::get( 'name' );
-		$show-> age = CreateShowForm::get( 'age' );
-        $show-> language = CreateShowForm::get( 'language' );
-        $show-> information = CreateShowForm::get( 'information' );
 
+        $show->name = CreateShowForm::get('name');
+        $show->name_english = CreateShowForm::get('name_english');
+        $show->slug = Str::slug(CreateShowForm::get('name'));
+        $show->age = CreateShowForm::get('age');
+        $show->language = CreateShowForm::get('language');
+        $show->language_english = CreateShowForm::get('language_english');
+        $show->duration = CreateShowForm::get('duration');
+        $show->information = CreateShowForm::get('information');
+        $show->information_english = CreateShowForm::get('information_english');
         if(!$show->is_valid())
         {
             return Redirect::back()->with_input()->with_errors($show->validation);

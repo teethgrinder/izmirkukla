@@ -6,7 +6,7 @@ class Create_Images {
 	{
 		Schema::create('images', function($table) {
 		$table->increments('id');
-		$table->string('title', 128);
+		$table->text('title');
 		$table->string('name', 128);
 		$table->string('tag', 128);
 		$table->string('meta_tag', 128);

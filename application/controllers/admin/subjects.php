@@ -23,10 +23,10 @@ class Admin_Subjects_Controller extends Base_Controller{
    public function get_show($slug=null)
     {
         $subject = Subject::find_by_slug($slug);
-       if(!$subject){
+        if(!$subject){
 		return Redirect::to_action('admin.subjects@add_one',array($slug));
 	}
-		
+
         return View::make('admin.subjects.show')->with('subject',$subject) ;
 
     }
@@ -41,8 +41,20 @@ class Admin_Subjects_Controller extends Base_Controller{
     public function get_add_one($slug=null)
     {
         $page = DB::table('pages')->where('slug','=',$slug)->first();
+
         CreateSubjectForm::forget_input();
-        return View::make('admin.subjects.add')->with('slug',$slug);
+        return View::make('admin.subjects.add')->with('slug',$slug)->with('page',$page);
+
+
+    }
+
+    public function get_add_crew($slug=null)
+    {
+        $page = DB::table('pages')->where('slug','=',$slug)->first();
+
+        CreateSubjectForm::forget_input();
+        return View::make('admin.subjects.add_crew')->with('slug',$slug)->with('page',$page);
+
 
     }
 
@@ -196,36 +208,40 @@ class Admin_Subjects_Controller extends Base_Controller{
     return View::make('admin.groups.simple_example_review')->with('id',$id)->with('group',$group);
      }*/
 
-  /*  public function get_edit($id)
+
+
+    public function get_edit($slug=null)
     {
-        $group = Group::find($id);
-        return View::make('admin.groups.edit')->with('group',$group)->with('id',$id);
+        $subject = Subject::find_by_slug($slug);
+
+        return View::make('admin.subjects.edit')->with('subject',$subject) ;
+
     }
 
     public function put_edit($id=false)
     {
         {
-            if( !CreateGroupForm::is_valid() )
+            if( !CreateSubjectForm::is_valid() )
             {
-                return Redirect::back()->with_input()->with_errors( CreateGroupForm::$validation );
+                return Redirect::back()->with_input()->with_errors( CreateSubjectForm::$validation );
             }
 
-            CreateGroupForm::save_input();
+            CreateSubjectForm::save_input();
 
-            $group = Group::find($id);
-            $group-> name = CreateGroupForm::get( 'name' );
-            $group-> country = CreateGroupForm::get( 'country' );
-            $group-> information = CreateGroupForm::get( 'information' );
+            $subject = Subject::find($id);
+            $subject-> title = CreateSubjectForm::get( 'title' );
+            $subject-> content = CreateSubjectForm::get( 'content' );
 
-            if(!$group->is_valid())
+
+            if(!$subject->is_valid())
             {
-                return Redirect::back()->with_input()->with_errors($group->validation);
+                return Redirect::back()->with_input()->with_errors($subject->validation);
             }
 
-            $group->save();
-            $id=$group->id;
+            $subject->save();
 
-            return Redirect::to_action( 'showgroup', array( $id ));
+
+            return Redirect::to_action( 'admin.subjects@index');
         }
 
     }
@@ -233,9 +249,9 @@ class Admin_Subjects_Controller extends Base_Controller{
     public function get_delete($id)
     {
 
-        $group = Group::find($id);
-        $group->delete();
-        return Redirect::to_action( 'admin.groups@index')->with('success','Grup Başarı ile silindi');
+        $subject = Subject::find($id);
+        $subject->delete();
+        return Redirect::to_action( 'admin.subjects@index')->with('success','Yazı Başarı ile silindi');
 
-    }*/
+    }
 }

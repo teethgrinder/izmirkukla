@@ -26,11 +26,12 @@
 
     <tbody>
 		 
-    
+    <tr>
  
-       <td>{{ $subject-> title }}</td>
+        <td>{{ $subject-> title }}</td>
         <td>{{ $subject-> content }}</td>
 		<td>{{HTML::link_to_action('admin.subjects@edit','Düzenle',array($subject->slug),array('class'=>'small radius button'))}}</td>
+
     </tr>
 		 
  
@@ -40,7 +41,7 @@
 	<div class="button-bar">
 	 <ul class="button-group radius">
 		 <!--<a class="button radius"href="<?php echo URL::to('newgroup'); ?>">Grup Ekle</a>--> 
-		 {{HTML::link_to_action('admin.subjects@add', 'Yeni Konu',array(),array('class'=>'button radius'))}} 
+		 {{HTML::link_to_action('admin.subjects@add', 'Yeni Konu',array('$slug'=>'makaleler'),array('class'=>'button radius'))}}
 		</ul>
 	</div>	
 </div>

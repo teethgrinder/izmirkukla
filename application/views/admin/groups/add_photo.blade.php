@@ -21,9 +21,9 @@
         {{Form::token()}}
 
 	<p>
-	    Fotoğraf bilgisi girin :
+	    Fotoğraf tagı:
 
-        {{ Form::text('title', Input::old('title')) }}
+        {{ Form::text('tag', Input::old('tag')) }}
     </p>
 
     <p>

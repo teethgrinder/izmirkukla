@@ -7,7 +7,7 @@ class Home_Shows_Controller extends Base_Controller
 	public function get_index()
 	{
 
-        $shows = Show::where('type','=','shows')->order_by('name', 'ASC')->get();
+        $shows = Show::order_by('name', 'ASC')->get();
         if(!($shows)){
             return Redirect::to_action('home.pages@homepage');
         }

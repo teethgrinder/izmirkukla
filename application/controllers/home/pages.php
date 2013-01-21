@@ -41,14 +41,18 @@ class Home_Pages_Controller extends Base_Controller {
 		$page = DB::table('pages')->where('slug', '=', $slug)->first();
         $images = DB::table('images')->where('show_id','>',0)->order_by(DB::raw(''),DB::raw('RAND()'))->get();
 		$subject = DB::table('subjects')->where('slug', '=', $slug)->first();
-        $shows = DB::table('shows')->where('type','=',$slug)->get();
+        $subjects = DB::table('subjects')->where('slug', '=', $slug)->get();
+        $other = DB::table('others')->where('slug', '=', $slug)->first();
+        $theaters = Theater::all();
+        $shows = DB::table('shows')->where('slug','=',$slug)->get();
+
         $showings = DB::table('showings')->where('slug', '=', $slug)->first();
 		if (! is_object($page))
 			return Response::error('404'); 
 		Section::inject('title', $page->meta_title);
 		if (is_file(path('app').'views/home/pages/'.$page->template.'.blade.php'))
 		{
-			return View::make('home.pages.'.$page->template)->with('page', $page)->with('subject', $subject)->with('images',$images)->with('showings',$showings)->with('shows',$shows);
+			return View::make('home.pages.'.$page->template)->with('page', $page)->with('subjects', $subjects)->with('subject', $subject)->with('images',$images)->with('showings',$showings)->with('shows',$shows)->with('other',$other)->with('theaters',$theaters);
 		}
 		else
 		{

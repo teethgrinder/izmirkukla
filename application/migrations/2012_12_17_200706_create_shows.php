@@ -9,6 +9,7 @@ class Create_Shows {
 		{	$table->engine = 'InnoDB';
 			$table->increments('id');
 			$table->string('name');
+            $table->string('name_english');
 			$table->string('slug');
             $table->string('type');
 			$table->string('age');

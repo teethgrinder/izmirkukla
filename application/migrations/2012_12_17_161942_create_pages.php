@@ -235,6 +235,40 @@ class Create_Pages {
             'created_by' => 1
 
         ));
+        DB::table('pages')->insert(array(
+            'id' => 23,
+            'title' => 'workshoplar',
+            'slug' => 'workshoplar',
+            'template'=>'workshoplar',
+            'created_by' => 1
+
+        ));
+
+        DB::table('pages')->insert(array(
+            'id' => 33,
+            'title' => 'workshops',
+            'slug' => 'workshops',
+            'template'=>'workshops',
+            'created_by' => 1
+
+        ));
+        DB::table('pages')->insert(array(
+            'id' => 24,
+            'title' => 'salonlar',
+            'slug' => 'salonlar',
+            'template'=>'salonlar',
+            'created_by' => 1
+
+        ));
+
+        DB::table('pages')->insert(array(
+            'id' => 34,
+            'title' => 'theaters',
+            'slug' => 'theaters',
+            'template'=>'theaters',
+            'created_by' => 1
+
+        ));
 		}
 	public function down()
 	{

@@ -1,6 +1,6 @@
 <?php
 Route::controller(array('home.user','home.pages','home.groups','home.showings',
-                  'admin.dashboard','admin.groups','admin.shows', 'admin.theaters', 'admin.showings','admin.subjects' ));
+                  'admin.dashboard','admin.groups','admin.shows', 'admin.theaters', 'admin.showings','admin.subjects' ,'admin.others'));
 //views home
 Route::get('/', 'home.pages@homepage');
 Route::any('login','home.users@login');

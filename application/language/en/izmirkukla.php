@@ -13,10 +13,12 @@
         'archieve'      =>  'Archieve',
         'articles'      =>  'Articles',
         'press'         =>  'Press',
+        'pressmenu'     =>  'Press',
         'crew'          =>  'Crew',
         'places'        =>  'Places',
         'supporters'    =>  'Supporters',
         'contact'       =>  'Contact',
+        'contactmenu'   =>  'Contact',
         'groups'        =>  'Groups',
         'group_name'    =>  'Group Name',
         'show_name'     =>  'Show Name',
@@ -27,5 +29,7 @@
         'type'          =>  'Type',
         'delete'        =>  'Delete',
         'edit'          =>  'Edit',
+        'program'       =>  'Program',
+        'programmenu'   =>  'Program'
 
     );

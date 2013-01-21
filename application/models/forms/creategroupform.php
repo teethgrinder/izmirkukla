@@ -6,6 +6,7 @@
 		public static $rules = array(
             'name' 				=> 'required',
             'country'           => 'required',
+            'country_english'   => 'required',
         );
 		public static $country = array(
             ''	                                => 	'Ülke Seçin',
@@ -37,30 +38,31 @@
 
         public static $country_english = array(
             ''	                                => 	'Choose Country',
-            'Germany'		                    => 	'Germany',
-            'USA'		                        => 	'USA',
+
             'Argentina'		                    => 	'Argentina',
             'Australia' 		                => 	'Australia',
             'Belgium'		                    => 	'Belgium',
             'Brazil'		                    => 	'Brazil',
             'Bulgaria'	                        => 	'Bulgaria',
-            'France'		                    =>	'France',
-            'Holland'		                    =>	'Holland',
             'Crotia'    	                    =>	'Crotial',
             'England'	                        => 	'England',
+            'France'		                    =>	'France',
+            'Germany'		                    => 	'Germany',
+            'Greece'     	                    =>	'Greece',
+            'Holland'		                    =>	'Holland',
             'Iran'	                            => 	'Iran',
-            'Spain'	                            => 	'Spain',
             'Israel'	                        => 	'Israel',
-            'Switzerland'	                    =>	'Switzerland',
             'Italy'	                            => 	'Italy',
             'Japan'                            	=> 	'Japan',
-            'South Korea'                      	=> 	'South Korea',
             'Hungary'   	                    => 	'Hungary',
+            'New Zelland'                    	=>	'New Zelland',
             'Peru'                          	=>	'Peru',
             'Slovenya'                      	=>	'Slovenya',
+            'South Korea'                      	=> 	'South Korea',
+            'Spain'	                            => 	'Spain',
+            'Switzerland'	                    =>	'Switzerland',
             'Turkey'	                        =>	'Turkey',
-            'Greece'     	                    =>	'Greece',
-            'New Zelland'                    	=>	'New Zelland',
+            'USA'		                        => 	'USA',
         );
 	}
 	

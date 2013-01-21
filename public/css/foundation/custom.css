@@ -5,8 +5,47 @@ font-family: 'Shadows Into Light', cursive;
  
  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
  font-family: 'PT Sans', sans-serif;
- background-image:url('/laravel/img/webzemin.jpg');
- 
+/* background-image:url('/laravel/img/webzemin.jpg');*/
+  /*  background: rgb(182,141,76); /* Old browsers */
+  /*  background: -moz-linear-gradient(top, rgba(182,141,76,1) 51%, rgba(233,212,179,1) 100%); /* FF3.6+ */
+  /*  background: -webkit-gradient(linear, left top, left bottom, color-stop(51%,rgba(182,141,76,1)), color-stop(100%,rgba(233,212,179,1))); /* Chrome,Safari4+ */
+  /*  background: -webkit-linear-gradient(top, rgba(182,141,76,1) 51%,rgba(233,212,179,1) 100%); /* Chrome10+,Safari5.1+ */
+  /*  background: -o-linear-gradient(top, rgba(182,141,76,1) 51%,rgba(233,212,179,1) 100%); /* Opera 11.10+ */
+  /*  background: -ms-linear-gradient(top, rgba(182,141,76,1) 51%,rgba(233,212,179,1) 100%); /* IE10+ */
+  /*  background: linear-gradient(to bottom, rgba(182,141,76,1) 51%,rgba(233,212,179,1) 100%); /* W3C */
+  /*  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b68d4c', endColorstr='#e9d4b3',GradientType=0 ); /* IE6-9 */
+
+
+    /* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+
+    /* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+
+
+
+    /* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+
+    /* IE10 Consumer Preview */
+
+
+
+
+    /* IE10 Consumer Preview */
+    background-image: -ms-radial-gradient(center, circle farthest-corner, #EFEFEF 0%, #A39894 100%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-radial-gradient(center, circle farthest-corner, #EFEFEF 0%, #A39894 100%);
+
+    /* Opera */
+    background-image: -o-radial-gradient(center, circle farthest-corner, #EFEFEF 0%, #A39894 100%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(radial, center center, 0, center center, 501, color-stop(0, #EFEFEF), color-stop(1, #A39894));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-radial-gradient(center, circle farthest-corner, #EFEFEF 0%, #A39894 100%);
+
+    /* W3C Markup, IE10 Release Preview */
+    background-image: radial-gradient(circle farthest-corner at center, #EFEFEF 0%, #A39894 100%);
 }
 .loading {
                 display: none;
@@ -217,8 +256,12 @@ table thead tr th:last-child, table tfoot tr td:last-child { border-right: none;
 table tbody tr.even, table tbody tr.alt { background: #f9f9f9; }
 
 table tbody tr:nth-child(even) { background: #f9f9f9; }
+table tbody tr:hover { background-color: blue; }
 
 table tbody tr td { color: #333; padding: 9px 10px; vertical-align: top; border: none; }
+table tbody tr td a { color: #000; }
+table tbody tr td a:hover { color: #fff;
+                           }
 
 .nivoSlider {
     position:relative;
@@ -288,9 +331,15 @@ ol ol{
 	transition: all .3s ease-out;
 }
 #contents{
--webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;border:1px solid #2E2A2B;
-border-top:none;
-padding:4px;
+   /* background-color: #666;
+    color: #fff;*/
+    border:solid;
+    border-color: #dddddd #aaaaaa #aaaaaa #dddddd;
+    border-width: 1px 2px 2px 1px;
+    font-weight: bold;
+    padding: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
 #slides {
 margin-top:20px;
@@ -570,21 +619,56 @@ text-shadow: 0 1px 1px rgba(255,255,255,0.3);
  
  
  
-.titlestyle > h1 {	
+.titlestyle  h1 {
  	margin-top:120px;
 	text-align:right;
 	color:gray;
-	font-size:40px;
+	font-size:30px;
 	font-family:"Comic Sans MS", cursive, sans-serif;
 	vertical-align:text-bottom;
 	}
  
- .titlestyle > h2 {	
+ .titlestyle  h2 {
+    font-family: "Times New Roman",Georgia,Serif;
 	margin-top:20px;
 	margin-bottom:20px;
 	text-align:center;
+
 	color:gray;
 	font-size:40px;
-	font-family:"Comic Sans MS", cursive, sans-serif;
+
 	vertical-align:text-bottom;
 	}
+.panel{
+background:none;
+border:none;
+}
+hr.rowing2{
+    border: 0;
+    height: 1px;
+    background: #006400;
+    background-image: -webkit-linear-gradient(left, #008000, #59cc00, #608000);
+    background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc);
+    background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc);
+    background-image:      -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+.post-it {
+    background:#fefabc;
+    padding:15px;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size:15px;
+    color: #000;
+    width:300px;
+
+    -moz-transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+    -o-transform: rotate(7deg);
+    -ms-transform: rotate(7deg);
+    transform: rotate(7deg);
+
+    box-shadow: 0px 4px 6px #333;
+    -moz-box-shadow: 0px 4px 6px #333;
+    -webkit-box-shadow: 0px 4px 6px #333;
+
+}

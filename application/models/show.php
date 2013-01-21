@@ -3,7 +3,7 @@
 class Show extends \EloquentBaseModel\Base
 {
 	 
-	public static $accessible = array('name', 'age', 'language','duration','information','type');
+	public static $accessible = array('name', 'age', 'language','duration','information' );
 	 
 	static function find_by_slug($slug)
 	{

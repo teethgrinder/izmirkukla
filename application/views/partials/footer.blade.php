@@ -2,7 +2,7 @@
   
   <footer class="row">
     <div class="twelve columns">
-      <hr />
+      <hr class="rowing2" />
       <div class="row">
         <div class="six columns">
           <p>&copy; DTBA was here.</p>

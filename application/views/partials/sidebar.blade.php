@@ -32,14 +32,14 @@
 			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.manifest')->get(),array(Lang::line('izmirkukla.manifest')->get()))}}</li>
 			<li> <a href="#">Arşiv</a></li>
 			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.articles')->get(),array(Lang::line('izmirkukla.articles')->get()))}}</li>
-			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.press')->get(),array(Lang::line('izmirkukla.press')->get()))}}</li>
+			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.pressmenu')->get(),array(Lang::line('izmirkukla.press')->get()))}}</li>
 			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.crew')->get(),array(Lang::line('izmirkukla.crew')->get()))}}</li>
 			<li>{{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.places')->get(),array(Lang::line('izmirkukla.places')->get()))}}</li>
 		</ul>
   </li>
         <li><h5>{{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.supporters')->get(),array(Lang::line('izmirkukla.supporters')->get()),array('class'=>'yt')) }}</h5></li>
  
-        <li><h5>{{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.contact')->get(),array(Lang::line('izmirkukla.contact')->get()),array('class'=>'yt')) }}</h5></li>
+        <li><h5>{{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.contactmenu')->get(),array(Lang::line('izmirkukla.contact')->get()),array('class'=>'yt')) }}</h5></li>
 
       </ul>
       

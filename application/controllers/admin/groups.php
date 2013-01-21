@@ -15,7 +15,7 @@ class Admin_Groups_Controller extends Base_Controller{
 	public function get_index()
 	{
 
-		$groups = Group::all();
+		$groups = Group::order_by('name','ASC')->get();
 		return View::make('admin.groups.index')->with('groups',$groups);
 
     }
@@ -118,7 +118,7 @@ class Admin_Groups_Controller extends Base_Controller{
 
         $image = new Image();
         $image->name = uniqid().'.'.$ext;
-        $image->title = Input::get('title');
+        $image->tag = Input::get('tag');
         $image->group_id = $group->id;
         $image->save();
 

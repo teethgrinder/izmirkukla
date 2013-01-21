@@ -71,13 +71,53 @@
               <li><a href="#">See all &rarr;</a></li>
             </ul>-->
           </li>
-          <li class="divider hide-for-small"></li>
+
           <!--Oyunlar-->
+            <li class="divider hide-for-small"></li>
+            <!-- Salonlar -->
+            <li class="divider"></li>
+            <li class="has-dropdown">
+                {{ HTML::link_to_action('admin.shows@index','Gösteriler',array(),array('class'=>'active')) }}
+                <ul class="dropdown">
+                    <li><label>Türkçe</label></li>
+                    <li>{{HTML::link_to_action('admin.shows@add', 'Oyun Ekle',array('oyun'),array())}}</li>
+                </ul>
+                </li>
+
+            <li class="divider hide-for-small"></li>
            <li class="divider"></li>
-          <li>
-              {{ HTML::link_to_action('admin.shows@index','Gösteriler') }}
-          </li>
-          <li class="divider hide-for-small"></li>
+            <ul class="dropdown">
+            <li class="has-dropdown">
+                {{ HTML::link_to_action('admin.others@index','Seminerler',array(),array('class'=>'active')) }}
+                <ul class="dropdown">
+                    <li><label>Düzenlemeler</label></li>
+                    <li class="has-dropdown">
+                        <a href="#" class="">Türkçe</a>
+                        <ul class="dropdown">
+
+                    <li>{{HTML::link_to_action('admin.others@add_exhibition', 'Sergi Ekle',array(),array())}}</li>
+                    <li>{{HTML::link_to_action('admin.others@add_conference', 'Konferans Ekle',array(),array())}}</li>
+                    <li>{{HTML::link_to_action('admin.others@add_workshop', 'Workshop Ekle',array(),array())}}</li>
+                </ul>
+            </li>
+            <li class="divider"></li>
+            <li><label>Edits</label></li>
+            <li class="has-dropdown">
+                <a href="#" class="">English</a>
+                <ul class="dropdown">
+
+
+
+
+                    <li>{{HTML::link_to_action('admin.others@add_exhibition_en', 'Add Exhibition',array(),array())}}</li>
+                    <li>{{HTML::link_to_action('admin.others@add_conference_en', 'Add Conference',array(),array())}}</li>
+                    <li>{{HTML::link_to_action('admin.others@add_workshop_en', 'Add Workshop',array(),array())}}</li>
+                    </ul>
+            </li>
+            </ul>
+            </li>
+            <li class="divider hide-for-small"></li>
+
           <!-- Salonlar -->
            <li class="divider"></li>
             <li>
@@ -95,17 +135,42 @@
           <!-- end of program -->
           <!-- Makaleler -->
            <li class="divider"></li>
-       <li class="has-dropdown">  {{ HTML::link_to_action('admin.subjects@index','Makaleler',array(),array('class'=>'active')) }}
-         <ul class="dropdown">
-              <li><label>Düzenlemeler</label></li>
-              <li class="has-dropdown">
-             <li>{{ HTML::link_to_action('admin.subjects@show', 'Sunuş', array('$slug'=>'sunum')) }}</li>
-             <li>{{ HTML::link_to_action('admin.subjects@show', 'Manifesto', array('$slug'=>'manifesto')) }}</li>
-             <li>{{ HTML::link_to_action('admin.subjects@show', 'Makaleler', array('$slug'=>'makaleler')) }}</li>
-             <li>{{ HTML::link_to_action('admin.subjects@show', 'Ekip', array('$slug'=>'ekip')) }}</li>
-             <li>{{ HTML::link_to_action('admin.subjects@show', 'Basında', array('$slug'=>'basın')) }}</li>
-            </ul>
-       </li>
+
+
+            <li class="has-dropdown">  {{ HTML::link_to_action('admin.subjects@index','Makaleler',array(),array('class'=>'active')) }}
+                <ul class="dropdown">
+                    <li><label>Düzenlemeler</label></li>
+                    <li class="has-dropdown">
+                        <a href="#" class="">Türkçe</a>
+                        <ul class="dropdown">
+
+                        <li>{{ HTML::link_to_action('admin.subjects@show', 'Sunuş', array('$slug'=>'sunum')) }}</li>
+                        <li>{{ HTML::link_to_action('admin.subjects@show', 'Manifesto', array('$slug'=>'manifesto')) }}</li>
+                        <li>{{ HTML::link_to_action('admin.subjects@show', 'Makaleler', array('$slug'=>'makaleler')) }}</li>
+                        <li>{{ HTML::link_to_action('admin.subjects@show', 'Ekip', array('$slug'=>'ekip')) }}</li>
+                        <li>{{ HTML::link_to_action('admin.subjects@show', 'Basında', array('$slug'=>'basın')) }}</li>
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li><label>Edits</label></li>
+                    <li class="has-dropdown">
+                        <a href="#" class="">English</a>
+                        <ul class="dropdown">
+
+
+                        <li>{{ HTML::link_to_action('admin.subjects@show', 'Presentation', array('$slug'=>'presentation')) }}</li>
+
+                        <li>{{ HTML::link_to_action('admin.subjects@show', 'Manifest', array('$slug'=>'manifest')) }}</li>
+
+                        <li>{{ HTML::link_to_action('admin.subjects@show', 'Articles', array('$slug'=>'articles')) }}</li>
+
+                        <li>{{ HTML::link_to_action('admin.subjects@show', 'Crew', array('$slug'=>'crew')) }}</li>
+
+                        <li>{{ HTML::link_to_action('admin.subjects@show', 'Press', array('$slug'=>'press')) }}</li>
+                    </ul>
+                </li>
+                    </ul>
+            </li>
           <li class="divider hide-for-small"></li>
         </ul>
 

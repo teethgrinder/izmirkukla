@@ -25,28 +25,27 @@
  	<table id="Oyunlar"  class="formatHTML5" >
 		<thead>
 			<tr>
-				<th>Grup Adı</th>
-                <th>Oyun Adı</th>
-				<th>Ülkesi</th>
-				 
-			
+				<th>Sergi Adı</th>
+                <th>Konu</th>
+				<th>Yer</th>
+				<th>tarih</th>
 			</tr>
 		</thead>
    
 
     <tbody>
-		@foreach($shows as $show)
-
-        <?php $group = Group::find($show->group_id); ?>
+    
     <tr>
-			<td>{{ HTML::link_to_action('home.shows@show',$group->name,array(Str::slug($show->name))) }}</td>
-			<td>{{ HTML::link_to_action('home.shows@show',$show->name,array($show->id)) }}</td>
-			<td>{{ HTML::link_to_action('home.shows@show',$group->country,array($show->id)) }}</td>
+			<td>{{ HTML::link_to_action('home.shows@show',$other->name) }}</td>
+			<td>{{ HTML::link_to_action('home.shows@show',$other->information) }}</td>
+			<td>{{ HTML::link_to_action('home.shows@show',$other->place) }}</td>
+			<td>{{ HTML::link_to_action('home.shows@show',$other->date) }}</td>
+
     </tr>
-		@endforeach
+
  
     </tbody>
- </table> 
+ </table>
  
  </div>
  </div>

@@ -12,6 +12,7 @@ class Create_Dates {
 			$table->create();
             $table->increments('id');
             $table->date('showdate');
+
          
             $table->timestamps();
         });
@@ -26,7 +27,8 @@ class Create_Dates {
         foreach($period as $dt)
         {
         DB::table('showingdates')->insert(array(
-        'showdate' => $dt
+        'showdate' => $dt,
+
         ));
         }
 	}

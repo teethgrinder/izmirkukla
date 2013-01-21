@@ -14,6 +14,7 @@ class Create_Showings {
 			$table->increments('id');
 			$table->integer('theater_id')->unsigned();
 			$table->integer('show_id')->unsigned();
+            $table->integer('showingdate_id')->unsigned();
 			$table->string('slug');
 			$table->string('price');
 		 

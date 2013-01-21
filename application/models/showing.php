@@ -17,7 +17,7 @@ class Showing extends \EloquentBaseModel\Base
 	
 	public function get_query_date()
     {
-        return date('j M, Y', strtotime($this->get_attribute('performance_date')));
+        return date('Y-m-d', strtotime($this->get_attribute('performance_date')));
     }
 
     public function get_publish_date()

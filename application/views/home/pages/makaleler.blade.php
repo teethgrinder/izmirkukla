@@ -24,9 +24,11 @@
 		<h2>Makaleler</h2>
 		</div>
       <div id="contents">
-	@if($subject)
+	@if($subjects)
+    @foreach($subjects as $subject)
 	<h1>{{$subject->title}}</h1>
 	<p>{{ $subject->content }}</p>
+    @endforeach
 	@endif
  
  </div>          

@@ -24,7 +24,7 @@
 			<tr>
 				<th>Anlatan</th>
                 <th>Konu</th>
-				<th>Ülkesi</th>
+
 				<th>Mekan</th>
 				<th>Tarih</th>
 				 

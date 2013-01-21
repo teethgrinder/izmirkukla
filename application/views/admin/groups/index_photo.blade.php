@@ -46,7 +46,7 @@
 		<tr>
 			@foreach($images as $image)
 			<td><a href="<?php echo URL::to('showgroup/'.$group->id); ?>"><img src="{{ URL::to_asset('img/uploads/'.$image->id.'/thumb-'.$image->name) }}" alt="" /></a></td>
-			<td><a href="<?php echo URL::to('showgroup/'.$group->id); ?>">{{$image->title}}</a></td>
+			<td><a href="<?php echo URL::to('showgroup/'.$group->id); ?>">{{$image->tag}}</a></td>
 			<td>{{HTML::link_to_action('admin.groups@delete_photo','Sil',array($image->id),array('class'=>'alert button',"onclick"=>"return confirm('Silmek için onaylayın')"))}}</td>
 			@endforeach
 		</tr>

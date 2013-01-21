@@ -8,7 +8,7 @@
 			'name'			        => 'required',
 			'country'		        => 'required',
 			'information'           => 'required',
-            'information_english'   =>'required'
+            'information_english'   => 'required'
 		);
 		
 		public function shows()

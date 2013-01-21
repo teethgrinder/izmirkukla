@@ -41,7 +41,8 @@
 	{{ HTML::style('js/thickbox.css') }} 
 	{{ HTML::style('css/foundation/custom.css') }} 
 	{{ HTML::style('js/calendar/css/common.css') }}  
-	
+	{{ HTML::style('js/horizontal.css') }}
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -88,6 +89,7 @@
 		{{ HTML::script('js/jquery-ui-timepicker-addon.js') }}
 		{{ HTML::script('js/jquery.ui.datepicker-tr.js') }}
 		 {{ HTML::script('js/accordion/jquery.accordion.2.0.js') }}
+        {{ HTML::script('js/jquery.horizontalaccordion.js') }}
         <script type="text/javascript">
             $('#example2').accordion({
                 canToggle: true
@@ -187,5 +189,9 @@
 			var dateFormat = $( "#datepicker" ).datetimepicker( "option", "dateFormat" );
 			$( "#datepicker" ).datetimepicker( "option", "dateFormat", 'yy-mm-dd' );
 			 </script>
+    <script>$('#accordion-1').easyAccordion({
+        autoStart: true,
+        slideInterval: 5000
+    });</script>
     </body>
 </html>
