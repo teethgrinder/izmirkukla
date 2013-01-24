@@ -24,7 +24,14 @@ class Showing extends \EloquentBaseModel\Base
     {
         return date('j M, Y H:i', strtotime($this->get_attribute('performance_date')));
     }
-
+    public function get_show_date()
+    {
+        return date('j M', strtotime($this->get_attribute('performance_date')));
+    }
+    public function get_show_time()
+    {
+        return date('H:i', strtotime($this->get_attribute('performance_date')));
+    }
 	public function get_language($date)
 	{ 	
 

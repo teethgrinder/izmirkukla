@@ -31,7 +31,7 @@
                          {{HTML::image('laravel/img/profil.jpg')}}
                      </div>
                      <div class="profiltext">
-                         <h4>Selçuk Dinçer</h4>
+                         <h6>Selcuk Dincer</h6>
                          <p>Festival Director</p>
                      </div>
                  </div>

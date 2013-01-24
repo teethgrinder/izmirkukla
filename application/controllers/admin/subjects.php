@@ -60,7 +60,7 @@ class Admin_Subjects_Controller extends Base_Controller{
 
     public function post_add_one($slug)
     {
-        $fields = array( 'title', 'content' , 'slug' );
+        $fields = array( 'title','writer', 'content' , 'slug' );
 
         if( !CreateSubjectForm::is_valid($fields) )
         {
@@ -71,6 +71,7 @@ class Admin_Subjects_Controller extends Base_Controller{
 
         $subject = new Subject;
         $subject->title= CreateSubjectForm::get('title');
+        $subject->writer= CreateSubjectForm::get('writer');
         $subject->content= CreateSubjectForm::get('content');
         $page = DB::table('pages')->where('slug','=',$slug)->first();
         if($page){

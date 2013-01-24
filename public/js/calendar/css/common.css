@@ -131,8 +131,8 @@ h4{ margin:0 0 2px; color:#000; font:normal 18px/20px helvetica,sans-serif; }
 /*#overlay-body { position:absolute; top:0;left:0; margin:0 auto; padding:10px; }*/
 #overlay-close { position:absolute; top:10px; right:10px; width:30px; height:30px; overflow:hidden; background:url(../images/bg-sprite.png) no-repeat 0 -210px; cursor:pointer; }
 #overlay-close span { position:absolute; top:0; left:0; width:30px; height:30px; display:block; background:url(../images/bg-sprite.png) no-repeat 0 -210px; cursor:pointer; }
-#overlay-main .left { width:356px; float:left; display:inline; }
-#overlay-main .right { margin-left:20px; padding:19px 0 0; width:264px; float:right; display:inline; word-wrap:break-word;}
+#overlay-main .left { width: 6px; float:left; display:inline; }
+#overlay-main .right { margin-left:20px; padding:19px 0 0; width:614px; float:right; display:inline; word-wrap:break-word;}
 #overlay-main p { margin:0 0 20px; }
 #overlay-main .caption { margin:4px 0 0; }
 

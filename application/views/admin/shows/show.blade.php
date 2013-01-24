@@ -55,15 +55,13 @@
  
 			<td>{{$image->title}}</td>
 			<td></td>
-			<td><a class="alert button" href="<?php echo URL::to('deleteshowimage/'.$image->id); ?>" onclick="return confirm('Silmek için onaylayın')">Sil</a></td>
-			
+			<td>{{HTML::link_to_action('admin.shows@deleteshowimage','Kaldır',array($image->id),array('class'=>'alert button small',"onlick"=>"return confirm('Silmek için Onaylayın')"))}}</td>
 		</tr>
 @endforeach
     </tbody>
  </table>
 	<div class="button-bar">
 		<ul class="button-group radius">
-			<li>{{HTML::link_to_action('admin.shows@add', 'Yeni Oyun Ekle',array($group->id),array('class'=>'button radius'))}}</li>
 			<li>{{HTML::link_to_action('admin.shows@add_photo', 'oyun fotoğrafları',array($show->id),array('class'=>'button radius'))}}</li>
 			<li>{{HTML::link_to_action('admin.groups@index', 'Tüm gruplar',array(),array('class'=>'button radius'))}}</li>
 		</ul>

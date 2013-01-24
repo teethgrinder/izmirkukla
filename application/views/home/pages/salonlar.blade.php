@@ -23,14 +23,16 @@
          <div class="titlestyle">
              <h2>Salonlar</h2>
          </div>
-         <div id="contents">
+        <ul class="custom-list">
              @if($theaters)
              @foreach($theaters as $theater)
-             <h1>{{$theater->name}}</h1>
+         <li><div class="theaters">
+             <h6>{{$theater->name}}</h6>
              <p>{{ $theater->adress }}</p>
+         </div></li>
              @endforeach
              @endif
+        </ul>
 
-         </div>
      </div>
      @endsection

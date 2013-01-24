@@ -25,8 +25,11 @@
        <link rel="stylesheet" media="screen" type="text/css" href="js/spacegallery/css/spacegallery.css" />
        <link rel="stylesheet" media="screen" type="text/css" href="js/spacegallery/css/custom.css" />
    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Griffy' rel='stylesheet' type='text/css'>
+
         <!-- begin javascript -->
     {{ HTML::script('js/foundation/modernizr.foundation.js') }}
+
   
 	{{ HTML::style('js/spacegallery/css/spacegallery.css') }}
 	{{ HTML::style('js/spacegallery/css/custom.css') }}
@@ -43,6 +46,32 @@
 	{{ HTML::style('js/calendar/css/common.css') }}  
 	{{ HTML::style('js/horizontal.css') }}
 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                // Cache result
+                var $eventday = $('#eventday');
+
+// Use jQuerys .on()
+                $eventday.on('click', '> li > div', function () {
+                    // Cache results
+                    var $divClicked = $divClicked(this);
+                    var $nextDiv = $divClicked.next();
+
+                    if ($nextDiv.next().is(':visible') == true) {
+                        $eventday.find('ul').slideUp(300);
+                    };
+
+                    $nextDiv.slideToggle(300);
+                });
+
+                $eventday.find('ul:eq(0)').show();
+            });
+
+
+        </script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -59,12 +88,12 @@
         </div>
         <!-- end content -->
          <!-- Use Googles online jQuery lib -->
- 
 
-    
- 
+
+
+
         <!-- Use local jQuery lib -->
-      <!--  {{ HTML::script('js/foundation/jquery.js') }}-->
+       <!--{{ HTML::script('js/foundation/jquery.js') }}
         <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script> -->
        <!-- {{ HTML::script('js/redactor/redactor.js') }}-->
 
@@ -80,8 +109,10 @@
 		{{HTML::script('js/spacegallery/js/utils.js')}}  
 		{{HTML::script('js/spacegallery/js/spacegallery.js')}}  
 		{{HTML::script('js/thickbox.js')}}  
-        {{HTML::script('js/infogrid.js')}}  
-         
+
+        {{HTML::script('js/infogrid.js')}}
+
+
         {{HTML::script('js/calendar/scripts/jquery.cookie.js')}}  
         {{HTML::script('js/calendar/scripts/common.js')}}  
         {{ HTML::script('js/ckeditor/ckeditor.js') }}
@@ -90,11 +121,12 @@
 		{{ HTML::script('js/jquery.ui.datepicker-tr.js') }}
 		 {{ HTML::script('js/accordion/jquery.accordion.2.0.js') }}
         {{ HTML::script('js/jquery.horizontalaccordion.js') }}
+
         <script type="text/javascript">
             $('#example2').accordion({
                 canToggle: true
             });
-            $(".loading").removeClass("loading");
+
         </script>
  
 
@@ -193,5 +225,14 @@
         autoStart: true,
         slideInterval: 5000
     });</script>
+        <script type="text/javascript">
+
+                $("#info").click(function() {
+                    $("#myModal").reveal();
+                });
+
+        </script>
+
+
     </body>
 </html>

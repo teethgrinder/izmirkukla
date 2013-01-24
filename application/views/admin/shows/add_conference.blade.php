@@ -11,6 +11,7 @@
         <h3>Konferans Ekle</h3>
         {{ Form::open(URL::to_action('admin.others@add_other')) }}
         {{Form::token()}}
+        {{Form::hidden('slug','konferanslar') }}
         <div class="row">
             <p>
             <h6>Konferans Adı:</h6>{{ Form::text( 'name', CreateOtherForm::old( 'name' ) ) }}

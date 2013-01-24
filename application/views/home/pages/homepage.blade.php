@@ -19,13 +19,14 @@
     <div class="nine columns push-three">
 
       <br />
- 
+      <br />
+
       <div id="slider">
 				
-		{{HTML::image('laravel/img/logo3.jpg')}}
-    {{HTML::image('laravel/img/building2.jpg')}}
-		{{HTML::image('laravel/img/Web2.jpg')}}
-		{{HTML::image('laravel/img/web3i.jpg')}}
+		{{HTML::image('laravel/img/puppets2.jpg')}}
+        {{HTML::image('laravel/img/midst.jpg')}}
+		{{HTML::image('laravel/img/full.jpg')}}
+		{{HTML::image('laravel/img/million.jpg')}}
   
  
  

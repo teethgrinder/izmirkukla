@@ -20,8 +20,8 @@ class Admin_Shows_Controller extends Base_Controller{
 
     public function get_show($slug=null)
     {
-        $show = Show::find($slug);
- 
+        $show = Show::find_by_slug($slug);
+
         $group = $show->group;
         $images = $show->images;
 
@@ -140,12 +140,13 @@ class Admin_Shows_Controller extends Base_Controller{
 
     }
 
-    public function get_delete_photo($id)
+    public function get_deleteshowimage($id)
     {
 
         $image = Image::find($id);
+        $show = $image->show;
         $image->delete();
-        return Redirect::to_action( 'admin.shows@index_photo')->with('success','Oyun Fotoğrafı  Başarı ile silindi');
+        return Redirect::to_action( 'admin.shows@show', array( $show->slug ))->with('success','Fotoğraf  Başarı ile eklendi');
 
     }
 

@@ -50,8 +50,8 @@ class Admin_Showings_Controller extends Base_Controller{
         $showing->price = CreateShowingForm::get('price');
 
         $showing->performance_date = Input::get('performance_date');
-		$date_showing = $showing->performance_date;
-		$showing->date_calendar = $showing->query_date;
+
+		$showing->date_calendar = $showing->show_date;
 
         $showing->start_time = Input::get('start_time');
         if(!$showing->is_valid())

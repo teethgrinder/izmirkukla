@@ -30,18 +30,15 @@
  
   @foreach($shows as $show)
 		<tr>
-            <td>{{HTML::link_to_action('admin.shows@show',$show->name,array($show->id)) }} /
-                {{HTML::link_to_action('admin.shows@show',$show->name_english,array($show->id)) }} </td>
-            <td>{{HTML::link_to_action('admin.shows@show',$show->age,array($show->id)) }}</td>
-            <td>{{HTML::link_to_action('admin.shows@show',$show->language,array($show->id))}} /
-                {{HTML::link_to_action('admin.shows@show',$show->language_english,array($show->id))}}</td>
-            <td>{{HTML::link_to_action('admin.shows@show',$show->information,array($show->id))}}</td>
-            <td>{{HTML::link_to_action('admin.shows@show',$show->information_english,array($show->id))}}</td>
-            <td>{{HTML::link_to_action('admin.shows@show',$show->type,array($show->id))}}</td>
+            <td>{{HTML::link_to_action('admin.shows@show',$show->name,array($show->slug)) }} /
+                {{HTML::link_to_action('admin.shows@show',$show->name_english,array($show->slug)) }} </td>
+            <td>{{HTML::link_to_action('admin.shows@show',$show->age,array($show->slug)) }}</td>
+            <td>{{HTML::link_to_action('admin.shows@show',$show->language,array($show->slug))}} /
+                {{HTML::link_to_action('admin.shows@show',$show->language_english,array($show->slug))}}</td>
+            <td>{{HTML::link_to_action('admin.shows@show',$show->information,array($show->slug))}}</td>
+            <td>{{HTML::link_to_action('admin.shows@show',$show->information_english,array($show->slug))}}</td>
+            <td>{{HTML::link_to_action('admin.shows@show',$show->type,array($show->slug))}}</td>
 
-		<!--	<td><a href="<?php echo URL::to('showgroup/'.$show->id); ?>">{{$show->age}}</a></td>
-			<td><a href="<?php echo URL::to('showgroup/'.$show->id); ?>">{{$show->language}}</a></td>
-			<td><a href="<?php echo URL::to('showgroup/'.$show->id); ?>">{{$show->information}}</a></td>-->
             <td>{{HTML::link_to_action('admin.shows@edit', 'Düzenle',array($show->id),array('class' => 'button small radius')) }}
                 {{HTML::link_to_action('admin.shows@delete','Sil',array($show->id),array('class'=>'alert small radius button',"onclick"=>"return confirm('Silmek için onaylayın')"))}}
             </td>

@@ -20,33 +20,24 @@
          <div class="titlestyle">
              <h2>Workshoplar</h2>
          </div>
-         <div id="contents">
-             <table id="Workshoplar"  class="formatHTML5" >
-                 <thead>
-                 <tr>
-                     <th>Grup Adı</th>
-                     <th>Workshop</th>
-                     <th>Ülkesi</th>
-                     <th>Mekan</th>
-                     <th>Tarih</th>
+         <ul class="postit">
+
+             @foreach($others as $other)
+             <li>
+                 <div class="post-it">
+
+                     <h6>{{ HTML::link_to_action('home.shows@show',$other->name) }}</h6>
+                     <p>{{ HTML::link_to_action('home.shows@show',Str::words(strip_tags($other->information),10)) }}</p>
+                     <adress>
+                         <p>{{ HTML::link_to_action('home.shows@show',$other->place) }}</p>
+                         <p>{{ HTML::link_to_action('home.shows@show',$other->date) }}</p>
+                     </adress>
 
 
-                 </tr>
-                 </thead>
+                 </div>
+             </li>
+             @endforeach
 
-
-                 <tbody>
-                 @foreach($shows as $show)
-                 <tr>
-                     <td>{{ HTML::link_to_action('home.shows@show',$group->name,array(Str::slug($show->name))) }}</td>
-                     <td>{{ HTML::link_to_action('home.shows@show',$show->name,array($show->id)) }}</td>
-                     <td>{{ HTML::link_to_action('home.shows@show',$group->country,array($show->id)) }}</td>
-                 </tr>
-                 @endforeach
-
-                 </tbody>
-             </table>
-
-         </div>
+         </ul>
      </div>
      @endsection

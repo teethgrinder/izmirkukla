@@ -25,7 +25,13 @@
            {{ $errors->has( 'title' ) ? $errors->first( 'title' ) : '' }}
 
 	</p>
+        <p>
 
+        <h6>Yazan:</h6>
+        <br />{{ Form::text( 'writer', CreateSubjectForm::old( 'writer' ) ) }}
+        {{ $errors->has( 'writer' ) ? $errors->first( 'writer' ) : '' }}
+
+        </p>
 <!--	<p>
 	Sayfa: {{ Form::select( 'page_id', CreateSubjectForm::page_options(),CreateSubjectForm::old('page_id') )  }}
 	{{ $errors->has( 'page_id' ) ? $errors->first( 'page_id' ) : '' }}

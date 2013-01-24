@@ -21,33 +21,25 @@
 		<div class="titlestyle">
 		<h2>Sergiler</h2>
 		</div>
-<div id="divContainer">	
- 	<table id="Oyunlar"  class="formatHTML5" >
-		<thead>
-			<tr>
-				<th>Sergi Adı</th>
-                <th>Konu</th>
-				<th>Yer</th>
-				<th>tarih</th>
-			</tr>
-		</thead>
-   
+     <ul class="postit">
 
-    <tbody>
-    
-    <tr>
-			<td>{{ HTML::link_to_action('home.shows@show',$other->name) }}</td>
-			<td>{{ HTML::link_to_action('home.shows@show',$other->information) }}</td>
-			<td>{{ HTML::link_to_action('home.shows@show',$other->place) }}</td>
-			<td>{{ HTML::link_to_action('home.shows@show',$other->date) }}</td>
+     @foreach($others as $other)
+         <li>
+    <div class="post-it">
 
-    </tr>
+        <h6>{{ HTML::link_to_action('home.shows@show',$other->name) }}</h6>
+        <p>{{ HTML::link_to_action('home.shows@show',Str::words(strip_tags($other->information),10)) }}</p>
+        <adress>
+        <p>{{ HTML::link_to_action('home.shows@show',$other->place) }}</p>
+        <p>{{ HTML::link_to_action('home.shows@show',$other->date) }}</p>
+        </adress>
 
- 
-    </tbody>
- </table>
- 
- </div>
+
+    </div>
+         </li>
+        @endforeach
+
+     </ul>
  </div>
 @endsection 
 

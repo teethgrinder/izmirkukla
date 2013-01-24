@@ -11,6 +11,7 @@
         <h3>Add Exhibition</h3>
         {{ Form::open(URL::to_action('admin.others@add_other_english')) }}
         {{Form::token()}}
+        {{Form::hidden('slug','exhibitions') }}
         <div class="row">
             <p>
             <h6>Sergi İngilizce Adı:</h6>{{ Form::text( 'name_english', CreateOtherForm::old( 'name_english' ) ) }}

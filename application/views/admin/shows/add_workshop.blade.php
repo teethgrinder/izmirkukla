@@ -11,6 +11,7 @@
         <h3>Workshop  Ekle</h3>
         {{ Form::open(URL::to_action('admin.others@add_other')) }}
         {{Form::token()}}
+        {{Form::hidden('slug','workshoplar') }}
         <div class="row">
             <p>
             <h6>Workshop Adı:</h6>{{ Form::text( 'name', CreateOtherForm::old( 'name' ) ) }}

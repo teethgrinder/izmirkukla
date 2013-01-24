@@ -32,15 +32,15 @@
  </div>
 
  
-	<h4>{{$group->name}}</h4>
+	<h4>{{$group->name}} KUKLA TİYATROSU</h4>
  <ul class="group-info">
-	<li>Oyun Adı:{{$show->name}}</li>
-    <li>Oyun Süresi:{{$show->duration}}</li>
-    <li>Yaş Grubu:{{$show->age}}+</li>
-    <li>Oyun Dili:{{$show->language}}</li>
+	<li>Oyun Adı:&nbsp;&nbsp;&nbsp;&nbsp;  {{$show->name}}</li>
+    <li>Oyun Süresi:&nbsp;&nbsp;&nbsp;&nbsp;{{$show->duration}}&nbsp;dakika</li>
+    <li>Yaş Grubu:&nbsp;&nbsp;&nbsp;&nbsp;{{$show->age}}+</li>
+    <li>Oyun Dili:&nbsp;&nbsp;&nbsp;&nbsp;{{$show->language}}</li>
  </ul>
 
-
+<br /><br />
 	
 	<p>{{$show->information}}</p>
  

@@ -42,7 +42,7 @@ class Home_Pages_Controller extends Base_Controller {
         $images = DB::table('images')->where('show_id','>',0)->order_by(DB::raw(''),DB::raw('RAND()'))->get();
 		$subject = DB::table('subjects')->where('slug', '=', $slug)->first();
         $subjects = DB::table('subjects')->where('slug', '=', $slug)->get();
-        $other = DB::table('others')->where('slug', '=', $slug)->first();
+        $others = DB::table('others')->where('slug', '=', $slug)->get();
         $theaters = Theater::all();
         $shows = DB::table('shows')->where('slug','=',$slug)->get();
 
@@ -52,7 +52,7 @@ class Home_Pages_Controller extends Base_Controller {
 		Section::inject('title', $page->meta_title);
 		if (is_file(path('app').'views/home/pages/'.$page->template.'.blade.php'))
 		{
-			return View::make('home.pages.'.$page->template)->with('page', $page)->with('subjects', $subjects)->with('subject', $subject)->with('images',$images)->with('showings',$showings)->with('shows',$shows)->with('other',$other)->with('theaters',$theaters);
+			return View::make('home.pages.'.$page->template)->with('page', $page)->with('subjects', $subjects)->with('subject', $subject)->with('images',$images)->with('showings',$showings)->with('shows',$shows)->with('others',$others)->with('theaters',$theaters);
 		}
 		else
 		{
