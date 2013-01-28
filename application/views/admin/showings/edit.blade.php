@@ -1,4 +1,4 @@
-@layout('layouts.main')
+@layout('layouts.dashboard')
 @section('navigation')
 @include('partials.dashnav')
 @endsection
@@ -18,7 +18,7 @@
 
          {{ Form::open(URL::to_action('admin.showings@edit',array($showing->id)), 'PUT') }}
          <input type="hidden" name="_method" value="PUT">
-         {{Form::token()}}
+         {{ Form::token() }}
 
 
          <p>
@@ -28,10 +28,7 @@
 
          </p>
          <p>
-
              Salon:
-
-
              {{ Form::select( 'theater_id', CreateShowingForm::old('theater_id') ? CreateShowingForm::theater_options() : $showing->theater_id )  }}
              {{ $errors->has( 'theater_id' ) ? $errors->first( 'theater_id' ) : '' }}
 
@@ -41,8 +38,6 @@
              <div class="six columns">
                  Tarih: <input type="text" id="datepicker" name="performance_date" />
              </div>
-
-
          </div>
          <!--<p>
          Hakkında: {{ Form::textarea( 'information', CreateShowingForm::old( 'information' ) ) }}
@@ -53,8 +48,12 @@
              {{ $errors->has( 'price' ) ? $errors->first( 'price' ) : '' }}
          </p>
          {{ Form::submit( 'Ekle' ,array('class'=>'button radius')) }}
-
          {{ Form::close() }}
 
      </div>
+@endsection
+
+
+@section('footer')
+@include('partials.dashfooter')
 @endsection

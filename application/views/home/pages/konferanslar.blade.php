@@ -16,9 +16,12 @@
     <!-- Main Content Section -->
     <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
     <div class="nine columns push-three">
-		
-		<h3>Konferanslar</h3>
- <div id="contenta">	
+        <hr />
+
+            <div id="contents">
+
+
+                <div class="seven columns">
  	<table id="conference"  class="formatHTML5" >
 		<thead>
 			<tr>
@@ -43,8 +46,15 @@
 		@endforeach
  
     </tbody>
- </table> 
- 
+ </table>
+ </div>
+     <div class="two columns push-one">
+         <div class="titlestyle">
+             <h2>Konferanslar</h2>
+         </div>
+
+     </div>
+
  </div>
  </div>
 @endsection 

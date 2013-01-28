@@ -132,6 +132,12 @@
 
           </li>
           <li class="divider hide-for-small"></li>
+                <li class="divider"></li>
+                <li class="has-dropdown">
+                <li>{{ HTML::link_to_action('admin.news@index', 'Basın') }}</li>
+
+                </li>
+                <li class="divider hide-for-small"></li>
           <!-- end of program -->
           <!-- Makaleler -->
            <li class="divider"></li>

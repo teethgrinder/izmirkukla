@@ -1,4 +1,4 @@
-@layout('layouts.main')
+@layout('layouts.dashboard')
 @section('navigation')
 @include('partials.dashnav')
 @endsection
@@ -9,10 +9,12 @@
 <div class="row" xmlns="http://www.w3.org/1999/html">
     <div class="twelve columns ">
         <h3>Add Conference</h3>
-        {{Form::hidden('slug','conferences') }}
+
         {{ Form::open(URL::to_action('admin.others@add_other_english')) }}
 
-        {{Form::token()}}
+        {{ Form::token() }}
+
+        {{ Form::hidden('slug','conferences') }}
         <div class="row">
             <p>
             <h6>Konferans Adı:<h6>Name:</h6>{{ Form::text( 'name_english', CreateOtherForm::old( 'name_english' ) ) }}
@@ -47,3 +49,8 @@
 
         </div>
         @endsection
+
+
+@section('footer')
+@include('partials.dashfooter')
+@endsection

@@ -1,4 +1,4 @@
-@layout('layouts.main')
+@layout('layouts.dashboard')
 @section('navigation')
 	@include('partials.dashnav')
 @endsection
@@ -15,7 +15,7 @@
 {{ Form::open(URL::to_action('admin.shows@edit',array($show->id)), 'PUT') }}
  
 	<input type="hidden" name="_method" value="PUT">
-	{{Form::token()}}
+	{{ Form::token() }}
     <div class="row">
         <div class="three columns">
 	    <p>
@@ -23,14 +23,17 @@
             {{ Form::text( 'name', (Input::old('name') ?  Input::old('name') : $show->name)) }}
 		    {{ $errors->has( 'name' ) ? $errors->first( 'name' ) : '' }}
 	    </p>
+
         </div>
         <div class="three columns">
-	    <p>
+
+        <p>
             <h6>  Yaş: </h6>
             {{ Form::text( 'age', (Input::old('age') ?  Input::old('age') : $show->age)) }}
 		    {{ $errors->has( 'age' ) ? $errors->first( 'age' ) : '' }}
 	    </p>
         </div>
+
         <div class="three columns">
             <p>
             <h6>  Dil: </h6>
@@ -48,7 +51,8 @@
         </div>
     </div>
 	    <p>
-		    Bilgiler: {{ Form::textarea( 'information', (Input::old('information') ?  Input::old('information') : $show->information)) }}
+		    Bilgiler:
+            {{ Form::textarea( 'information', (Input::old('information') ?  Input::old('information') : $show->information)) }}
 		    {{ $errors->has( 'information' ) ? $errors->first( 'information' ) : '' }}
 	    </p>
 
@@ -79,7 +83,8 @@
         </div>
             <p>
 
-            About:{{ Form::textarea( 'information_english', (Input::old('information_eglish') ?  Input::old('information_english') : $show->information_english)) }}
+            About:
+            {{ Form::textarea( 'information_english', (Input::old('information_eglish') ?  Input::old('information_english') : $show->information_english)) }}
             {{ $errors->has( 'information_english' ) ? $errors->first( 'information_english' ) : '' }}
          </p>
 
@@ -90,4 +95,8 @@
 {{ Form::close() }}
  
 </div>
+@endsection
+
+@section('footer')
+@include('partials.dashfooter')
 @endsection

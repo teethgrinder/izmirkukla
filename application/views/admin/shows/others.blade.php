@@ -1,4 +1,4 @@
-@layout('layouts.main')
+@layout('layouts.dashboard')
 @section('navigation')
 @include('partials.dashnav')
 @endsection
@@ -40,8 +40,8 @@
                  <td>{{ $other->date }}</td>
 
 
-                 <td>{{HTML::link_to_action('admin.otherss@edit', 'Düzenle',array($other->id),array('class' => 'button small radius')) }}
-                     {{HTML::link_to_action('admin.otherss@delete','Sil',array($other->id),array('class'=>'alert small radius button',"onclick"=>"return confirm('Silmek için onaylayın')"))}}
+                 <td>{{HTML::link_to_action('admin.others@edit', 'Düzenle',array($other->id),array('class' => 'button small radius')) }}
+                     {{HTML::link_to_action('admin.others@delete','Sil',array($other->id),array('class'=>'alert small radius button',"onclick"=>"return confirm('Silmek için onaylayın')"))}}
                  </td>
              </tr>
              @endforeach
@@ -49,4 +49,8 @@
          </table>
 
 
+ @endsection
+
+ @section('footer')
+ @include('partials.dashfooter')
  @endsection

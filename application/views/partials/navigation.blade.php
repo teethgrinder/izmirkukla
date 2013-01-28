@@ -81,7 +81,7 @@
      <ul class="right">
             <li><a href="#" class="fc-webicon facebook small">Like us on Facebook</a></li>
             <li><a href="#" class="fc-webicon twitter small">Like us on Twitter</a></li>
-            <li><a href="#" class="fc-webicon mail small">Mail us</a></li>
+
          @if (Config::get('application.language') == 'tr')
             <li><a href="/en" class="small" >{{HTML::image('laravel/img/english.png')}}</a></li>
          @elseif (Config::get('application.language') == 'en')

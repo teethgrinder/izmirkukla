@@ -5,10 +5,10 @@ font-family: 'Shadows Into Light', cursive;
  
  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
  font-family: 'PT Sans', sans-serif;
- background-image:url('/laravel/img/webzemin.jpg');
+ /*background-image:url('/laravel/img/webzemin.jpg');
 
 
-
+*/
 }
 .loading {
  display: none;
@@ -108,7 +108,7 @@ color:#dc9030;
 .panel>li>a{
     color:#8a4f09;
 }
-.panel> li > a:hover{
+.panel.open   a:hover{
     color:#e4d3b7;
 } 
 #example2  li h6 a:hover
@@ -204,14 +204,14 @@ background: transparent;
 border-color: #aaab9c #fff #fff #ccc;
 }
 table { background: #fff;
--webkit-border-radius: 3px; 
+-webkit-border-radius: 3px;
 -moz-border-radius: 3px;
--ms-border-radius: 3px; 
+-ms-border-radius: 3px;
 -o-border-radius: 3px;
-border-radius: 3px; 
+border-radius: 3px;
 margin: 0 0 18px;
 border: 1px solid #ddd;
- 
+
  }
 
 table thead, table tfoot { background: #f5f5f5; }
@@ -275,7 +275,7 @@ ol ol{
 .rounded-list li a:nth-child(even) { background: #EBEBEB;   }
 .rounded-list li a:nth-child(odd) { background:#99ff99;  }
  
-}
+
 .rounded-list a:hover{
 	background: #eee;
 }
@@ -410,69 +410,93 @@ h1 {color:#FFE47A; font-size:1.5em;}
 /*** sample table to demonstrate CSS3 formatting ***/
 
 table.formatHTML5 {
-
-width: 100%;
-
-border-collapse:collapse;
-
-text-align:left;
+background:none;
+width: 140%;
 
 color: #606060;
-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;
+border: none;
+border-spacing: 20px 0px  ;
+border-collapse:separate;
 }
-
-
 
 /*** table's thead section, head row style ***/
 
 table.formatHTML5 thead tr td {
-
-background-color: White;
-
-vertical-align:middle;
-
-padding: 0.6em;
-
-font-size:0.8em;
-
+vertical-align:top;
+font-size:15px;;
 }
-
-
 
 /*** table's thead section, coulmns header style ***/
 
 table.formatHTML5 thead tr th
+{background-image:url('/laravel/img/button.jpg');
 
-{
 
-padding: 0.5em;
+    border: 2px solid;
+    border-color:#ded0b3;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size:14px;
+    font-weight: bold;
+    color: #894f05;
+    text-align: center;
 
-/* add gradient */
 
-background-color: #f9c667;
-
-background: #b4ddb4; /* Old browsers */
-/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2I0ZGRiNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjglIiBzdG9wLWNvbG9yPSIjMDAyNDAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNjklIiBzdG9wLWNvbG9yPSIjNTJiMTUyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
-background: -moz-linear-gradient(top, #b4ddb4 0%, #002400 8%, #52b152 69%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4ddb4), color-stop(8%,#002400), color-stop(69%,#52b152)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, #b4ddb4 0%,#002400 8%,#52b152 69%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, #b4ddb4 0%,#002400 8%,#52b152 69%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, #b4ddb4 0%,#002400 8%,#52b152 69%); /* IE10+ */
-background: linear-gradient(to bottom, #b4ddb4 0%,#002400 8%,#52b152 69%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#52b152',GradientType=0 ); /* IE6-8 */
-color: #fff;
-
+    /*   -moz-transform: rotate(7deg);
+       -webkit-transform: rotate(7deg);
+       -o-transform: rotate(7deg);
+       -ms-transform: rotate(7deg);
+       transform: rotate(7deg);
+   */
 }
 
 
 table.formatHTML5 thead tr th:first-child { border-radius: 9px 0 0 0; }
-table.formatHTML5 thead tr th:last-child{ border-radius: 0 9px 0 0;}
+table.formatHTML5 thead tr th:last-child{ border-radius: 0 9px 0 0; }
 /*** table's tbody section, odd rows style ***/
 
+table.formatHTML5 thead:after {
+    line-height:1em;
+    content:"-";
+    color:white; /* to hide text */
+    display:block;
+}
+table.formatHTML5 tbody{
+    margin-top:10px;
+    padding-top:10px;
+    border-collapse:collapse;
+    color:#dd8a2a;
+}
+table.formatHTML5 tbody tr td a{
+    color:#dd8a2a;
+    font-size:14px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+table.formatHTML5 tbody tr td{
+
+    background-image:url('/laravel/img/button.jpg');
+
+
+    border: 1px solid;
+    border-color:#ded0b3;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size:12px;
+
+    color: #894f05;
+    text-align: center;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+
+}
 table.formatHTML5 tbody tr:nth-child(odd) {
 
 background-color: #fafafa;
+
+
 
 }
 
@@ -560,19 +584,14 @@ background: -moz-linear-gradient(top, #606060, #909090);
 
 color: #dadada;
 
+
 }
 
 
 
 /*** table's td element, all section ***/
 
-table.formatHTML5 td {
 
-vertical-align:middle;
-
-padding: 0.5em;
-
-}
 
 
 
@@ -591,7 +610,7 @@ text-shadow: 0 1px 1px rgba(255,255,255,0.3);
  
  
 .titlestyle  h1 {
- 	margin-top:120px;
+ 	margin-top:0px;
 	text-align:right;
 	color:gray;
 	font-size:34px;
@@ -601,7 +620,7 @@ text-shadow: 0 1px 1px rgba(255,255,255,0.3);
  
  .titlestyle  h2 {
     font-family: 'Griffy', cursive;
-	margin-top:20px;
+	margin-top: 0px;
 	margin-bottom:20px;
 	text-align:center;
 
@@ -632,44 +651,95 @@ hr.rowing2{
     float:left;
     list-style-type: none;
     padding-right: 20px;
+
+
 }
 .post-it {
-    background:#fefabc;
+    position:relative;
+    overflow:hidden; /* hides part of the box-shadow */
+    background:#e7dfcc;
     padding:15px;
     font-family: 'Gloria Hallelujah', cursive;
     font-size:15px;
+
     color: #000;
     width:200px;
     font-size:0.8em;
- /*   -moz-transform: rotate(7deg);
-    -webkit-transform: rotate(7deg);
-    -o-transform: rotate(7deg);
-    -ms-transform: rotate(7deg);
-    transform: rotate(7deg);
-*/
-    box-shadow: 0px 4px 6px #333;
-    -moz-box-shadow: 0px 4px 6px #333;
-    -webkit-box-shadow: 0px 4px 6px #333;
+    height:200px;
+    /*   -moz-transform: rotate(7deg);
+       -webkit-transform: rotate(7deg);
+       -o-transform: rotate(7deg);
+       -ms-transform: rotate(7deg);
+       transform: rotate(7deg);
+   */
+    box-shadow: 0px 4px 6px #999b9c;
+    -moz-box-shadow: 0px 4px 6px #999b9c;
+    -webkit-box-shadow: 0px 4px 6px #999b9c;
 
 }
-.programit{
-    list-style: none;
+.post-it:before {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    border-width:0 16px 16px 0;
+    border-style:solid;
+    border-color: #8e6e32 #F5F1E8;
+    /* css3 extras */
+    -webkit-box-shadow:0 0px 1px rgba(0,0,0,0.1),
+    -1px 1px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow:0 0px 1px rgba(0,0,0,0.1),
+    -1px 1px 1px rgba(0,0,0,0.2);
+    box-shadow:0 0px 1px rgba(0,0,0,0.1),
+    -1px 0px 2px rgba(0,0,0,0.2);
+}
 
+.program-it{
+    list-style: none;
+    text-align: center;
+
+}
+.program-it h5 {
+    color: #8a4e06;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.program-it h5 a{
+    color: #8a4e06;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.program-it h4, a{
+   color: #8a4e06;
+   font-size: 12px;
+    text-transform: capitalize;
+    text-align:center;
 }
 .programit li{
     display:  inline;
     float:left;
     list-style-type: none;
-    padding-right: 5px;
+
     margin:5px;
 }
+.programit li img , .buy{
+   margin:auto;
+   vertical-align:bottom;
+}
 .program-it {
-    background:#fefabc;
+    margin-bottom:0px;
+    paddin-bottom:0px;
+    text-align:center;
+    padding-top:5px;
+    background:#ded0b3;
     padding-left:25px;
     font-family: 'Gloria Hallelujah', cursive;
     font-size:15px;
     color: #000;
-    width:150px;
+    width:180px;
+    height:193px;
     font-size:0.8em;
     /*   -moz-transform: rotate(7deg);
        -webkit-transform: rotate(7deg);
@@ -712,6 +782,7 @@ hr.rowing2{
     -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
 }
 .theater-name{
+    padding-top:10px;
     font-size:0.8em;
 }
 .custom-list{

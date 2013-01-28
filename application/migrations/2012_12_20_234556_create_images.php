@@ -13,6 +13,7 @@ class Create_Images {
 		$table->integer('group_id')->unsigned();
 		$table->integer('show_id')->unsigned();
 		$table->integer('theater_id')->unsigned();
+		$table->integer('new_id')->unsigned();
 		$table->timestamps();
 		});
 	}

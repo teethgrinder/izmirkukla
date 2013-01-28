@@ -17,10 +17,10 @@
     <!-- Main Content Section -->
     <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
     <div class="nine columns push-three">
-		
-		<div class="titlestyle">
-		<h2>Sergiler</h2>
-		</div>
+        <hr />
+    <div class="row">
+            <div class="eight columns">
+
      <ul class="postit">
 
      @foreach($others as $other)
@@ -40,6 +40,13 @@
         @endforeach
 
      </ul>
+                </div>
+                <div class="two columns ">
+                <div class="titlestyle">
+                    <h2>Sergiler</h2>
+                </div>
+                    </div>
+    </div>
  </div>
 @endsection 
 

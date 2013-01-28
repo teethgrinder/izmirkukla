@@ -125,14 +125,14 @@ h4{ margin:0 0 2px; color:#000; font:normal 18px/20px helvetica,sans-serif; }
 .component-box .close span { position:absolute; top:0; left:0; width:10px; height:10px; overflow:hidden; background:url(../images/bg-sprite.png) no-repeat 0 -180px; cursor:pointer; }
 /* -- Overlay Specifics */
 #overlay-mask { position:absolute;z-index:999;background-color:#000;display:none;top:0px;left:0px; }
-#overlay-main { position:absolute; top:0; left:0; margin:0 auto; text-align:left; background:#d9d9d9 url(../images/bg-overlay-main.png) repeat-x 0 0; box-shadow:0 0 19px #000; -moz-box-shadow:0 0 19px #000; -webkit-box-shadow:0 0 19px #000; z-index:1000; }
+#overlay-main { position:absolute; top:50px; left:50px;margin: auto; text-align:left; background:#d9d9d9 url(../images/bg-overlay-main.png) repeat-x 0 0; box-shadow:0 0 19px #000; -moz-box-shadow:0 0 19px #000; -webkit-box-shadow:0 0 19px #000; z-index:1000; }
 /*#overlay-main { position:absolute; top:0; left:0; margin:0 auto; padding:10px; width:666px; height:410px; text-align:left; background:#d9d9d9 url(../images/bg-overlay-main.png) repeat-x 0 0; box-shadow:0 0 19px #000; -moz-box-shadow:0 0 19px #000; -webkit-box-shadow:0 0 19px #000; z-index:1000; }*/
 #overlay-body { overflow:hidden; margin:0 auto; padding:10px; }
 /*#overlay-body { position:absolute; top:0;left:0; margin:0 auto; padding:10px; }*/
 #overlay-close { position:absolute; top:10px; right:10px; width:30px; height:30px; overflow:hidden; background:url(../images/bg-sprite.png) no-repeat 0 -210px; cursor:pointer; }
 #overlay-close span { position:absolute; top:0; left:0; width:30px; height:30px; display:block; background:url(../images/bg-sprite.png) no-repeat 0 -210px; cursor:pointer; }
 #overlay-main .left { width: 6px; float:left; display:inline; }
-#overlay-main .right { margin-left:20px; padding:19px 0 0; width:614px; float:right; display:inline; word-wrap:break-word;}
+#overlay-main .right { margin-left:50px; padding:19px 0 0; width:614px; float:right; display:inline; word-wrap:break-word;}
 #overlay-main p { margin:0 0 20px; }
 #overlay-main .caption { margin:4px 0 0; }
 

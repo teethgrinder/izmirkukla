@@ -1,4 +1,4 @@
-@layout('layouts.main')
+@layout('layouts.dashboard')
 @section('navigation')
 @include('partials.dashnav')
 @endsection
@@ -10,20 +10,23 @@
     <div class="twelve columns ">
         <h3>Add Exhibition</h3>
         {{ Form::open(URL::to_action('admin.others@add_other_english')) }}
-        {{Form::token()}}
-        {{Form::hidden('slug','exhibitions') }}
+        {{ Form::token() }}
+        {{ Form::hidden('slug','exhibitions') }}
         <div class="row">
             <p>
-            <h6>Sergi İngilizce Adı:</h6>{{ Form::text( 'name_english', CreateOtherForm::old( 'name_english' ) ) }}
+            <h6>Sergi İngilizce Adı:</h6>
+            {{ Form::text( 'name_english', CreateOtherForm::old( 'name_english' ) ) }}
             {{ $errors->has( 'name_english' ) ? $errors->first( 'name_english' ) : '' }}
             </p>
             <p>
 
-            <h6>Sergi Sahibi:</h6>{{ Form::text( 'actor', CreateOtherForm::old( 'actor' ) ) }}
+            <h6>Sergi Sahibi:</h6>
+            {{ Form::text( 'actor', CreateOtherForm::old( 'actor' ) ) }}
             {{ $errors->has( 'actor' ) ? $errors->first( 'actor' ) : '' }}
             </p>
             <p>
-            <h6>About:</h6>{{ Form::textarea( 'information_english', CreateOtherForm::old( 'information_english' ) ) }}
+            <h6>About:</h6>
+            {{ Form::textarea( 'information_english', CreateOtherForm::old( 'information_english' ) ) }}
             {{ $errors->has( 'information_english' ) ? $errors->first( 'information_english' ) : '' }}
             </p>
             {{Form::hidden('slug','exhibitions') }}
@@ -31,12 +34,14 @@
 
             <p>
 
-            <h6>Yer:</h6>{{ Form::text( 'place', CreateOtherForm::old( 'place' ) ) }}
+            <h6>Yer:</h6>
+            {{ Form::text( 'place', CreateOtherForm::old( 'place' ) ) }}
             {{ $errors->has( 'place' ) ? $errors->first( 'place' ) : '' }}
             </p>
             <p>
 
-            <h6>Tarih:</h6>{{ Form::text( 'date', CreateOtherForm::old( 'date' ) ) }}
+            <h6>Tarih:</h6>
+            {{ Form::text( 'date', CreateOtherForm::old( 'date' ) ) }}
             {{ $errors->has( 'date' ) ? $errors->first( 'date' ) : '' }}
             </p>
             {{ Form::submit( 'Ekle' ,array('class'=>'button radius')) }}
@@ -45,3 +50,6 @@
 
         </div>
         @endsection
+@section('footer')
+@include('partials.dashfooter')
+@endsection

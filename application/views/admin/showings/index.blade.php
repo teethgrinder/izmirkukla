@@ -1,4 +1,4 @@
-@layout('layouts.main')
+@layout('layouts.dashboard')
 @section('navigation')
 	@include('partials.dashnav')
 @endsection
@@ -7,10 +7,10 @@
 <!-- Main Content Section -->
 <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
 	
-		<div class="twelve columns">
-		<h3>Program</h3>
-		<br />
-		</div>
+ <div class="twelve columns">
+	<h3>Program</h3>
+	<br />
+ </div>
  <div class="twelve columns">
 	<table class="twelve">
 		<thead>
@@ -34,7 +34,7 @@
               $performance = $showing->get_language( $date );?>
         <tr>
 
-             <td>{{ HTML::link_to_action('admin.groups@show',$group->name,array($showing->show->id)) }}</td>
+            <td>{{ HTML::link_to_action('admin.groups@show',$group->name,array($showing->show->id)) }}</td>
             <td>{{ HTML::link_to_action('admin.shows@show',$show->name,array($show->id)) }}</td>
            <!--  <td>{{ HTML::link_to_action('admin.shows@show',$showing->publish_date,array($show->id)) }}</td> -->
            <td>{{ HTML::link_to_action('admin.shows@show',$performance,array($show->id)) }}</td>
@@ -47,14 +47,16 @@
 		@endforeach
  
     </tbody>
- </table>
- 
+    </table>
 	<div class="button-bar">
 	 <ul class="button-group radius">
-		 <!--<a class="button radius"href="<?php echo URL::to('newgroup'); ?>">Grup Ekle</a>--> 
-		<li>{{HTML::link_to_action('admin.showings@add', 'Programa Oyun Ekle',array(),array('class'=>'button radius'))}} </li> 
-
-		</ul>
+		<li>{{HTML::link_to_action('admin.showings@add', 'Programa Oyun Ekle',array(),array('class'=>'button radius'))}} </li>
+	</ul>
 	</div>	
 </div>
-@endsection 
+@endsection
+
+
+@section('footer')
+@include('partials.dashfooter')
+@endsection

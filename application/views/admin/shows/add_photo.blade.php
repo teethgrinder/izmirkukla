@@ -1,4 +1,4 @@
-@layout('layouts.main')
+@layout('layouts.dashboard')
 @section('navigation')
 	@include('partials.dashnav')
 @endsection
@@ -18,7 +18,7 @@
 
 
 {{ Form::open_for_files(URL::to_action('admin.shows@add_photo',array($show->id),'POST')) }}
-{{Form::token()}}
+{{ Form::token() }}
 
 	<p>
 	    Fotoğraf bilgisi girin :
@@ -39,4 +39,8 @@
 
 {{ Form::close() }}
 </div>
-@endsection 
+@endsection
+
+@section('footer')
+@include('partials.dashfooter')
+@endsection

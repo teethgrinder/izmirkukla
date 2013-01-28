@@ -7,15 +7,16 @@ class Home_Showings_Controller extends Base_Controller
 	public function get_index()
 	{
 		$showingdates = Showingdate::all();
-        foreach ($showingdates as $date)
+
          //$alt = Str::alternator('color1', 'color2', 'color3', 'color4');
 		//$showings= Showing::where('date_calendar','=','showdate')->order_by('performance_date', 'ASC')->get();
+
 
         $images = DB::table('images')->where('show_id','>',0)->order_by(DB::raw(''),DB::raw('RAND()'))->get();
         if (Config::get('application.language') == 'tr'){
         return View::make('home.showings.index')->with('showingdates',$showingdates)->with('images',$images);
         }else{
-            return View::make('home.showings.english')->with('showingdates',$showingdates)->with('images',$images);
+            return View::make('home.showings.english')->with('showingdates',$showingdates)->with('showings',$showings)->with('images',$images);
 
         }
 

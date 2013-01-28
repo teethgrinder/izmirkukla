@@ -1,4 +1,4 @@
-@layout('layouts.main')
+@layout('layouts.dashboard')
 @section('navigation')
 	@include('partials.dashnav')
 @endsection
@@ -58,4 +58,10 @@
 			</ul>
 			</div>
 	</div>
-@endsection 
+@endsection
+
+
+
+@section('footer')
+@include('partials.dashfooter')
+@endsection

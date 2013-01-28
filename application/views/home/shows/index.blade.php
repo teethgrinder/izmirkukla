@@ -9,44 +9,56 @@
 @endsection
 
 @section('content')
- <div class="row">    
+ <div class="row">
 
-     
-    
+
+
+     <!-- Main Content Section -->
+     <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
+     <div class="nine columns push-three">
+         <hr />
+         <div id="contents">
+
+
+    <div class="seven columns">
+
+            <table id="Oyunlar"  class="formatHTML5" >
+                <thead>
+                <tr>
+                    <th>GRUP ADI</th>
+                    <th>OYUN ADI</th>
+                    <th>ÜLKESİ</th>
+
+
+                </tr>
+                </thead>
+
+
+                <tbody>
+                @foreach($shows as $show)
+                <tr>
+                    <td>{{ HTML::link_to_action('home.shows@show',$show->group->name,array(Str::slug($show->name)),array('class'=>'info')) }}</td>
+                    <td>{{ HTML::link_to_action('home.shows@show',$show->name,array(Str::slug($show->name)),array('class'=>'info')) }}</td>
+                    <td>{{ HTML::link_to_action('home.shows@show',$show->country,array(Str::slug($show->name)),array('class'=>'info')) }}</td>
+
+                </tr>
+                @endforeach
+
+                </tbody>
+            </table>
+
+    </div>
+
     <!-- Main Content Section -->
     <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
-    <div class="nine columns push-three">
 
-		<div class="titlestyle">
-		<h2>Oyunlar</h2>
-		</div>
-        <div id="contents">
- <div id="divContainer">	
- 	<table id="Oyunlar"  class="formatHTML5" >
-		<thead>
-			<tr>
-				<th>Grup Adı</th>
-                <th>Oyun Adı</th>
-				<th>Ülkesi</th>
-				 
-			
-			</tr>
-		</thead>
-   
+        <div class="two columns push-one">
+		    <div class="titlestyle">
+		        <h2>Oyunlar</h2>
+		    </div>
 
-    <tbody>
-		@foreach($shows as $show)
-    <tr>
-			<td>{{ HTML::link_to_action('home.shows@show',$show->group->name,array(Str::slug($show->name)),array('class'=>'info')) }}</td>
-			<td>{{ HTML::link_to_action('home.shows@show',$show->name,array(Str::slug($show->name)),array('class'=>'info')) }}</td>
-            <td>{{ HTML::link_to_action('home.shows@show',$show->group->country,array(Str::slug($show->name)),array('class'=>'info')) }}</td>
+         </div>
 
-    </tr>
-		@endforeach
- 
-    </tbody>
- </table>
- </div>
  </div>
 
  </div>

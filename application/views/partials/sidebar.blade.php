@@ -15,22 +15,23 @@
        <h6>Festival </h6>   
       
     
-		<ul  class="panel loading">
+		<ul class="panel loading">
 		<!--	<li> <a href="/groups">Gruplar</a></li>-->
 
-			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.presentation')->get(),array(Lang::line('izmirkukla.presentation')->get()))}}</li>
+			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.presentation')->get(),array(Lang::line('izmirkukla.presentation')->get()),array('class'=>'alt'))}}</li>
 			<li> {{HTML::link_to_action('home.shows@index',Lang::line('izmirkukla.shows')->get())}}</li>
 			<li> {{HTML::link_to_action('home.showings@index',Lang::line('izmirkukla.program')->get())}}</li>
 			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.exhibitions')->get(),array(Lang::line('izmirkukla.exhibitions')->get()))}}</li>
 			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.workshops')->get(),array(Lang::line('izmirkukla.workshops')->get()))}}</li>
 			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.conferences')->get(),array(Lang::line('izmirkukla.conferences')->get()))}}</li>
-		</ul>
+
+        </ul>
   </li>
   <li>
   <h6>{{ Lang::line('izmirkukla.documents') }}  </h6>
 		<ul class="panel loading">
 			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.manifest')->get(),array(Lang::line('izmirkukla.manifest')->get()))}}</li>
-			<li> <a href="#">Arşiv</a></li>
+			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.archieve')->get(),array(Lang::line('izmirkukla.archievemenu')->get()))}}</li>
 			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.articles')->get(),array(Lang::line('izmirkukla.articles')->get()))}}</li>
 			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.pressmenu')->get(),array(Lang::line('izmirkukla.press')->get()))}}</li>
 			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.crew')->get(),array(Lang::line('izmirkukla.crew')->get()))}}</li>

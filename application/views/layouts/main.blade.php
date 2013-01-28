@@ -5,12 +5,9 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
- <?php
-  header('Content-Type: text/javascript; charset=UTF-8');
-  // ...
-?>
+
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1; charset=ISO-8859-9">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1;">
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
@@ -20,58 +17,25 @@
         {{ HTML::style('css/foundation/foundation.css') }}  
         {{ HTML::style('css/foundation/app.css') }}  
        
-       <!-- {{ HTML::style('js/redactor/redactor.css') }}-->
+        <!-- {{ HTML::style('js/redactor/redactor.css') }}-->
         
-       <link rel="stylesheet" media="screen" type="text/css" href="js/spacegallery/css/spacegallery.css" />
-       <link rel="stylesheet" media="screen" type="text/css" href="js/spacegallery/css/custom.css" />
-   <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Griffy' rel='stylesheet' type='text/css'>
 
         <!-- begin javascript -->
-    {{ HTML::script('js/foundation/modernizr.foundation.js') }}
-
-  
-	{{ HTML::style('js/spacegallery/css/spacegallery.css') }}
-	{{ HTML::style('js/spacegallery/css/custom.css') }}
-    
-     
-	  {{ HTML::style('laravel/css/jquery-ui.css') }} 
- 
-	  {{ HTML::style('css/foundation/webicons.css') }}  
-	  {{ HTML::style('js/nivo-slider/nivo-slider.css') }}  
-	  {{ HTML::style('js/nivo-slider/themes/light/light.css') }}  
-	{{ HTML::style('js/hallo/examples/fontawesome/css/font-awesome.css') }}  
-	{{ HTML::style('js/thickbox.css') }} 
-	{{ HTML::style('css/foundation/custom.css') }} 
-	{{ HTML::style('js/calendar/css/common.css') }}  
-	{{ HTML::style('js/horizontal.css') }}
-
+        {{ HTML::script('js/foundation/modernizr.foundation.js') }}
+	    {{ HTML::style('laravel/css/jquery-ui.css') }}
+        {{ HTML::style('css/foundation/webicons.css') }}
+	    {{ HTML::style('js/nivo-slider/nivo-slider.css') }}
+	    {{ HTML::style('js/nivo-slider/themes/light/light.css') }}
+	    {{ HTML::style('js/hallo/examples/fontawesome/css/font-awesome.css') }}
+    	{{ HTML::style('js/thickbox.css') }}
+        {{ HTML::style('css/foundation/custom.css') }}
+	    {{ HTML::style('js/calendar/css/common.css') }}
+	    {{ HTML::style('js/horizontal.css') }}
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
-        <script type="text/javascript">
-            $(document).ready(function(){
-
-                // Cache result
-                var $eventday = $('#eventday');
-
-// Use jQuerys .on()
-                $eventday.on('click', '> li > div', function () {
-                    // Cache results
-                    var $divClicked = $divClicked(this);
-                    var $nextDiv = $divClicked.next();
-
-                    if ($nextDiv.next().is(':visible') == true) {
-                        $eventday.find('ul').slideUp(300);
-                    };
-
-                    $nextDiv.slideToggle(300);
-                });
-
-                $eventday.find('ul:eq(0)').show();
-            });
-
-
-        </script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -84,7 +48,7 @@
 			@yield('navigation')
             @yield('content')
             @yield('sidebar')
-            @include('partials.footer')
+            @yield('footer')
         </div>
         <!-- end content -->
          <!-- Use Googles online jQuery lib -->
@@ -98,28 +62,21 @@
        <!-- {{ HTML::script('js/redactor/redactor.js') }}-->
 
         {{ HTML::script('js/foundation/foundation.min.js') }}
-				
         {{ HTML::script('js/foundation/app.js') }}
-        
-       
-    
-        {{HTML::script('js/accordionGallery.js')}}
-         {{HTML::script('js/nivo-slider/jquery.nivo.slider.pack.js')}}
-		{{HTML::script('js/spacegallery/js/eye.js')}}  
-		{{HTML::script('js/spacegallery/js/utils.js')}}  
-		{{HTML::script('js/spacegallery/js/spacegallery.js')}}  
-		{{HTML::script('js/thickbox.js')}}  
-
-        {{HTML::script('js/infogrid.js')}}
-
-
-        {{HTML::script('js/calendar/scripts/jquery.cookie.js')}}  
-        {{HTML::script('js/calendar/scripts/common.js')}}  
+        {{ HTML::script('js/accordionGallery.js') }}
+        {{ HTML::script('js/nivo-slider/jquery.nivo.slider.pack.js') }}
+		{{ HTML::script('js/spacegallery/js/eye.js') }}
+		{{ HTML::script('js/spacegallery/js/utils.js') }}
+		{{ HTML::script('js/spacegallery/js/spacegallery.js') }}
+		{{ HTML::script('js/thickbox.js') }}
+        {{ HTML::script('js/infogrid.js') }}
+        {{ HTML::script('js/calendar/scripts/jquery.cookie.js') }}
+        {{ HTML::script('js/calendar/scripts/common.js') }}
         {{ HTML::script('js/ckeditor/ckeditor.js') }}
         {{ HTML::script('js/jquery-ui.js') }}
 		{{ HTML::script('js/jquery-ui-timepicker-addon.js') }}
 		{{ HTML::script('js/jquery.ui.datepicker-tr.js') }}
-		 {{ HTML::script('js/accordion/jquery.accordion.2.0.js') }}
+		{{ HTML::script('js/accordion/jquery.accordion.2.0.js') }}
         {{ HTML::script('js/jquery.horizontalaccordion.js') }}
 
         <script type="text/javascript">
@@ -206,7 +163,7 @@
             } );
 
         </script>
-        	<script>
+        <script>
                 CKEDITOR.replace( 'content',{
                     toolbar: 'Full',
                     enterMode : CKEDITOR.ENTER_BR,
@@ -221,13 +178,13 @@
 			var dateFormat = $( "#datepicker" ).datetimepicker( "option", "dateFormat" );
 			$( "#datepicker" ).datetimepicker( "option", "dateFormat", 'yy-mm-dd' );
 			 </script>
-    <script>$('#accordion-1').easyAccordion({
-        autoStart: true,
-        slideInterval: 5000
-    });</script>
+         <script>$('#accordion-1').easyAccordion({
+                     autoStart: true,
+                    slideInterval: 5000
+         });</script>
         <script type="text/javascript">
 
-                $("#info").click(function() {
+                     $("#info").click(function() {
                     $("#myModal").reveal();
                 });
 

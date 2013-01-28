@@ -12,6 +12,7 @@ class Show extends \EloquentBaseModel\Base
 	public function group()
 	{
 		return $this->belongs_to('Group');
+
 	}
 	
 	public function showings()

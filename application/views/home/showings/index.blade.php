@@ -9,16 +9,26 @@
 @endsection
 
 @section('content')
- <div class="row">
+<div class="row" xmlns="http://www.w3.org/1999/html">
 
 
 
      <!-- Main Content Section -->
      <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
      <div class="nine columns push-three">
-        <div class="titlestyle">
-         <h2>Program</h2>
-        </div>
+
+             <hr />
+         <div class="ten columns">
+             <a href="#" class="buy">{{HTML::image('laravel/img/bilet1.png')}}</a>
+         </div>
+         <div class="two columns">
+             <div class="titlestyle">
+                 <h2>Program</h2>
+             </div>
+         </div>
+
+
+
          <nav role="navigation">
              <div id="calendar">
 
@@ -46,8 +56,9 @@
 
                  </ul>
              </div><!--// ENDS: #CALENDAR -->
-         </nav>
 
+         </nav>
+       
 
          <article role="main">
              <div id="daydetail">
@@ -69,14 +80,20 @@
                                      <ul  class="programit">
                                          @foreach ($showings as $showing)
                                          <li><div class="program-it">
+                                            <h5>{{HTML::link_to_action('home.shows@show',$showing->show->name,array($showing->show->slug)) }}</h5>
+                                             <p><h4>{{$showing->show->group->country}}</h4>
+                                             <h4> {{$showing->show->group->name}}</h4>
+                                              <span class="theater-name"> {{$showing->theater->name}}
+                                                 <br />
+                                               {{ $showing->show_time }}  </span>
+                                             <a href="#" class="buy">{{HTML::image('laravel/img/bilet2.png')}}</a>
+                                             </p>
 
-                                             <h5> {{ $showing->show_time }} </h5>
-                                             <p>{{$showing->show->group->name}}</p>
-                                             <h5>{{HTML::link_to_action('home.shows@show',$showing->show->name,array($showing->show->slug)) }}</h5>
 
-                                             <p class="theater-name"> {{$showing->theater->name}}</p>
-                                             <p></p>
-                                             <p>{{ $showing->price }}tl </p>
+
+
+
+
 
 
                                          </div>
@@ -103,10 +120,13 @@
 
                  </ul>
              </div><!--// ENDS: #DAYDETAIL -->
+
          </article>
 
 
-     </div><!--// ENDS #CONTAINER -->
+             </div>
+
+     <!--// ENDS #CONTAINER -->
 
 
 

@@ -11,8 +11,6 @@ class Create_Groups {
 			$table->string('country');
             $table->string('country_english');
 			$table->string('slug');
-			$table->text('information');
-            $table->text('information_english');
 			$table->string('theater_id');
 			$table->string('meta_title',255);
 			$table->string('meta_description',255);

@@ -45,7 +45,6 @@
             'Brazil'		                    => 	'Brazil',
             'Bulgaria'	                        => 	'Bulgaria',
             'Crotia'    	                    =>	'Crotial',
-            'England'	                        => 	'England',
             'France'		                    =>	'France',
             'Germany'		                    => 	'Germany',
             'Greece'     	                    =>	'Greece',
@@ -57,11 +56,12 @@
             'Hungary'   	                    => 	'Hungary',
             'New Zelland'                    	=>	'New Zelland',
             'Peru'                          	=>	'Peru',
-            'Slovenya'                      	=>	'Slovenya',
+            'Slovenya'                      	=>	'Slovenia',
             'South Korea'                      	=> 	'South Korea',
             'Spain'	                            => 	'Spain',
             'Switzerland'	                    =>	'Switzerland',
             'Turkey'	                        =>	'Turkey',
+            'United Kingdom'                    =>  'United Kingdom',
             'USA'		                        => 	'USA',
         );
 	}

@@ -11,6 +11,7 @@
         'documents'     =>  'Documents',
         'manifest'      =>  'Manifest',
         'archieve'      =>  'Archieve',
+        'archievemenu'  =>  'Archieve',
         'articles'      =>  'Articles',
         'press'         =>  'Press',
         'pressmenu'     =>  'Press',

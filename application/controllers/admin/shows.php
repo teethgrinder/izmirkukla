@@ -74,6 +74,9 @@ class Admin_Shows_Controller extends Base_Controller{
         $show->information_english = CreateShowForm::get('information_english');
 
 		$show->group_id = Input::get('group_id');
+        $group = Group::find($show->group_id);
+        $show->country = $group->country;
+        $show->country_english = $group->country_english;
 		$show->save();
 
 		return Redirect::to_action( 'admin.shows@index');

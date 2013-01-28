@@ -1,4 +1,4 @@
-@layout('layouts.main')
+@layout('layouts.dashboard')
 @section('content')
  <div class="row">    
 
@@ -12,13 +12,15 @@
       <h3>Oyun Bilgileri<small>Page subtitle</small></h3>
  
 
-{{ Form::open_for_files(URL::to_action('admin.shows@add_two')) }}
+    {{ Form::open_for_files(URL::to_action('admin.shows@add_two')) }}
 
 	<p>
-	Oyun bilgileri: {{ Form::textarea( 'information', CreateShowForm::old( 'information' ) ) }}
+	Oyun bilgileri:
+    {{ Form::textarea( 'information', CreateShowForm::old( 'information' ) ) }}
 	{{ $errors->has( 'information' ) ? $errors->first( 'information' ) : '' }}
 	</p>
-	<p>{{ Form::text('name', Input::old('name')) }}
+	<p>
+    {{ Form::text('name', Input::old('name')) }}
 	{{  Form::file('picture') }}
 	</p>
  
@@ -26,4 +28,8 @@
 
 {{ Form::close() }}
 </div>
-@endsection 
+@endsection
+
+@section('footer')
+@include('partials.dashfooter')
+@endsection

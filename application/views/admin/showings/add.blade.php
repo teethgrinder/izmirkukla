@@ -1,4 +1,4 @@
-@layout('layouts.main')
+@layout('layouts.dashboard')
 @section('navigation')
 	@include('partials.dashnav')
 @endsection
@@ -16,40 +16,38 @@
       <h3>YENİ Gösteri</h3>
  
 
-{{ Form::open(URL::to_action('admin.showings@add')) }}
-{{Form::token()}}
+        {{ Form::open(URL::to_action('admin.showings@add')) }}
+        {{ Form::token() }}
 
 
-	<p>
-		Oyun: {{ Form::select( 'show_id', CreateShowingForm::show_options(), CreateShowingForm::old( 'show_id' ) ) }}
+	    <p>
+		Oyun:
+        {{ Form::select( 'show_id', CreateShowingForm::show_options(), CreateShowingForm::old( 'show_id' ) ) }}
 		{{ $errors->has( 'show_id' ) ? $errors->first( 'show_id' ) : '' }}
-	</p>
-	<p>
-	
-	Salon:
- 
- 
-	{{ Form::select( 'theater_id', CreateShowingForm::theater_options(),CreateShowingForm::old('theater_id') )  }}
-	{{ $errors->has( 'theater_id' ) ? $errors->first( 'theater_id' ) : '' }}
-	
-
-	</p>
- <!--{{ Form::date('performance_date', Input::old('performance_date') )   }} -->
-	<div class="row">
-    <div class="six columns">
-			Tarih: <input type="text" id="datepicker" name="performance_date" />
-	</div>
- 
- 
-	</div>
-
+	    </p>
+	    <p>
+	    Salon:
+    	{{ Form::select( 'theater_id', CreateShowingForm::theater_options(),CreateShowingForm::old('theater_id') )  }}
+    	{{ $errors->has( 'theater_id' ) ? $errors->first( 'theater_id' ) : '' }}
+    	</p>
+        <!--{{ Form::date('performance_date', Input::old('performance_date') )   }} -->
+	    <div class="row">
+            <div class="six columns">
+			    Tarih: <input type="text" id="datepicker" name="performance_date" />
+	        </div>
+    	</div>
 		<p>
-		Ücreti: {{ Form::text( 'price', CreateShowingForm::old( 'price' ) ) }}
+		Ücreti:
+        {{ Form::text( 'price', CreateShowingForm::old( 'price' ) ) }}
 		{{ $errors->has( 'price' ) ? $errors->first( 'price' ) : '' }}
-	</p>
-	{{ Form::submit( 'Ekle' ,array('class'=>'button radius')) }}
-
-{{ Form::close() }}
+	    </p>
+	    {{ Form::submit( 'Ekle' ,array('class'=>'button radius')) }}
+        {{ Form::close() }}
  
-</div>
-@endsection 
+    </div>
+@endsection
+
+
+@section('footer')
+@include('partials.dashfooter')
+@endsection

@@ -1,4 +1,4 @@
-@layout('layouts.main')
+@layout('layouts.dashboard')
 @section('navigation')
 	@include('partials.dashnav')
 @endsection
@@ -14,21 +14,21 @@
 	<h3>Gösteriler</h3>
  
  	<table class="twelve">
-  <thead>
-    <tr>
-      <th>Oyun Adı</th>
-      <th>Yaş</th>
-      <th>Dil</th>
-      <th>Hakkında</th>
-      <th>İngilizce</th>
-      <th>Düzenle/Sil</th>
+      <thead>
+        <tr>
+          <th>Oyun Adı</th>
+          <th>Yaş</th>
+          <th>Dil</th>
+          <th>Hakkında</th>
+          <th>İngilizce</th>
+          <th>Düzenle/Sil</th>
 
-    </tr>
-  </thead>
+        </tr>
+      </thead>
  
      <tbody>
  
-  @foreach($shows as $show)
+    @foreach($shows as $show)
 		<tr>
             <td>{{HTML::link_to_action('admin.shows@show',$show->name,array($show->slug)) }} /
                 {{HTML::link_to_action('admin.shows@show',$show->name_english,array($show->slug)) }} </td>
@@ -53,4 +53,8 @@
 				</ul>
 			</div>	
 	</div>-->
-@endsection 
+@endsection
+
+@section('footer')
+@include('partials.dashfooter')
+@endsection

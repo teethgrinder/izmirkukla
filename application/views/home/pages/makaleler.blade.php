@@ -20,9 +20,7 @@
 
       <br />
  
- <div class="titlestyle">
-		<h2>Makaleler</h2>
-		</div>
+
       <div id="contents">
 	@if($subjects)
     @foreach($subjects as $subject)
@@ -30,7 +28,9 @@
 	<p>{{ $subject->content }}</p>
     @endforeach
 	@endif
- 
+          <div class="titlestyle">
+              <h2>Makaleler</h2>
+          </div>
  </div>          
     </div>
 @endsection 

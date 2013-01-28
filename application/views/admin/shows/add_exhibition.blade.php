@@ -1,4 +1,4 @@
-@layout('layouts.main')
+@layout('layouts.dashboard')
 @section('navigation')
 @include('partials.dashnav')
 @endsection
@@ -10,32 +10,38 @@
     <div class="twelve columns ">
         <h3>Sergi  Ekle</h3>
         {{ Form::open(URL::to_action('admin.others@add_other')) }}
-        {{Form::token()}}
+        {{ Form::token() }}
         <div class="row">
             <p>
-            <h6>Sergi Adı:</h6>{{ Form::text( 'name', CreateOtherForm::old( 'name' ) ) }}
+            <h6>Sergi Adı:</h6>
+            {{ Form::text( 'name', CreateOtherForm::old( 'name' ) ) }}
             {{ $errors->has( 'name' ) ? $errors->first( 'name' ) : '' }}
             </p>
             <p>
 
-            <h6>Sergi Sahibi:</h6>{{ Form::text( 'actor', CreateOtherForm::old( 'actor' ) ) }}
+            <h6>Sergi Sahibi:</h6>
+            {{ Form::text( 'actor', CreateOtherForm::old( 'actor' ) ) }}
             {{ $errors->has( 'actor' ) ? $errors->first( 'actor' ) : '' }}
             </p>
             <p>
-            <h6>Konusu:</h6>{{ Form::textarea( 'information', CreateOtherForm::old( 'information' ) ) }}
+            <h6>Konusu:</h6>
+            {{ Form::textarea( 'information', CreateOtherForm::old( 'information' ) ) }}
             {{ $errors->has( 'information' ) ? $errors->first( 'information' ) : '' }}
             </p>
+
             {{Form::hidden('slug','sergiler') }}
 
 
             <p>
 
-            <h6>Yer:</h6>{{ Form::text( 'place', CreateOtherForm::old( 'place' ) ) }}
+            <h6>Yer:</h6>
+            {{ Form::text( 'place', CreateOtherForm::old( 'place' ) ) }}
             {{ $errors->has( 'place' ) ? $errors->first( 'place' ) : '' }}
             </p>
             <p>
 
-            <h6>Tarih:</h6>{{ Form::text( 'date', CreateOtherForm::old( 'date' ) ) }}
+            <h6>Tarih:</h6>
+            {{ Form::text( 'date', CreateOtherForm::old( 'date' ) ) }}
             {{ $errors->has( 'date' ) ? $errors->first( 'date' ) : '' }}
             </p>
             {{ Form::submit( 'Ekle' ,array('class'=>'button radius')) }}
@@ -43,4 +49,9 @@
             {{ Form::close() }}
 
         </div>
+        @endsection
+
+
+        @section('footer')
+        @include('partials.dashfooter')
         @endsection

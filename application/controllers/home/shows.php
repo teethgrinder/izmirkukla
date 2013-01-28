@@ -7,18 +7,17 @@ class Home_Shows_Controller extends Base_Controller
 	public function get_index()
 	{
 
-        $shows = Show::order_by('name', 'ASC')->get();
+        $shows = Show::order_by('country','asc')->get();
+
         if(!($shows)){
             return Redirect::to_action('home.pages@homepage');
         }
-        foreach ($shows as $show) {
-        $group = Group::find($show->group_id);
-        }
+
         $images = DB::table('images')->where('show_id','>',0)->order_by(DB::raw(''),DB::raw('RAND()'))->get();
         if (Config::get('application.language') == 'tr')
-        return View::make('home.shows.index')->with('shows',$shows)->with('images',$images)->with('group',$group);
+        return View::make('home.shows.index')->with('shows',$shows)->with('images',$images) ;
         else
-        return View::make('home.shows.index_en')->with('shows',$shows)->with('images',$images)->with('group',$group);
+        return View::make('home.shows.index_en')->with('shows',$shows)->with('images',$images) ;
 
 	}
 	

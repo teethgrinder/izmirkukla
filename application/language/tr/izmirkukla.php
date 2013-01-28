@@ -11,6 +11,7 @@ return array(
     'documents'     =>  'Dökümanlar',
     'manifest'      =>  'Manifesto',
     'archieve'      =>  'Arşiv',
+    'archievemenu'  =>  'Arsiv',
     'articles'      =>  'Makaleler',
     'press'         =>  'basin',
     'pressmenu'     =>  'Basın',

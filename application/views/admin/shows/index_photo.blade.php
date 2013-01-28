@@ -1,4 +1,4 @@
-@layout('layouts.main')
+@layout('layouts.dashboard')
 @section('navigation')
 	@include('partials.dashnav')
 @endsection
@@ -15,32 +15,32 @@
 	
 <h3>Oyun Bilgileri</h3>
  	<table class="twelve">
-  <thead>
-    <tr>
-      <th>Oyun Adı</th>
-      <th>Dili</th>
-			<th>Hakkında</th>
-    </tr>
-  </thead>
-  <tbody>
-		<tr>
-			<td>{{$show->name}}</td>
-			<td>{{$show->language}}</td>
-			<td>{{$show->information}}</td>
-		
-		</tr>
-    </tbody>
+      <thead>
+        <tr>
+          <th>Oyun Adı</th>
+          <th>Dili</th>
+                <th>Hakkında</th>
+        </tr>
+      </thead>
+      <tbody>
+            <tr>
+                <td>{{$show->name}}</td>
+                <td>{{$show->language}}</td>
+                <td>{{$show->information}}</td>
+
+            </tr>
+        </tbody>
  
 
- 	 <thead>
-    <tr>
-      <th>Fotoğraflar</th>
-      <th>Fotoğraflar</th>
-      <th>Fotoğraflar</th>
-  
-	 
-    </tr>
-  </thead>
+         <thead>
+        <tr>
+          <th>Fotoğraflar</th>
+          <th>Fotoğraflar</th>
+          <th>Fotoğraflar</th>
+
+
+        </tr>
+      </thead>
    <tbody> 
   
 		<tr>
@@ -64,4 +64,8 @@
 			</ul>
 			</div>
 	</div>
-@endsection 
+@endsection
+
+@section('footer')
+@include('partials.dashfooter')
+@endsection

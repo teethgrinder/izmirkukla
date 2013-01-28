@@ -18,17 +18,22 @@
      <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
      <div class="nine columns push-three">
 
-         <br />
+         <div class="row">
+             <hr />
 
-         <div class="titlestyle">
-             <h2>Destekleyenler</h2>
-         </div>
-         <div id="contents">
-             @if($subject)
-             <h1>{{$subject->title}}</h1>
-             <p>{{ $subject->content }}</p>
-             @endif
+             <div class="three columns">
 
+             </div>
+
+
+
+
+
+             <div class="two columns push-one">
+                 <div class="titlestyle">
+                     <h2>Destekleyenler</h2>
+                 </div>
+             </div>
          </div>
      </div>
      @endsection

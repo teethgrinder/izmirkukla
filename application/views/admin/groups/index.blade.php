@@ -1,4 +1,4 @@
-@layout('layouts.main')
+@layout('layouts.dashboard')
 @section('navigation')
 	@include('partials.dashnav')
 @endsection
@@ -10,40 +10,45 @@
 	<div class="twelve columns ">
 		
 		<h3>Kukla Grupları</h3>
-@if(Session::has('success')) 
-{{ Session::get('success') }}
-@endif	
-	<table class="twelve">
-		<thead>
-			<tr>
+
+        @if(Session::has('success'))
+        {{ Session::get('success') }}
+        @endif
+
+        <table class="twelve">
+
+            <thead>
+
+            <tr>
 				<th>Grup Adı</th>
 				<th>Ülkesi</th>
 				<th>Hakkında</th>
 				<th>Durum</th>
-			
 			</tr>
-		</thead>
+
+            </thead>
    
+           <tbody>
 
-    <tbody>
-		@foreach($groups as $group)
-    <tr>
-      <td><a href="<?php echo URL::to('showgroup/'.$group->id); ?>">{{$group->name}}</a></td>
-      <td><a href="<?php echo URL::to('showgroup/'.$group->id); ?>">{{$group->country}}</a></td>
-      <td><a href="<?php echo URL::to('showgroup/'.$group->id); ?>">{{$group->information}}</a></td>
-      <td>{{HTML::link_to_action('admin.groups@edit', 'Düzenle',array($group->id),array('class'=>'button small radius'))}} {{HTML::link_to_action('admin.groups@delete', 'Sil',array($group->id),array('class'=>'button alert small radius',"onclick"=>"return confirm('Silmek için onaylayın')"))}}</td>
-
-    </tr>
+		     @foreach($groups as $group)
+            <tr>
+              <td><a href="<?php echo URL::to('showgroup/'.$group->id); ?>">{{$group->name}}</a></td>
+              <td><a href="<?php echo URL::to('showgroup/'.$group->id); ?>">{{$group->country}}</a></td>
+              <td>{{ HTML::link_to_action('admin.groups@edit', 'Düzenle',array($group->id),array('class'=>'button small radius')) }} {{ HTML::link_to_action('admin.groups@delete', 'Sil',array($group->id),array('class'=>'button alert small radius',"onclick"=>"return confirm('Silmek için onaylayın')")) }}</td>
+            </tr>
 		@endforeach
- 
-    </tbody>
- </table>
+
+           </tbody>
+         </table>
  
 	<div class="button-bar">
 	 <ul class="button-group radius">
-		 <!--<a class="button radius"href="<?php echo URL::to('newgroup'); ?>">Grup Ekle</a>--> 
-		 {{HTML::link_to_action('admin.groups@add', 'Yeni Grup',array(),array('class'=>'button radius'))}} 
-		</ul>
+		 {{HTML::link_to_action('admin.groups@add', 'Yeni Grup',array(),array('class'=>'button radius'))}}
+     </ul>
 	</div>	
 </div>
-@endsection 
+@endsection
+
+@section('footer')
+@include('partials.dashfooter')
+@endsection

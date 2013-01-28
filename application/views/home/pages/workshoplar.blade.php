@@ -9,18 +9,19 @@
 @endsection
 
 @section('content')
- <div class="row">
+<div class="row">
 
 
 
      <!-- Main Content Section -->
      <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
      <div class="nine columns push-three">
+         <div id="contents">
+             <hr />
 
-         <div class="titlestyle">
-             <h2>Workshoplar</h2>
-         </div>
-         <ul class="postit">
+        <div class="six columns">
+
+            <ul class="postit">
 
              @foreach($others as $other)
              <li>
@@ -38,6 +39,15 @@
              </li>
              @endforeach
 
-         </ul>
-     </div>
+            </ul>
+         </div>
+         <div class="two columns">
+             <div class="titlestyle">
+                 <h2>Workshoplar</h2>
+             </div>
+          </div>
+
+        </div>
+    </div>
+
      @endsection

@@ -13,6 +13,11 @@ class Image extends \EloquentBaseModel\Base
 	{
 		return $this->belongs_to('Show');
 	}
+
+    public function news()
+    {
+        return $this->belongs_to('News');
+    }
 	
 }
 	
