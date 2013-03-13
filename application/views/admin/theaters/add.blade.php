@@ -1,4 +1,4 @@
-@layout('layouts.main')
+@layout('layouts.dashboard')
 @section('navigation')
 	@include('partials.dashnav')
 @endsection
@@ -18,20 +18,20 @@
 		{{ $errors->has( 'name' ) ? $errors->first( 'name' ) : '' }}
 	</p>
  
- <p>
-   Adres: 
+     <p>
+         Adres:
    
 		{{ Form::text( 'adress', CreateTheaterForm::old( 'adress' )) }}
 		{{ $errors->has( 'adress' ) ? $errors->first( 'adress' ) : '' }}
  
- </p>
- 
- 
- 
-
+         </p>
 	{{ Form::submit( 'Ekle' ,array('class'=>'button radius')) }}
  
-{{ Form::close() }}
+    {{ Form::close() }}
    
  </div>
-@endsection 
+@endsection
+
+@section('footer')
+@include('partials.dashfooter')
+@endsection

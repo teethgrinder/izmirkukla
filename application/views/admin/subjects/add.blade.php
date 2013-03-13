@@ -1,4 +1,4 @@
-@layout('layouts.main')
+@layout('layouts.dashboard')
 @section('navigation')
 	@include('partials.dashnav')
 @endsection
@@ -16,15 +16,16 @@
       <h3>{{ $slug }}</h3>
  
 
-{{ Form::open(URL::to_action('admin.subjects@add_one',array($slug))) }}
-{{Form::token()}}
-	<p>
+        {{ Form::open(URL::to_action('admin.subjects@add_one',array($slug))) }}
+        {{ Form::token() }}
+    	<p>
 
-    <h6>Başlık:</h6>
-        <br />{{ Form::text( 'title', CreateSubjectForm::old( 'name' ) ) }}
-           {{ $errors->has( 'title' ) ? $errors->first( 'title' ) : '' }}
+        <h6>Başlık:</h6>
+        <br />
+        {{ Form::text( 'title', CreateSubjectForm::old( 'name' ) ) }}
+        {{ $errors->has( 'title' ) ? $errors->first( 'title' ) : '' }}
 
-	</p>
+	    </p>
         <p>
 
         <h6>Yazan:</h6>
@@ -36,17 +37,23 @@
 	Sayfa: {{ Form::select( 'page_id', CreateSubjectForm::page_options(),CreateSubjectForm::old('page_id') )  }}
 	{{ $errors->has( 'page_id' ) ? $errors->first( 'page_id' ) : '' }}
 	</p>-->
-	<br />
-	<p>
-	<h6>İçerik:</h6>
+	    <br />
+	    <p>
+	    <h6>İçerik:</h6>
         <br />
            {{ Form::textarea( 'content', CreateSubjectForm::old( 'content' ),array()) }}
 	       {{ $errors->has( 'content' ) ? $errors->first( 'content' ) : '' }}
 
-	</p>
-	{{ Form::submit( 'Ekle' ,array('class'=>'button radius')) }}
+	    </p>
+	    {{ Form::submit( 'Ekle' ,array('class'=>'button radius')) }}
 
-{{ Form::close() }}
+        {{ Form::close() }}
  
-</div>
-@endsection 
+    </div>
+@endsection
+
+
+
+@section('footer')
+@include('partials.dashfooter')
+@endsection

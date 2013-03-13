@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-9"?>
+
+<gallery>
+  <image id="1" fiyat="20" />
+	<image id="2" fiyat="15" />
+	<image id="3" fiyat="20" />
+	<image id="4" fiyat="15" />
+	<image id="5" fiyat="0" />
+	<image id="6" fiyat="15" />
+	<image id="7" fiyat="15" />
+	<image id="8" fiyat="15" />
+	<image id="9" fiyat="15" />
+	<image id="10" fiyat="15" />
+	<image id="11" fiyat="15" />
+	<image id="12" fiyat="15" />
+	<image id="13" fiyat="15" />
+	<image id="14" fiyat="15" />
+	<image id="15" fiyat="0" />
+	<image id="16" fiyat="15" />
+	<image id="17" fiyat="15" />
+	<image id="18" fiyat="0" />
+	<image id="19" fiyat="15" />
+	<image id="20" fiyat="15" />
+	<image id="21" fiyat="15" />
+	<image id="22" fiyat="15" />
+	<image id="23" fiyat="15" />
+	<image id="24" fiyat="20" />
+	<image id="25" fiyat="15" />
+	<image id="26" fiyat="15" />
+	<image id="27" fiyat="0" />
+	<image id="28" fiyat="15" />
+	<image id="29" fiyat="15" />
+	<image id="30" fiyat="15" />
+	<image id="31" fiyat="15" />
+	<image id="32" fiyat="15" />
+	<image id="33" fiyat="15" />
+	<image id="34" fiyat="15" />
+	<image id="35" fiyat="15" />
+	<image id="36" fiyat="15" />
+</gallery>

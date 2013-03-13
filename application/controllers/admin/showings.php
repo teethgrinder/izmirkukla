@@ -15,11 +15,11 @@ class Admin_Showings_Controller extends Base_Controller{
     {
 
         $showings = Showing::all();
-        if(!($showings)){
+        if(!(Showing::all())){
             return Redirect::to_action('admin.showings@add');
         }
 
-        return View::make('admin.showings.index') ;
+        return View::make('admin.showings.index')->with('showings',$showings) ;
 
     }
 

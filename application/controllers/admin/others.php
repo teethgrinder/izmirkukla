@@ -126,4 +126,12 @@ class Admin_Others_Controller extends Base_Controller{
         return Redirect::to_action( 'admin.others@index');
     }
 
+    public function get_delete($id)
+    {
+
+        $other = Other::find($id);
+        $other->delete();
+        return Redirect::to_action( 'admin.others@index')->with('success','Yazı Başarı ile silindi');
+
+    }
 }

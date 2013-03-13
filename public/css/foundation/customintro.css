@@ -1,0 +1,41 @@
+body {
+    background:url('/laravel/img/welcoming.png')no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.linktopages {
+   margin-top:350px;
+
+
+}
+.couple {
+    margin-left:300px;
+}
+.introbuttons li{
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
+.speciallink {
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 15px;
+    vertical-align: text-bottom;
+    padding: 10px;
+    padding-right:20px;
+    text-decoration: none;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-box-shadow: 2px 1px 3px #666666;
+    -moz-box-shadow: 2px 1px 3px #666666;
+    text-shadow: 1px 1px 15px #666666;
+    border: solid #eb842a 2px;
+    background: #b79731;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#b79731), to(#61230f));
+    background: -moz-linear-gradient(top, #b79731, #61230f);
+}
+.speciallink:hover {
+    background: #805304;
+}

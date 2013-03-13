@@ -14,17 +14,17 @@ class Home_Others_Controller extends Base_Controller
         foreach ($shows as $show) {
             $group = Group::find($show->group_id);
         }
-        $images = DB::table('images')->where('show_id','>',0)->order_by(DB::raw(''),DB::raw('RAND()'))->get();
+        $images = DB::table('images')->where('show_id','>',0)->order_by(DB::raw(''),DB::raw('RAND()'))->take(8)->get();
         return View::make('home.shows.index')->with('shows',$shows)->with('images',$images)->with('group',$group);
     }
 
-    public function get_show($slug=null)
+    public function get_show($id=null)
     {
-        $other = Show::find_by_slug($slug);
+        $other = Other::find($id);
 
 
-        $images = DB::table('images')->where('show_id','>',0)->order_by(DB::raw(''),DB::raw('RAND()'))->get();
-        return View::make('home.shows.show')->with('show',$show)->with('images',$images)->with('imageshows',$imageshows)->with('group',$group);
+        $images = DB::table('images')->where('show_id','>',0)->order_by(DB::raw(''),DB::raw('RAND()'))->take(8)->get();
+        return View::make('home.others.show')->with('other',$other)->with('images',$images)->with('other',$other);
     }
 
 

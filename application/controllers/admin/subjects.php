@@ -31,6 +31,18 @@ class Admin_Subjects_Controller extends Base_Controller{
 
     }
 
+    public function get_articles($slug=null)
+    {
+        $subjects = Subject::where('slug','=',$slug)->get();
+
+        if(!$subjects){
+            return Redirect::to_action('admin.subjects@add_one',array($slug));
+        }
+
+        return View::make('admin.subjects.show_articles')->with('subjects',$subjects) ;
+
+    }
+
     public function get_add($slug=null)
     {
 
@@ -44,6 +56,16 @@ class Admin_Subjects_Controller extends Base_Controller{
 
         CreateSubjectForm::forget_input();
         return View::make('admin.subjects.add')->with('slug',$slug)->with('page',$page);
+
+
+    }
+
+    public function get_add_articles($slug=null)
+    {
+        $page = DB::table('pages')->where('slug','=',$slug)->first();
+
+        CreateSubjectForm::forget_input();
+        return View::make('admin.subjects.add_articles')->with('slug',$slug)->with('page',$page);
 
 
     }

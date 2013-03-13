@@ -98,6 +98,10 @@
                 {{ $errors->has( 'information_english' ) ? $errors->first( 'information_english' ) : '' }}
 
         </p>
+        <p>
+			<h6>  Video Link: </h6> {{ Form::text( 'video_link', (Input::old('video_link') ?  Input::old('video_link') : $show->video_link)) }}
+            {{ $errors->has( 'video_link' ) ? $errors->first( 'video_link' ) : '' }}
+            </p>
 
         {{ Form::submit( 'Ekle' ,array('class'=>'button radius')) }}
         {{ Form::close() }}

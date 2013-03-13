@@ -29,21 +29,22 @@
 			
 			</tr>
 		</thead>
-   
-
-    <tbody>
+         <tbody>
 		@foreach($shows as $show)
-    <tr>
-			<td>{{ HTML::link_to_action('home.shows@show',$group->name,array(Str::slug($show->name))) }}</td>
-			<td>{{ HTML::link_to_action('home.shows@show',$show->name,array($show->id)) }}</td>
-      <td>{{ HTML::link_to_action('home.shows@show',$group->country,array($show->id)) }}</td>
-    </tr>
+             <tr>
+		    	<td>{{ HTML::link_to_action('home.shows@show',$group->name,array(Str::slug($show->name))) }}</td>
+			    <td>{{ HTML::link_to_action('home.shows@show',$show->name,array($show->id)) }}</td>
+                <td>{{ HTML::link_to_action('home.shows@show',$group->country,array($show->id)) }}</td>
+             </tr>
 		@endforeach
  
-    </tbody>
- </table> 
+       </tbody>
+    </table>
  
  </div>
  </div>
-@endsection 
+@endsection
 
+ @section('footer')
+ @include('partials.footer')
+ @endsection

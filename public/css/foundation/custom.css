@@ -5,10 +5,20 @@ font-family: 'Shadows Into Light', cursive;
  
  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
  font-family: 'PT Sans', sans-serif;
- /*background-image:url('/laravel/img/webzemin.jpg');
+ background-image:url('/laravel/img/webzemin.jpg');
 
 
-*/
+
+}
+
+.reveal-modal {
+    background:#e7dfcc;
+}
+.information{
+    text-align:justify;
+    font-size: 16px;
+    line-height: 170%;
+    margin-bottom: 20px; 
 }
 .loading {
  display: none;
@@ -21,7 +31,15 @@ color: black;
     color: black;
     font-size:1.1em;
 }
-
+.icons li {
+    display:inline;
+    list-style:none;
+    padding-right:10px;
+    float:right;
+}
+.flag{
+    margin-top:2px;
+}
 .four {
 margin-top:20px;
 margin-left:0px;
@@ -31,6 +49,11 @@ padding:0px;
 margin: 10px 0 30px;
 background:none;
 
+}
+.top-bar ul > li {
+    float: left;
+    margin-top:0px;
+    padding-right:10px;
 }
 .top-bar ul > li:not(.name):hover, .top-bar ul > li:not(.name).active { background: none; }
 .top-bar ul > li:not(.name):hover a, .top-bar ul > li:not(.name).active a {color:#8a4f09; }
@@ -69,7 +92,7 @@ padding:0;
 background-color:#ded0b3;
 display:block;
     margin: 2px;
-color: #8a4f09;
+color: #cd7616;
 padding: 10px 15px;
 text-decoration: none;
 border-radius: 14px; 
@@ -97,7 +120,7 @@ h5, h6, h6>a
 
 margin-top:0px;
 margin-bottom:0px;
-color:#dc9030;
+color: #cd7616;
 }
  
 
@@ -109,7 +132,7 @@ color:#dc9030;
     color:#8a4f09;
 }
 .panel.open   a:hover{
-    color:#e4d3b7;
+    color: #b4a183;
 } 
 #example2  li h6 a:hover
 {
@@ -117,7 +140,7 @@ color:#dc9030;
 
  }
 .yt,accordion-opener{
-    color: #dc9030;
+    color: #cd7616;
 }
  #example2  li a h6:hover
 {
@@ -126,7 +149,7 @@ color:#dc9030;
  }
  h4{
  color:orange;
- text-transform: uppercase;
+
  text-align: left;
  }
  h6 a:hover{
@@ -138,8 +161,8 @@ hr
   border: 0;
   width: 100%;
   color: #f00;
-background-color: #8a4e05;
-height: 2px;
+background-color: #e18316;
+height: 3px;
 }
  
 .top-bar > ul .name img {
@@ -227,11 +250,12 @@ table thead tr th:last-child, table tfoot tr td:last-child { border-right: none;
 table tbody tr.even, table tbody tr.alt { background: #f9f9f9; }
 
 table tbody tr:nth-child(even) { background: #f9f9f9; }
-table tbody tr:hover { background-color: blue; }
+table tbody tr:hover { background-color: #fffef6; }
 
 table tbody tr td { color: #333; padding: 9px 10px; vertical-align: top; border: none; }
 table tbody tr td a { color: #000; }
 table tbody tr td a:hover { color: #fff;
+
                            }
 
 .nivoSlider {
@@ -311,18 +335,29 @@ ol ol{
     padding: 10px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
+
 }
 #slides {
-margin-top:20px;
+margin-top:5px;
  
 }
 #showphotos{
-text-align:center;
-border-radius: 8px 8px 5px 5px; 
--moz-border-radius: 8px 8px 5px 5px; 
--webkit-border-radius: 8px 8px 5px 5px; 
+text-align:justify;
+ 
+border-radius: 6px 6px 6px 6px;
+-moz-border-radius: 6px 6px 6px 6px;
+-webkit-border-radius: 6px 6px 6px 6px;
 border: 2px double #FAC002;
 }
+#showphotos a {
+margin :1px;
+padding: 4px 4px 1px 11px;
+}
+#showphotos img {
+	margin-top:1px;
+   border:1px solid #021a40;
+   background-color:#ff0;
+   }
 .group-info{
 list-style:none;
 }
@@ -429,24 +464,25 @@ font-size:15px;;
 /*** table's thead section, coulmns header style ***/
 
 table.formatHTML5 thead tr th
-{background-image:url('/laravel/img/button.jpg');
+{background-color:#ded0b3;
 
 
     border: 2px solid;
     border-color:#ded0b3;
     font-family: 'Gloria Hallelujah', cursive;
-    font-size:14px;
+    font-size:12px;
     font-weight: bold;
     color: #894f05;
-    text-align: center;
+    text-align: justify;
 
 
-    /*   -moz-transform: rotate(7deg);
-       -webkit-transform: rotate(7deg);
-       -o-transform: rotate(7deg);
-       -ms-transform: rotate(7deg);
-       transform: rotate(7deg);
-   */
+    /* css3 extras */
+    -webkit-box-shadow:0 0px 1px rgba(0,0,0,0.1),
+    -1px 1px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow:0 0px 1px rgba(0,0,0,0.1),
+    -1px 1px 1px rgba(0,0,0,0.2);
+    box-shadow:0 0px 1px rgba(0,0,0,0.1),
+    -1px 0px 2px rgba(0,0,0,0.2);
 }
 
 
@@ -454,12 +490,6 @@ table.formatHTML5 thead tr th:first-child { border-radius: 9px 0 0 0; }
 table.formatHTML5 thead tr th:last-child{ border-radius: 0 9px 0 0; }
 /*** table's tbody section, odd rows style ***/
 
-table.formatHTML5 thead:after {
-    line-height:1em;
-    content:"-";
-    color:white; /* to hide text */
-    display:block;
-}
 table.formatHTML5 tbody{
     margin-top:10px;
     padding-top:10px;
@@ -468,14 +498,14 @@ table.formatHTML5 tbody{
 }
 table.formatHTML5 tbody tr td a{
     color:#dd8a2a;
-    font-size:14px;
-    text-transform: uppercase;
+    font-size:12px;
+
     font-weight: bolder;
 }
 table.formatHTML5 tbody tr td{
 
-    background-image:url('/laravel/img/button.jpg');
-
+    /*background-image:url('/laravel/img/button.jpg');
+*/
 
     border: 1px solid;
     border-color:#ded0b3;
@@ -483,7 +513,7 @@ table.formatHTML5 tbody tr td{
     font-size:12px;
 
     color: #894f05;
-    text-align: center;
+
     -webkit-border-top-left-radius: 3px;
     -webkit-border-bottom-left-radius: 3px;
     -moz-border-radius-topleft: 3px;
@@ -494,7 +524,7 @@ table.formatHTML5 tbody tr td{
 }
 table.formatHTML5 tbody tr:nth-child(odd) {
 
-background-color: #fafafa;
+    background-image:url('/laravel/img/button.jpg');
 
 
 
@@ -512,11 +542,11 @@ cursor:pointer;
 
 /* add gradient */
 
-background-color: #808080;
+background-color: #807378;
 
-background: -webkit-gradient(linear, left top, left bottom, from(#606060), to(#909090));
+background: -webkit-gradient(linear, left top, left bottom, from(#f5b958), to(rgba(97, 80, 72, 0.2)));
 
-background: -moz-linear-gradient(top, #606060, #909090);
+background: -moz-linear-gradient(top, #f5b958, rgba(97, 80, 72, 0.2));
 
 color: #dadada;
 
@@ -528,7 +558,8 @@ color: #dadada;
 
 table.formatHTML5 tbody tr:nth-child(even) {
 
-background-color: #efefef;
+background-color:#ded0b3;
+;
 
 }
 
@@ -543,11 +574,13 @@ cursor:pointer;
 
 /* add gradient */
 
-background-color: #808080;
+background-color: #807378;
 
-background: -webkit-gradient(linear, left top, left bottom, from(#606060), to(#909090));
+background: -webkit-gradient(linear, left top, left bottom, from(#f5b958), to(rgba(97, 80, 72, 0.2)));
 
-background: -moz-linear-gradient(top, #606060, #909090);
+background: -moz-linear-gradient(top, #f5b958, rgba(97, 80, 72, 0.2));
+
+
 
 color: #dadada;
 
@@ -606,8 +639,7 @@ color:#303030;
 text-shadow: 0 1px 1px rgba(255,255,255,0.3);
 
 }
- 
- 
+
  
 .titlestyle  h1 {
  	margin-top:0px;
@@ -650,7 +682,7 @@ hr.rowing2{
     display:  inline;
     float:left;
     list-style-type: none;
-    padding-right: 20px;
+    padding:0 40px;
 
 
 }
@@ -661,9 +693,9 @@ hr.rowing2{
     padding:15px;
     font-family: 'Gloria Hallelujah', cursive;
     font-size:15px;
-
+    margin-bottom:20px;
     color: #000;
-    width:200px;
+    width:250px;
     font-size:0.8em;
     height:200px;
     /*   -moz-transform: rotate(7deg);
@@ -703,19 +735,19 @@ hr.rowing2{
     color: #8a4e06;
     font-size: 20px;
     font-weight: bold;
-    text-transform: capitalize;
+
 }
 .program-it h5 a{
     color: #8a4e06;
     font-size: 20px;
     font-weight: bold;
-    text-transform: capitalize;
+
 }
 .program-it h4, a{
    color: #8a4e06;
    font-size: 12px;
-    text-transform: capitalize;
-    text-align:center;
+
+    text-align:left;
 }
 .programit li{
     display:  inline;
@@ -736,10 +768,9 @@ hr.rowing2{
     background:#ded0b3;
     padding-left:25px;
     font-family: 'Gloria Hallelujah', cursive;
-    font-size:15px;
     color: #000;
-    width:180px;
-    height:193px;
+    width:200px;
+    height:150px;
     font-size:0.8em;
     /*   -moz-transform: rotate(7deg);
        -webkit-transform: rotate(7deg);
@@ -758,15 +789,17 @@ hr.rowing2{
 
 .program-it:hover {
 
-    -moz-transform: scale(2);
-    -webkit-transform: scale(2);
-    -o-transform: scale(2);
-    transform: scale(2);
-    -ms-transform: scale(2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
     filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand',
-    M11=2, M12=-0, M21=0, M22=2);
+    M11=1.2, M12=-0, M21=0, M22=1.2);
 }
-
+h4.group-name{
+    font-size:10px;
+}
 /* theater adresses */
 .theaters {
     width: 120px;
@@ -854,3 +887,267 @@ hr.rowing2{
     overflow:hidden;
 }
 
+.move {
+    -moz-animation: anim2 ease-in-out 4s   alternate;
+    -webkit-animation: anim2 ease-in-out 4s   alternate; }
+@-moz-keyframes anim2
+{
+    from {left: 0px;   -moz-transform: scale(1.0) rotate(0deg)   }
+    50%  {left: 250px; -moz-transform: scale(0.8) rotate(10deg)  }
+    to   {left: 500px; -moz-transform: scale(1.2) rotate(-20deg) }
+}
+@-webkit-keyframes anim2
+{
+    from {left: 0px;   -webkit-transform: scale(1.0) rotate(0deg)   }
+    50%  {left: 250px; -webkit-transform: scale(0.8) rotate(10deg)  }
+    to   {left: 500px; -webkit-transform: scale(1.2) rotate(-20deg) }
+}
+
+
+table.formatHTML5-show {
+    background:none;
+    width: 100%;
+
+    color: #606060;
+    border: none;
+    border-spacing: 20px 0px  ;
+    border-collapse:separate;
+}
+
+/*** table's thead section, head row style ***/
+
+table.formatHTML5-show thead tr td {
+    vertical-align:top;
+    font-size:15px;;
+}
+
+/*** table's thead section, coulmns header style ***/
+
+table.formatHTML5-show thead tr th
+{background-color:#ded0b3;
+
+
+    border: 2px solid;
+    border-color:#ded0b3;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size:14px;
+    font-weight: bold;
+    color: #894f05;
+
+
+
+    /* css3 extras */
+    -webkit-box-shadow:0 0px 1px rgba(0,0,0,0.1),
+    -1px 1px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow:0 0px 1px rgba(0,0,0,0.1),
+    -1px 1px 1px rgba(0,0,0,0.2);
+    box-shadow:0 0px 1px rgba(0,0,0,0.1),
+    -1px 0px 2px rgba(0,0,0,0.2);
+}
+
+
+table.formatHTML5-show thead tr th:first-child { border-radius: 9px 0 0 0; }
+table.formatHTML5-show thead tr th:last-child{ border-radius: 0 9px 0 0; }
+/*** table's tbody section, odd rows style ***/
+
+table.formatHTML5-show tbody{
+    margin-top:10px;
+    padding-top:10px;
+    border-collapse:collapse;
+    color:#dd8a2a;
+}
+table.formatHTML5-show tbody tr td a{
+    color:#dd8a2a;
+    font-size:14px;
+
+    font-weight: bolder;
+}
+table.formatHTML5-show tbody tr td{
+
+    /*background-image:url('/laravel/img/button.jpg');
+*/
+
+    border: 1px solid;
+    border-color:#ded0b3;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size:12px;
+
+    color: #894f05;
+    text-align: center;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+
+}
+table.formatHTML5-show tbody tr:nth-child(odd) {
+
+    background-image:url('/laravel/img/button.jpg');
+
+
+
+}
+
+
+
+/*** hover effect to table's tbody odd rows ***/
+
+table.formatHTML5-show tbody tr:nth-child(odd):hover
+
+{
+
+    cursor:pointer;
+
+    /* add gradient */
+
+    background-color: #807378;
+
+    background: -webkit-gradient(linear, left top, left bottom, from(#f5b958), to(rgba(97, 80, 72, 0.2)));
+
+    background: -moz-linear-gradient(top, #f5b958, rgba(97, 80, 72, 0.2));
+
+    color: #dadada;
+
+}
+
+
+
+/*** table's tbody section, even rows style ***/
+
+table.formatHTML5-show tbody tr:nth-child(even) {
+
+    background-color:#ded0b3;
+;
+
+}
+
+
+/*** hover effect to apply to table's tbody section, even rows ***/
+
+table.formatHTML5-show tbody tr:nth-child(even):hover
+
+{
+
+    cursor:pointer;
+
+    /* add gradient */
+
+    background-color: #807378;
+
+    background: -webkit-gradient(linear, left top, left bottom, from(#f5b958), to(rgba(97, 80, 72, 0.2)));
+
+    background: -moz-linear-gradient(top, #f5b958, rgba(97, 80, 72, 0.2));
+
+
+
+    color: #dadada;
+
+}
+
+
+
+/*** table's tbody section, last row style ***/
+
+table.formatHTML5-show tbody tr:last-child {
+
+
+    border-radius: 0 9px 0 0;
+
+}
+table.formatHTML5-show tbody tr:first-child {
+
+
+    border-radius: 9px 0 0 0;
+
+}
+
+/*** table's tbody section, separator row pseudo-class ***/
+
+table.formatHTML5-show tbody tr.separator {
+
+    /* add gradient */
+
+    background-color: #808080;
+
+    background: -webkit-gradient(linear, left top, left bottom, from(#606060), to(#909090));
+
+    background: -moz-linear-gradient(top, #606060, #909090);
+
+    color: #dadada;
+
+
+}
+
+
+
+/*** table's td element, all section ***/
+
+
+
+
+
+/*** table's tfoot section ***/
+
+table.formatHTML5-show tfoot{
+
+    text-align:center;
+
+    color:#303030;
+
+    text-shadow: 0 1px 1px rgba(255,255,255,0.3);
+
+}
+
+.specialbutton {
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 15px;
+    vertical-align: text-bottom;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-box-shadow: 2px 1px 3px #666666;
+    -moz-box-shadow: 2px 1px 3px #666666;
+    text-shadow: 1px 1px 15px #666666;
+    border: solid #eb842a 2px;
+    background: #eb842a;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffd042), to(#eb842a));
+    background: -moz-linear-gradient(top, #ffd042, #eb842a);
+}
+.specialbutton:hover {
+    background: #805304;
+}
+.article p{
+    text-align:justify;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    line-height:175%;
+    margin-top: 0.8em;
+
+}
+hr.special{
+    border: 0;
+    width: 100%;
+    color: #f00;
+    background-color: #8a4e05;
+    height: 1px;
+}
+h2.makale{
+    font-size:18px;
+}
+.crew p{
+    text-align:center;
+}
+h1.welcome{
+    color: #8a4e05;
+    letter-spacing:3px;
+    font-size: 37px;
+    text-align:center;
+    text-transform: capitalize;
+    font-family: 'Griffy', cursive;
+
+}

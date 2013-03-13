@@ -9,36 +9,48 @@
 @endsection
 
 @section('content')
- <div class="row">
+<div class="row">
+    <!-- Main Content Section -->
+    <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
+    <div class="nine columns push-three">
 
+        <hr />
+        <div class="row">
+            <div class="two columns push-four ">
+                <div class="titlestyle">
+                    <h2>Exhibitions</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="twelve columns">
 
-     <br />
-     <br />
-     <!-- Main Content Section -->
-     <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
-     <div class="nine columns push-three">
+                <ul class="postit">
 
-         <div class="titlestyle">
-             <h2>Exhibitions</h2>
-         </div>
-         <ul class="postit">
+                    @foreach($others as $other)
+                    <li>
+                        <div class="post-it">
 
-             @foreach($others as $other)
-             <li>
-                 <div class="post-it">
+                            <h6>{{ HTML::link_to_action('home.others@show',$other->name_english,array($other->id),array('data-reveal-id'=>$other->id)) }}</h6>
+                            <br />
+                            <!--  <p>{{ HTML::link_to_action('home.others@show',Str::words(strip_tags($other->information),10),array($other->id),array('data-reveal-id'=>$other->id)) }}</p>-->
+                            <adress>
+                                <br />
+                                <p>Venue : {{ HTML::link_to_action('home.others@show',$other->place,array($other->id),array('data-reveal-id'=>$other->id)) }}</p>
+                                <br />
+                                <p>Date : {{ HTML::link_to_action('home.others@show',$other->date,array($other->id),array('data-reveal-id'=>$other->id)) }}</p>
+                            </adress>
+                        </div>
+                    </li>
+                    @endforeach
+                </ul>
+            </div>
 
-                     <h6>{{ HTML::link_to_action('home.shows@show',$other->name) }}</h6>
-                     <p>{{ HTML::link_to_action('home.shows@show',Str::words(strip_tags($other->information_english),10)) }}</p>
-                     <adress>
-                         <p>{{ HTML::link_to_action('home.shows@show',$other->place) }}</p>
-                         <p>{{ HTML::link_to_action('home.shows@show',$other->date) }}</p>
-                     </adress>
+        </div>
 
+    </div>
+    @endsection
 
-                 </div>
-             </li>
-             @endforeach
-
-         </ul>
-     </div>
-     @endsection
+    @section('footer')
+    @include('partials.showfooter')
+    @endsection

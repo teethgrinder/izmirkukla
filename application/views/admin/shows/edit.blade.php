@@ -88,6 +88,12 @@
             {{ $errors->has( 'information_english' ) ? $errors->first( 'information_english' ) : '' }}
          </p>
 
+            <p>
+            <h6>  Video Link: </h6> {{ Form::text( 'video_link', (Input::old('video_link') ?  Input::old('video_link') : $show->video_link)) }}
+            {{ $errors->has( 'video_link' ) ? $errors->first( 'video_link' ) : '' }}
+            </p>
+
+
 	{{ Form::submit( 'Değiştir' ,array('class'=>'button radius') ) }}
 	{{HTML::link_to_action('admin.shows@index','Tüm Oyunlar',array(),array('class'=>'button radius'))}}
 

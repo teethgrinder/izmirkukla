@@ -39,7 +39,7 @@
             <td>{{HTML::link_to_action('admin.shows@show',$show->information_english,array($show->slug))}}</td>
             <td>{{HTML::link_to_action('admin.shows@show',$show->type,array($show->slug))}}</td>
 
-            <td>{{HTML::link_to_action('admin.shows@edit', 'Düzenle',array($show->id),array('class' => 'button small radius')) }}
+            <td>{{HTML::link_to_action('admin.shows@edit', 'Düzenle',array($show->slug),array('class' => 'button small radius')) }}
                 {{HTML::link_to_action('admin.shows@delete','Sil',array($show->id),array('class'=>'alert small radius button',"onclick"=>"return confirm('Silmek için onaylayın')"))}}
             </td>
 		</tr>

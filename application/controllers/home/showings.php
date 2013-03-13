@@ -12,11 +12,11 @@ class Home_Showings_Controller extends Base_Controller
 		//$showings= Showing::where('date_calendar','=','showdate')->order_by('performance_date', 'ASC')->get();
 
 
-        $images = DB::table('images')->where('show_id','>',0)->order_by(DB::raw(''),DB::raw('RAND()'))->get();
+        $images = DB::table('images')->where('show_id','>',0)->order_by(DB::raw(''),DB::raw('RAND()'))->take(8)->get();
         if (Config::get('application.language') == 'tr'){
         return View::make('home.showings.index')->with('showingdates',$showingdates)->with('images',$images);
         }else{
-            return View::make('home.showings.english')->with('showingdates',$showingdates)->with('showings',$showings)->with('images',$images);
+            return View::make('home.showings.english')->with('showingdates',$showingdates)->with('images',$images);
 
         }
 
@@ -28,7 +28,7 @@ class Home_Showings_Controller extends Base_Controller
 
         $group = $show->group;
         $imageshows = $show->images;
-        $images = DB::table('images')->where('show_id','>',0)->order_by(DB::raw(''),DB::raw('RAND()'))->get();
+        $images = DB::table('images')->where('show_id','>',0)->order_by(DB::raw(''),DB::raw('RAND()'))->take(8)->get();
         return View::make('home.shows.show')->with('show',$show)->with('images',$images)->with('imageshows',$imageshows)->with('group',$group);
 	}
 	

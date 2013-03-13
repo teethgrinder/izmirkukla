@@ -31,7 +31,7 @@
 			<td> {{$show->age}} </td>
 			<td> {{$show->language}} </td>
 			<td>{{$show->information}}</a></td>
-			<td> {{HTML::link_to_action('admin.shows@edit', 'Düzenle',array($show->id),array('class'=>'button small radius'))}} </td>
+			<td> {{HTML::link_to_action('admin.shows@edit', 'Düzenle',array($show->slug),array('class'=>'button small radius'))}} </td>
 			<td> {{HTML::link_to_action('admin.groups@delete', 'Sil',array($show->id),array('class'=>'alert small button radius'))}} </td>
 		</tr>
 	 

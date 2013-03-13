@@ -9,45 +9,44 @@
 @endsection
 
 @section('content')
-<div class="row">
+ <div class="row">
 
 
 
      <!-- Main Content Section -->
      <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
      <div class="nine columns push-three">
-         <div id="contents">
-             <hr />
 
-        <div class="six columns">
-
-            <ul class="postit">
-
-             @foreach($others as $other)
-             <li>
-                 <div class="post-it">
-
-                     <h6>{{ HTML::link_to_action('home.shows@show',$other->name) }}</h6>
-                     <p>{{ HTML::link_to_action('home.shows@show',Str::words(strip_tags($other->information),10)) }}</p>
-                     <adress>
-                         <p>{{ HTML::link_to_action('home.shows@show',$other->place) }}</p>
-                         <p>{{ HTML::link_to_action('home.shows@show',$other->date) }}</p>
-                     </adress>
-
-
-                 </div>
-             </li>
-             @endforeach
-
-            </ul>
+         <div class="titlestyle">
+             <h2>Workshoplar</h2>
          </div>
-         <div class="two columns">
-             <div class="titlestyle">
-                 <h2>Workshoplar</h2>
-             </div>
-          </div>
+         <div id="contents">
+             <table id="Workshoplar"  class="formatHTML5" >
+                 <thead>
+                 <tr>
+                     <th>Grup Adı</th>
+                     <th>Workshop</th>
+                     <th>Ülkesi</th>
+                     <th>Mekan</th>
+                     <th>Tarih</th>
 
-        </div>
-    </div>
 
+                 </tr>
+                 </thead>
+
+
+                 <tbody>
+                 @foreach($shows as $show)
+                 <tr>
+                     <td>{{ HTML::link_to_action('home.shows@show',$group->name,array(Str::slug($show->name))) }}</td>
+                     <td>{{ HTML::link_to_action('home.shows@show',$show->name,array($show->id)) }}</td>
+                     <td>{{ HTML::link_to_action('home.shows@show',$group->country,array($show->id)) }}</td>
+                 </tr>
+                 @endforeach
+
+                 </tbody>
+             </table>
+
+         </div>
+     </div>
      @endsection

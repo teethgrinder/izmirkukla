@@ -24,28 +24,19 @@
 
 	    <p>
 		Ülke:
-        {{ Form::select( 'country', (CreateGroupForm::$country ? CreateGroupForm::$country : $group->country )) }}
+        {{ Form::select( 'country', (Input::old('country') ? (Input::old('country')  : $group->country )) }}
 		{{ $errors->has( 'country' ) ? $errors->first( 'country' ) : '' }}
 	    </p>
 
-        <p>
-		Grup Adı:
-        {{ Form::textarea( 'information', (Input::old('information') ?  Input::old('information') : $group->information)) }}
-		{{ $errors->has( 'information' ) ? $errors->first( 'information' ) : '' }}
-	    </p>
 
-        <h6>İngilizce Bilgiler</h6>
+        <h6>İngilizce Bilgiler :</h6>
 
         <p>
         Country:
-        {{ Form::select( 'country_english', (CreateGroupForm::$country_english ? CreateGroupForm::$country_english : $group->country_english )) }}
+        {{ Form::select( 'country_english', (Input::old('country_english')  ? (Input::old('country_english') : $group->country_english )) }}
         {{ $errors->has( 'country' ) ? $errors->first( 'country' ) : '' }}
         </p>
 
-        <p>
-        About:
-        {{ Form::textarea( 'information_english', (Input::old('information_english') ?  Input::old('information_english') : $group->information_english)) }}
-        {{ $errors->has( 'information_english' ) ? $errors->first( 'information_english' ) : '' }}
 
         {{ Form::submit( 'Değiştir' ,array('class'=>'button radius') ) }}
         {{HTML::link_to_action('admin.groups@index','Gruplara Dön',array(),array('class' => 'button radius'))}}

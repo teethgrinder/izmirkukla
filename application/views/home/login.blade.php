@@ -2,9 +2,7 @@
 @section('navigation')
 	@include('partials.navigation')
 @endsection
-@section('sidebar')
-  @include('partials.sidebar2')
-@endsection
+
 @section('content')
  <div class="row">    
 

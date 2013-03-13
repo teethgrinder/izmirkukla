@@ -11,42 +11,46 @@
 @section('content')
 
  <div class="row">
-
-
-
-     <!-- Main Content Section -->
      <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
      <div class="nine columns push-three">
-
-
-
-             <hr />
-
-
-
-             <div class="row">
-                 <div class="eight columns">
-
-        <ul class="custom-list">
-             @if($theaters)
-             @foreach($theaters as $theater)
-         <li><div class="theaters">
-             <h6>{{$theater->name}}</h6>
-             <p>{{ $theater->adress }}</p>
-         </div></li>
-             @endforeach
-             @endif
-        </ul>
-         </div>
-
-            <div class="two columns push-one">
+         <hr />
+         <div class="row">
+             <div class="two columns push-four">
                  <div class="titlestyle">
-                 <h2>Salonlar</h2>
+                     <h2>Salonlar</h2>
+                 </div>
              </div>
-             </div>
+         </div>
+         <div id="contents">
+
+             <div class="eight columns">
+
+                 <table id="Oyunlar"  class="formatHTML5" >
+                     <thead>
+                     <tr>
+                     <th>SALON ADI</th>
+                     <th>ADRES</th>
+                     </tr>
+                     </thead>
+                     <tbody>
+
+                 @foreach($theaters as $theater)
+                     <tr>
+                        <td>{{ $theater->name }} </td>
+                        <td>{{ $theater->adress }} </td>
+
+                     </tr>
+                @endforeach
+
+                     </tbody>
+                 </table>
              </div>
 
 
-
+        </div>
      </div>
-     @endsection
+@endsection
+
+@section('footer')
+@include('partials.footer')
+@endsection

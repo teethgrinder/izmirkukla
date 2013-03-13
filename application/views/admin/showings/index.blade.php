@@ -26,15 +26,15 @@
 
 
     <tbody>
-		@foreach(Showing::all() as $showing)
-       <?php $theater = $showing->theater;
+		@foreach($showings as $showing)
+       <?php  $theater = Theater::find($showing->theater_id);
               $show = Show::find($showing->show_id);
               $group = $show->group;
               $date = $showing->publish_date;
               $performance = $showing->get_language( $date );?>
         <tr>
 
-            <td>{{ HTML::link_to_action('admin.groups@show',$group->name,array($showing->show->id)) }}</td>
+            <td>{{ HTML::link_to_action('admin.groups@show',$showing->show->group->name,array($showing->show->id)) }}</td>
             <td>{{ HTML::link_to_action('admin.shows@show',$show->name,array($show->id)) }}</td>
            <!--  <td>{{ HTML::link_to_action('admin.shows@show',$showing->publish_date,array($show->id)) }}</td> -->
            <td>{{ HTML::link_to_action('admin.shows@show',$performance,array($show->id)) }}</td>

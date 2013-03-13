@@ -1,35 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/application/views/home/shows/show.blade.php" description="&lt;p&gt;Oyun Adı:{{$show-&gt;name}}&lt;/p&gt;" line="36" />
-    <bookmark url="file://$PROJECT_DIR$/application/views/home/shows/show.blade.php" description="&lt;p&gt;Oyun Dili:{{$show-&gt;language}}&lt;/p&gt;" line="37" />
-    <bookmark url="file://$PROJECT_DIR$/application/views/home/shows/show.blade.php" description="&lt;p&gt;Yaş Grubu:{{$show-&gt;age}}&lt;/p&gt;" line="38" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="30917087-26f4-4ecb-bb8e-30ebe7eb8e86" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/admin/news.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/forms/createnewsform.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/news.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/admin/news/add.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/admin/news/index.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/admin/news/show.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/home/pages/places.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/layouts/dashboard.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/partials/dashfooter.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/admin/habers.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/home/habers.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/home/subjects.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/forms/createhabersform.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/haber.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/admin/subjects/add_articles.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/admin/subjects/show_articles.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/home/habers/index.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/home/habers/show.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/home/others/show.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/home/pages/arsiv.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/home/pages/intro.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/home/pages/makale.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/home/subjects/show.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/home/subjects/show_en.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/layouts/intromain.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/partials/showfooter.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/partials/showfooter_en.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/partials/singleshowfooter.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/foundation/customintro.css" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/controllers/admin.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/controllers/admin/dash.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/controllers/admin/news.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/controllers/admin/page.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/controllers/admin/theater.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/controllers/admin/user.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/controllers/home.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/controllers/home/page.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/controllers/pages.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/controllers/sandbox/2012_11_19_202224_create_users.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/controllers/sandbox/2012_11_19_211658_create_roles.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/controllers/sandbox/2012_11_19_211709_create_role_user.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/controllers/sandbox/admin.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/controllers/sandbox/home.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/controllers/sandbox/pages.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/creategroupform.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/exroute.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/migrations/2012_11_19_202224_create_users.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/migrations/2012_11_19_210648_create_pages.php" afterPath="" />
@@ -38,11 +44,11 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/migrations/2012_12_17_202615_create_groups.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/migrations/2012_12_17_210312_create_shows_theaters.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/migrations/2012_12_18_083224_create_shows_dates.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/migrations/2013_01_28_074034_create_news.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/models/date.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/models/news.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/models/role.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/admin/page/index.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/home/page/home.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/home/page/homepage.blade.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/home/pages/workshop.blade.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/homepage.blade.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/bundles/bootstrapper/.gitignore" afterPath="" />
@@ -90,8 +96,310 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/bundles/bootstrapper/js/bootstrap.min.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/bundles/bootstrapper/js/jquery-1.8.2.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/bundles/bootstrapper/js/jquery-1.8.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/foundation/images/foundation/orbit/left-arrow-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/foundation/images/foundation/orbit/right-arrow-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/.gitignore" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/bilet1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/bilet2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/foundation/fc-webicon-facebook-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/foundation/fc-webicon-facebook-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/foundation/fc-webicon-facebook.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/foundation/fc-webicon-facebook.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/foundation/fc-webicon-twitter-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/foundation/fc-webicon-twitter-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/foundation/fc-webicon-twitter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/foundation/fc-webicon-twitter.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/foundation/orbit/bullets.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/foundation/orbit/left-arrow-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/foundation/orbit/left-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/foundation/orbit/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/foundation/orbit/mask-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/foundation/orbit/pause-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/foundation/orbit/right-arrow-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/foundation/orbit/right-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/foundation/orbit/rotator-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/foundation/orbit/timer-black.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/postakutusu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/sayfa1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/sayfa2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/sayfa3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/sayfa4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/sayfa5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/1/large-50ea947a5f9c2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/1/large-50eb218a2c2f6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/1/large-50f486c95f0c3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/1/large-50f5855faf021.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/1/large-50fb26025710c.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/1/page-50eb218a2c2f6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/1/page-50f5855faf021.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/1/thumb-50ea947a5f9c2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/1/thumb-50eb218a2c2f6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/1/thumb-50f486c95f0c3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/1/thumb-50f5855faf021.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/1/thumb-50fb26025710c.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/2/large-50ea948ab215f.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/2/large-50eb219d26bd6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/2/large-50f48882ce9ef.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/2/large-50fb2776eca29.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/2/page-50eb219d26bd6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/2/page-50f48882ce9ef.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/2/thumb-50ea948ab215f.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/2/thumb-50eb219d26bd6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/2/thumb-50f48882ce9ef.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/2/thumb-50fb2776eca29.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/3/large-50eb21b855536.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/3/large-50f585a9162c5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/3/large-50fdcac581c75.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/3/page-50eb21b855536.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/3/page-50f585a9162c5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/3/page-50fdcac581c75.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/3/thumb-50eb21b855536.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/3/thumb-50f585a9162c5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/3/thumb-50fdcac581c75.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/4/large-50fdcadf4bbdb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/4/page-50fdcadf4bbdb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/4/thumb-50fdcadf4bbdb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/5/large-50fdcb0938e7a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/5/page-50fdcb0938e7a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/5/thumb-50fdcb0938e7a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/6/large-50fdcbb2075c8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/6/page-50fdcbb2075c8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/6/thumb-50fdcbb2075c8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/7/large-50fdcdc7987ef.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/7/page-50fdcdc7987ef.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/7/thumb-50fdcdc7987ef.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/9/large-50fdcddb6ad9c.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/9/page-50fdcddb6ad9c.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uploads/9/thumb-50fdcddb6ad9c.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/README.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/fc-webicons.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/fc-webicons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/images/fc-webicon-facebook-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/images/fc-webicon-facebook-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/images/fc-webicon-facebook.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/images/fc-webicon-facebook.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/images/fc-webicon-twitter-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/images/fc-webicon-twitter-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/images/fc-webicon-twitter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/images/fc-webicon-twitter.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/README.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/fc-webicons.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/fc-webicons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-aboutme-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-aboutme-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-aboutme.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-aboutme.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-adn-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-adn-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-adn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-adn.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-android-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-android-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-android.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-android.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-apple-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-apple-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-apple.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-apple.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-behance-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-behance-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-behance.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-behance.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-bitbucket-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-bitbucket-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-bitbucket.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-bitbucket.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-creativecloud-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-creativecloud-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-creativecloud.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-creativecloud.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-dribbble-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-dribbble-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-dribbble.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-dribbble.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-dropbox-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-dropbox-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-dropbox.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-dropbox.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-evernote-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-evernote-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-evernote.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-evernote.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-facebook-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-facebook-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-facebook.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-facebook.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-flickr-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-flickr-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-flickr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-flickr.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-foursquare-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-foursquare-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-foursquare.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-foursquare.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-git-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-git-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-git.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-git.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-github-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-github-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-github.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-github.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-googleplay-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-googleplay-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-googleplay.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-googleplay.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-googleplus-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-googleplus-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-googleplus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-googleplus.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-html5-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-html5-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-html5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-html5.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-icloud-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-icloud-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-icloud.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-icloud.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-instagram-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-instagram-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-instagram.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-instagram.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-lastfm-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-lastfm-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-lastfm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-lastfm.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-linkedin-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-linkedin-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-linkedin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-linkedin.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-mail-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-mail-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-mail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-mail.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-mercurial-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-mercurial-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-mercurial.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-mercurial.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-mixi-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-mixi-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-mixi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-mixi.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-msn-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-msn-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-msn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-msn.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-orkut-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-orkut-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-orkut.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-orkut.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-pinterest-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-pinterest-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-pinterest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-pinterest.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-pocketapp-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-pocketapp-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-pocketapp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-pocketapp.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-quora-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-quora-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-quora.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-quora.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-rdio-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-rdio-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-rdio.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-rdio.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-renren-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-renren-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-renren.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-renren.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-rss-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-rss-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-rss.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-rss.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-skitch-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-skitch-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-skitch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-skitch.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-skype-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-skype-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-skype.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-skype.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-soundcloud-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-soundcloud-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-soundcloud.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-soundcloud.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-spotify-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-spotify-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-spotify.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-spotify.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-stackoverflow-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-stackoverflow-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-stackoverflow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-stackoverflow.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-stumbleupon-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-stumbleupon-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-stumbleupon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-stumbleupon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-svn-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-svn-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-svn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-svn.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-tent-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-tent-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-tent.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-tent.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-tripadvisor-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-tripadvisor-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-tripadvisor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-tripadvisor.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-tumblr-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-tumblr-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-tumblr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-tumblr.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-twitter-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-twitter-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-twitter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-twitter.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-vimeo-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-vimeo-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-vimeo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-vimeo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-weibo-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-weibo-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-weibo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-weibo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-windows-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-windows-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-windows.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-windows.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-wordpress-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-wordpress-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-wordpress.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-wordpress.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-xing-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-xing-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-xing.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-xing.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-yelp-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-yelp-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-yelp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-yelp.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-youtube-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-youtube-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-youtube.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-youtube.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-youversion-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-youversion-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-youversion.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-youversion.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-zerply-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-zerply-s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-zerply.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/webicons/webicons-master/webicons-master/images/fc-webicon-zerply.svg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/laravel/css/jquery.fancybox-1.3.4.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/laravel/css/nivo-slider.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/laravel/css/normalize.css" afterPath="" />
@@ -122,6 +430,13 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/laravel/fancybox/jquery.fancybox-1.3.4.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/laravel/fancybox/jquery.fancybox-1.3.4.pack.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/laravel/fancybox/jquery.mousewheel-3.0.4.pack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/laravel/img/Web-Development.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/laravel/img/Web2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/laravel/img/sky_15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/laravel/img/web05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/laravel/img/web06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/laravel/img/web3i.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/laravel/img/web_tasarimi.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/laravel/img/wooden.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/laravel/img/wooden2.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/laravel/img/wooden2.png" afterPath="" />
@@ -159,69 +474,95 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/laravel/js/jquery.mousewheel-3.0.4.pack.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/laravel/js/preloader.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/laravel/js/styler.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/foundation/images/foundation/orbit/left-arrow.png" afterPath="$PROJECT_DIR$/public/css/foundation/images/foundation/orbit/left-arrow.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/foundation/images/foundation/orbit/right-arrow.png" afterPath="$PROJECT_DIR$/public/css/foundation/images/foundation/orbit/right-arrow.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/laravel/img/bilet2.png" afterPath="$PROJECT_DIR$/public/laravel/img/bilet2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/laravel/img/english.png" afterPath="$PROJECT_DIR$/public/laravel/img/english.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/laravel/img/turkey.png" afterPath="$PROJECT_DIR$/public/laravel/img/turkey.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/admin/groups.php" afterPath="$PROJECT_DIR$/application/controllers/admin/groups.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/admin/others.php" afterPath="$PROJECT_DIR$/application/controllers/admin/others.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/admin/showings.php" afterPath="$PROJECT_DIR$/application/controllers/admin/showings.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/admin/shows.php" afterPath="$PROJECT_DIR$/application/controllers/admin/shows.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/admin/subjects.php" afterPath="$PROJECT_DIR$/application/controllers/admin/subjects.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/admin/theaters.php" afterPath="$PROJECT_DIR$/application/controllers/admin/theaters.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/home/others.php" afterPath="$PROJECT_DIR$/application/controllers/home/others.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/home/pages.php" afterPath="$PROJECT_DIR$/application/controllers/home/pages.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/home/showings.php" afterPath="$PROJECT_DIR$/application/controllers/home/showings.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/home/shows.php" afterPath="$PROJECT_DIR$/application/controllers/home/shows.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/pages.php" afterPath="$PROJECT_DIR$/application/controllers/pages.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/language/en/izmirkukla.php" afterPath="$PROJECT_DIR$/application/language/en/izmirkukla.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/language/tr/izmirkukla.php" afterPath="$PROJECT_DIR$/application/language/tr/izmirkukla.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/migrations/2012_12_17_200705_create_groups.php" afterPath="$PROJECT_DIR$/application/migrations/2012_12_17_200705_create_groups.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/migrations/2012_12_20_234556_create_images.php" afterPath="$PROJECT_DIR$/application/migrations/2012_12_20_234556_create_images.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/forms/creategroupform.php" afterPath="$PROJECT_DIR$/application/models/forms/creategroupform.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/group.php" afterPath="$PROJECT_DIR$/application/models/group.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/image.php" afterPath="$PROJECT_DIR$/application/models/image.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/show.php" afterPath="$PROJECT_DIR$/application/models/show.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/showing.php" afterPath="$PROJECT_DIR$/application/models/showing.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/routes.php" afterPath="$PROJECT_DIR$/application/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/dashboard/index.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/dashboard/index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/groups/add.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/groups/add.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/groups/add_photo.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/groups/add_photo.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/groups/edit.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/groups/edit.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/groups/index.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/groups/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/groups/index_photo.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/groups/index_photo.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/groups/show.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/groups/show.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/groups/show_photos.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/groups/show_photos.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/showings/add.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/showings/add.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/showings/edit.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/showings/edit.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/showings/index.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/showings/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/showings/show.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/showings/show.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/shows/add.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/shows/add.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/shows/add_conference.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/shows/add_conference.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/shows/add_conference_en.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/shows/add_conference_en.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/shows/add_exhibition.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/shows/add_exhibition.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/shows/add_exhibition_en.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/shows/add_exhibition_en.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/shows/add_info.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/shows/add_info.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/shows/add_photo.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/shows/add_photo.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/shows/add_workshop.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/shows/add_workshop.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/shows/add_workshop_en.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/shows/add_workshop_en.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/shows/edit.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/shows/edit.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/shows/index.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/shows/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/shows/index_photo.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/shows/index_photo.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/shows/others.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/shows/others.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/shows/show.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/shows/show.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/shows/workshop.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/shows/workshop.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/subjects/add.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/subjects/add.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/subjects/add_crew.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/subjects/add_crew.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/subjects/edit.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/subjects/edit.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/subjects/index.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/subjects/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/subjects/show.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/subjects/show.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/theaters/add.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/theaters/add.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/theaters/edit.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/theaters/edit.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/theaters/index.blade.php" afterPath="$PROJECT_DIR$/application/views/admin/theaters/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/contactform/contact.php" afterPath="$PROJECT_DIR$/application/views/home/contactform/contact.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/contactform/demo.php" afterPath="$PROJECT_DIR$/application/views/home/contactform/demo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/contactform/form/contact.php" afterPath="$PROJECT_DIR$/application/views/home/contactform/form/contact.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/contactform/form/css/ie.css" afterPath="$PROJECT_DIR$/application/views/home/contactform/form/css/ie.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/contactform/form/css/style.css" afterPath="$PROJECT_DIR$/application/views/home/contactform/form/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/contactform/form/demo.php" afterPath="$PROJECT_DIR$/application/views/home/contactform/form/demo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/contactform/form/js/main.js" afterPath="$PROJECT_DIR$/application/views/home/contactform/form/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/contactform/form/process-form.php" afterPath="$PROJECT_DIR$/application/views/home/contactform/form/process-form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/contactform/process-form.php" afterPath="$PROJECT_DIR$/application/views/home/contactform/process-form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/exhibitions/index.blade.php" afterPath="$PROJECT_DIR$/application/views/home/exhibitions/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/groups/index.blade.php" afterPath="$PROJECT_DIR$/application/views/home/groups/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/login.blade.php" afterPath="$PROJECT_DIR$/application/views/home/login.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/page/homepage.blade.php" afterPath="$PROJECT_DIR$/application/views/home/page/homepage.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/pages/anasayfa.blade.php" afterPath="$PROJECT_DIR$/application/views/home/pages/anasayfa.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/pages/articles.blade.php" afterPath="$PROJECT_DIR$/application/views/home/pages/articles.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/pages/basin.blade.php" afterPath="$PROJECT_DIR$/application/views/home/pages/basin.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/pages/conferences.blade.php" afterPath="$PROJECT_DIR$/application/views/home/pages/conferences.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/pages/contact.blade.php" afterPath="$PROJECT_DIR$/application/views/home/pages/contact.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/pages/crew.blade.php" afterPath="$PROJECT_DIR$/application/views/home/pages/crew.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/pages/destekleyenler.blade.php" afterPath="$PROJECT_DIR$/application/views/home/pages/destekleyenler.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/pages/ekip.blade.php" afterPath="$PROJECT_DIR$/application/views/home/pages/ekip.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/pages/exhibitions.blade.php" afterPath="$PROJECT_DIR$/application/views/home/pages/exhibitions.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/pages/homepage.blade.php" afterPath="$PROJECT_DIR$/application/views/home/pages/homepage.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/pages/iletisim.blade.php" afterPath="$PROJECT_DIR$/application/views/home/pages/iletisim.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/pages/konferanslar.blade.php" afterPath="$PROJECT_DIR$/application/views/home/pages/konferanslar.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/pages/makaleler.blade.php" afterPath="$PROJECT_DIR$/application/views/home/pages/makaleler.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/pages/manifest.blade.php" afterPath="$PROJECT_DIR$/application/views/home/pages/manifest.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/pages/manifesto.blade.php" afterPath="$PROJECT_DIR$/application/views/home/pages/manifesto.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/pages/places.blade.php" afterPath="$PROJECT_DIR$/application/views/home/pages/places.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/pages/presentation.blade.php" afterPath="$PROJECT_DIR$/application/views/home/pages/presentation.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/pages/press.blade.php" afterPath="$PROJECT_DIR$/application/views/home/pages/press.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/pages/salonlar.blade.php" afterPath="$PROJECT_DIR$/application/views/home/pages/salonlar.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/pages/sergiler.blade.php" afterPath="$PROJECT_DIR$/application/views/home/pages/sergiler.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/pages/sunum.blade.php" afterPath="$PROJECT_DIR$/application/views/home/pages/sunum.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/pages/supporters.blade.php" afterPath="$PROJECT_DIR$/application/views/home/pages/supporters.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/pages/viewshows.blade.php" afterPath="$PROJECT_DIR$/application/views/home/pages/viewshows.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/pages/workshoplar.blade.php" afterPath="$PROJECT_DIR$/application/views/home/pages/workshoplar.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/pages/workshops.blade.php" afterPath="$PROJECT_DIR$/application/views/home/pages/workshops.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/showings/index.blade.php" afterPath="$PROJECT_DIR$/application/views/home/showings/index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/shows/index.blade.php" afterPath="$PROJECT_DIR$/application/views/home/shows/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/shows/index_en.blade.php" afterPath="$PROJECT_DIR$/application/views/home/shows/index_en.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/shows/show.blade.php" afterPath="$PROJECT_DIR$/application/views/home/shows/show.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/shows/show_en.blade.php" afterPath="$PROJECT_DIR$/application/views/home/shows/show_en.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/layouts/main.blade.php" afterPath="$PROJECT_DIR$/application/views/layouts/main.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/partials/dashnav.blade.php" afterPath="$PROJECT_DIR$/application/views/partials/dashnav.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/partials/footer.blade.php" afterPath="$PROJECT_DIR$/application/views/partials/footer.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/partials/navigation.blade.php" afterPath="$PROJECT_DIR$/application/views/partials/navigation.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/partials/sidebar.blade.php" afterPath="$PROJECT_DIR$/application/views/partials/sidebar.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/foundation/custom.css" afterPath="$PROJECT_DIR$/public/css/foundation/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/foundation/foundation.css" afterPath="$PROJECT_DIR$/public/css/foundation/foundation.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/foundation/foundation.min.css" afterPath="$PROJECT_DIR$/public/css/foundation/foundation.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/accordion/jquery.accordion.2.0.js" afterPath="$PROJECT_DIR$/public/js/accordion/jquery.accordion.2.0.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/calendar/css/common.css" afterPath="$PROJECT_DIR$/public/js/calendar/css/common.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/horizontal.css" afterPath="$PROJECT_DIR$/public/js/horizontal.css" />
     </list>
@@ -240,9 +581,125 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="iletisim.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/home/pages/iletisim.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="46" selection-start="2546" selection-end="2570" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/home/users.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/layouts/main.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="anasayfa.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/home/pages/anasayfa.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1360700730853" expanded="true" signature="195:1667" placeholder="..." />
+                <marker date="1360700730853" expanded="true" signature="422:1574" placeholder="..." />
+                <marker date="1360700730853" expanded="true" signature="467:781" placeholder="..." />
+                <marker date="1360700730853" expanded="true" signature="832:958" placeholder="..." />
+                <marker date="1360700730853" expanded="true" signature="985:1562" placeholder="..." />
+                <marker date="1360700730853" expanded="true" signature="1027:1254" placeholder="..." />
+                <marker date="1360700730853" expanded="true" signature="1065:1234" placeholder="..." />
+                <marker date="1360700730853" expanded="true" signature="1295:1542" placeholder="..." />
+                <marker date="1360700730853" expanded="true" signature="1333:1522" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="groups.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/admin/groups.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="229" column="8" selection-start="6028" selection-end="6123" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/admin/groups/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="377" selection-end="459" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidebar.blade.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/partials/sidebar.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="33" selection-start="1919" selection-end="3015" vertical-scroll-proportion="0.031578947">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="subjects.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/home/subjects.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="8" selection-start="308" selection-end="356" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homepage.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/home/pages/homepage.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1360701142999" expanded="true" signature="198:1671" placeholder="..." />
+                <marker date="1360701142999" expanded="true" signature="435:1567" placeholder="..." />
+                <marker date="1360701142999" expanded="true" signature="474:779" placeholder="..." />
+                <marker date="1360701142999" expanded="true" signature="828:954" placeholder="..." />
+                <marker date="1360701142999" expanded="true" signature="981:1556" placeholder="..." />
+                <marker date="1360701142999" expanded="true" signature="1025:1253" placeholder="..." />
+                <marker date="1360701142999" expanded="true" signature="1062:1234" placeholder="..." />
+                <marker date="1360701142999" expanded="true" signature="1294:1537" placeholder="..." />
+                <marker date="1360701142999" expanded="true" signature="1331:1518" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/home/login.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="13" selection-start="1117" selection-end="1210" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -255,22 +712,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/application/views/admin/shows/add.blade.php" />
-        <option value="$PROJECT_DIR$/application/models/forms/creategroupform.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/shows/add_conference.blade.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/shows/add_conference_en.blade.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/shows/add_exhibition.blade.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/shows/add_exhibition_en.blade.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/shows/add_info.blade.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/shows/add_photo.blade.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/shows/add_workshop.blade.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/shows/add_workshop_en.blade.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/shows/edit.blade.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/shows/index.blade.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/shows/index_photo.blade.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/shows/others.blade.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/shows/workshop.blade.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/shows/show.blade.php" />
+        <option value="$PROJECT_DIR$/application/views/layouts/main.blade.php" />
+        <option value="$PROJECT_DIR$/application/views/partials/footer.blade.php" />
+        <option value="$PROJECT_DIR$/application/views/home/pages/anasayfa.blade.php" />
+        <option value="$PROJECT_DIR$/application/views/home/pages/homepage.blade.php" />
+        <option value="$PROJECT_DIR$/application/views/partials/sidebar.blade.php" />
+        <option value="$PROJECT_DIR$/application/views/home/pages/crew.blade.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/theaters/index.blade.php" />
+        <option value="$PROJECT_DIR$/application/controllers/admin/showings.php" />
+        <option value="$PROJECT_DIR$/application/models/show.php" />
+        <option value="$PROJECT_DIR$/application/models/group.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/showings/index.blade.php" />
+        <option value="$PROJECT_DIR$/application/models/showing.php" />
+        <option value="$PROJECT_DIR$/public/js/calendar/css/common.css" />
+        <option value="$PROJECT_DIR$/public/css/foundation/custom.css" />
+        <option value="$PROJECT_DIR$/application/views/home/showings/index.blade.php" />
+        <option value="$PROJECT_DIR$/application/views/home/pages/iletisim.blade.php" />
       </list>
     </option>
   </component>
@@ -278,8 +735,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
     <option name="y" value="26" />
-    <option name="width" value="1682" />
-    <option name="height" value="999" />
+    <option name="width" value="1368" />
+    <option name="height" value="717" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -307,6 +764,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -322,56 +780,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -408,6 +816,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="izmirkukla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="izmirkukla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -481,331 +907,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subjects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shows" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="showings" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="news" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="groups" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="izmirkukla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/js/calendar/scripts/common.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../puppetsite" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -868,19 +977,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="26" width="1682" height="999" extended-state="6" />
-    <editor active="false" />
+    <frame x="-1" y="26" width="1368" height="717" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2386781" sideWeight="0.32699168" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2386781" sideWeight="0.6646849" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23257576" sideWeight="0.1842576" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3037879" sideWeight="0.80322003" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -888,7 +997,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296582" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -945,121 +1054,129 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/application/controllers/home/shows.php</url>
-          <line>11</line>
+          <line>16</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="1" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/models/forms/creategroupform.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="2291" selection-end="2291" vertical-scroll-proportion="-16.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/shows/add_conference.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="10" selection-start="1795" selection-end="1857" vertical-scroll-proportion="0.84415585">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/shows/add.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="0" selection-start="3126" selection-end="3188" vertical-scroll-proportion="-30.458334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/shows/add_conference_en.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="9" selection-start="1818" selection-end="1880" vertical-scroll-proportion="-27.083334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/shows/add_exhibition.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/shows/add_exhibition_en.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="12" selection-start="1639" selection-end="1639" vertical-scroll-proportion="-21.458334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/shows/add_info.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/shows/add_photo.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="1" selection-start="828" selection-end="890" vertical-scroll-proportion="-26.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/shows/add_workshop.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="25" selection-start="497" selection-end="497" vertical-scroll-proportion="0.41666666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/shows/add_workshop_en.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="1881" selection-end="1943" vertical-scroll-proportion="-27.083334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/shows/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="13" selection-start="3609" selection-end="3671" vertical-scroll-proportion="-28.333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/shows/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="23" selection-start="592" selection-end="592" vertical-scroll-proportion="-14.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/shows/index_photo.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/shows/workshop.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/shows/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/admin/shows/others.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="57" selection-start="1393" selection-end="1393" vertical-scroll-proportion="0.8290489">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/admin/shows.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/admin/subjects.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/subjects/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/partials/navigation.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/home/pages/iletisim.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="46" selection-start="2546" selection-end="2570" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/admin/groups.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="229" column="8" selection-start="6028" selection-end="6123" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/groups/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.6673729" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/groups/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="377" selection-end="459" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/home/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="13" selection-start="1117" selection-end="1210" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/home/subjects.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="8" selection-start="308" selection-end="356" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/home/pages/homepage.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1360701142999" expanded="true" signature="198:1671" placeholder="..." />
+            <marker date="1360701142999" expanded="true" signature="435:1567" placeholder="..." />
+            <marker date="1360701142999" expanded="true" signature="474:779" placeholder="..." />
+            <marker date="1360701142999" expanded="true" signature="828:954" placeholder="..." />
+            <marker date="1360701142999" expanded="true" signature="981:1556" placeholder="..." />
+            <marker date="1360701142999" expanded="true" signature="1025:1253" placeholder="..." />
+            <marker date="1360701142999" expanded="true" signature="1062:1234" placeholder="..." />
+            <marker date="1360701142999" expanded="true" signature="1294:1537" placeholder="..." />
+            <marker date="1360701142999" expanded="true" signature="1331:1518" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/home/users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/layouts/main.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/home/pages/anasayfa.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1360700730853" expanded="true" signature="195:1667" placeholder="..." />
+            <marker date="1360700730853" expanded="true" signature="422:1574" placeholder="..." />
+            <marker date="1360700730853" expanded="true" signature="467:781" placeholder="..." />
+            <marker date="1360700730853" expanded="true" signature="832:958" placeholder="..." />
+            <marker date="1360700730853" expanded="true" signature="985:1562" placeholder="..." />
+            <marker date="1360700730853" expanded="true" signature="1027:1254" placeholder="..." />
+            <marker date="1360700730853" expanded="true" signature="1065:1234" placeholder="..." />
+            <marker date="1360700730853" expanded="true" signature="1295:1542" placeholder="..." />
+            <marker date="1360700730853" expanded="true" signature="1333:1522" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/partials/sidebar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="33" selection-start="1919" selection-end="3015" vertical-scroll-proportion="0.031578947">
           <folding />
         </state>
       </provider>

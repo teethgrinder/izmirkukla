@@ -14,6 +14,9 @@
 		{
 			return $this->has_many('Show');
 		}
+
+
+
 		public function images()
 		{
 				return $this->has_many('Image');

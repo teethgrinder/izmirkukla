@@ -1,0 +1,84 @@
+﻿<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xsi="http://www.w3.org/2001/XMLSchema-instance" sourceLibraryItemHRef="sprite 53" name="Sprite/sprite 53" linkageExportForAS="true" linkageIdentifier="Kukla_fla.tuslar_mc_16" linkageClassName="Kukla_fla.tuslar_mc_16">
+	<timeline>
+		<DOMTimeline name="sprite 53">
+			<layers>
+				<DOMLayer name="Layer 7" color="#CCCCCC">
+					<frames>
+						<DOMFrame index="0" duration="1" motionTweenSnap="false">
+							<elements>
+								<DOMSymbolInstance libraryItemName="Sprite/button 52" name="twitter_btn" symbolType="button" loop="loop">
+									<matrix>
+										<Matrix a="1.00000000" d="1.00000000" b="0.00000000" c="0.00000000" tx="-417.45" ty="302.00"/>
+									</matrix>
+									<color>
+										<Color alphaMultiplier="1.00000000" redMultiplier="1.00000000" blueMultiplier="1.00000000" greenMultiplier="1.00000000" alphaOffset="0" redOffset="0" blueOffset="0" greenOffset="0"/>
+									</color>
+									<transformationPoint>
+										<Point/>
+									</transformationPoint>
+								</DOMSymbolInstance>
+							</elements>
+						</DOMFrame>
+					</frames>
+				</DOMLayer>
+				<DOMLayer name="Layer 5" color="#FF800A">
+					<frames>
+						<DOMFrame index="0" duration="1" motionTweenSnap="false">
+							<elements>
+								<DOMSymbolInstance libraryItemName="Sprite/button 49" name="facebook_btn" symbolType="button" loop="loop">
+									<matrix>
+										<Matrix a="1.00000000" d="1.00000000" b="0.00000000" c="0.00000000" tx="-459.45" ty="302.00"/>
+									</matrix>
+									<color>
+										<Color alphaMultiplier="1.00000000" redMultiplier="1.00000000" blueMultiplier="1.00000000" greenMultiplier="1.00000000" alphaOffset="0" redOffset="0" blueOffset="0" greenOffset="0"/>
+									</color>
+									<transformationPoint>
+										<Point/>
+									</transformationPoint>
+								</DOMSymbolInstance>
+							</elements>
+						</DOMFrame>
+					</frames>
+				</DOMLayer>
+				<DOMLayer name="Layer 3" color="#9933CC">
+					<frames>
+						<DOMFrame index="0" duration="1" motionTweenSnap="false">
+							<elements>
+								<DOMSymbolInstance libraryItemName="Sprite/button 46" name="en_btn" symbolType="button" loop="loop">
+									<matrix>
+										<Matrix a="1.00000000" d="1.00000000" b="0.00000000" c="0.00000000" tx="539.50" ty="111.00"/>
+									</matrix>
+									<color>
+										<Color alphaMultiplier="1.00000000" redMultiplier="1.00000000" blueMultiplier="1.00000000" greenMultiplier="1.00000000" alphaOffset="0" redOffset="0" blueOffset="0" greenOffset="0"/>
+									</color>
+									<transformationPoint>
+										<Point/>
+									</transformationPoint>
+								</DOMSymbolInstance>
+							</elements>
+						</DOMFrame>
+					</frames>
+				</DOMLayer>
+				<DOMLayer name="Layer 1" color="#4FFF4F">
+					<frames>
+						<DOMFrame index="0" duration="1" motionTweenSnap="false">
+							<elements>
+								<DOMSymbolInstance libraryItemName="Sprite/button 39" name="tr_btn" symbolType="button" loop="loop">
+									<matrix>
+										<Matrix a="1.00000000" d="1.00000000" b="0.00000000" c="0.00000000" tx="414.50" ty="111.00"/>
+									</matrix>
+									<color>
+										<Color alphaMultiplier="1.00000000" redMultiplier="1.00000000" blueMultiplier="1.00000000" greenMultiplier="1.00000000" alphaOffset="0" redOffset="0" blueOffset="0" greenOffset="0"/>
+									</color>
+									<transformationPoint>
+										<Point/>
+									</transformationPoint>
+								</DOMSymbolInstance>
+							</elements>
+						</DOMFrame>
+					</frames>
+				</DOMLayer>
+			</layers>
+		</DOMTimeline>
+	</timeline>
+</DOMSymbolItem>

@@ -11,17 +11,15 @@
 @section('content')
 
  <div class="row">
-
-
-
-     <!-- Main Content Section -->
      <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
      <div class="nine columns push-three">
-
-         <br />
-
-         <div class="titlestyle">
-             <h2>Press</h2>
+         <hr />
+         <div class="row">
+             <div class="two columns push-four">
+                 <div class="titlestyle">
+                     <h2>Newsroom</h2>
+                 </div>
+             </div>
          </div>
          <div id="contents">
              @if($subject)
@@ -31,4 +29,8 @@
 
          </div>
      </div>
+@endsection
+
+@section('footer')
+@include('partials.footer')
 @endsection

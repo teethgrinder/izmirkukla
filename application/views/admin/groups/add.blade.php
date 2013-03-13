@@ -32,7 +32,7 @@
         <h5>Türkçe Bilgiler</h5>
 	    <p>
 		Ülke:
-        {{ Form::select( 'country', CreateGroupForm::$country, CreateGroupForm::old( 'country' ) ) }}
+        {{ Form::text( 'country', CreateGroupForm::old( 'country' ) ) }}
 		{{ $errors->has( 'country' ) ? $errors->first( 'country' ) : '' }}
 	    </p>
 
@@ -40,7 +40,7 @@
 
         <p>
         Country:
-        {{ Form::select( 'country_english', CreateGroupForm::$country_english, CreateGroupForm::old( 'country_english' ) ) }}
+        {{ Form::text( 'country_english', CreateGroupForm::old( 'country_english' ) ) }}
         {{ $errors->has( 'country_english' ) ? $errors->first( 'country_english' ) : '' }}
         </p>
 	    <br />

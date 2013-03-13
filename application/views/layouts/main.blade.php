@@ -3,11 +3,11 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gte IE 9 ]><html class="no-js ie9" lang="tr"> <![endif]-->
     <head>
 
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1;">
+        <!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
@@ -33,7 +33,7 @@
     	{{ HTML::style('js/thickbox.css') }}
         {{ HTML::style('css/foundation/custom.css') }}
 	    {{ HTML::style('js/calendar/css/common.css') }}
-	    {{ HTML::style('js/horizontal.css') }}
+
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
     </head>
@@ -47,7 +47,7 @@
 
 			@yield('navigation')
             @yield('content')
-            @yield('sidebar')
+            @include('partials.sidebar')
             @yield('footer')
         </div>
         <!-- end content -->
@@ -65,9 +65,7 @@
         {{ HTML::script('js/foundation/app.js') }}
         {{ HTML::script('js/accordionGallery.js') }}
         {{ HTML::script('js/nivo-slider/jquery.nivo.slider.pack.js') }}
-		{{ HTML::script('js/spacegallery/js/eye.js') }}
-		{{ HTML::script('js/spacegallery/js/utils.js') }}
-		{{ HTML::script('js/spacegallery/js/spacegallery.js') }}
+
 		{{ HTML::script('js/thickbox.js') }}
         {{ HTML::script('js/infogrid.js') }}
         {{ HTML::script('js/calendar/scripts/jquery.cookie.js') }}
@@ -77,11 +75,13 @@
 		{{ HTML::script('js/jquery-ui-timepicker-addon.js') }}
 		{{ HTML::script('js/jquery.ui.datepicker-tr.js') }}
 		{{ HTML::script('js/accordion/jquery.accordion.2.0.js') }}
-        {{ HTML::script('js/jquery.horizontalaccordion.js') }}
+
 
         <script type="text/javascript">
             $('#example2').accordion({
-                canToggle: true
+
+                canToggle: true, // Default: false
+
             });
 
         </script>
@@ -117,7 +117,7 @@
             $('#timepicker').timepicker();
 
           });
-         </script>-->
+         </script> -->
         
   
         <script type="text/javascript">
@@ -144,8 +144,33 @@
         lastSlide: function(){}, // Triggers when last slide is shown
         afterLoad: function(){} // Triggers when slider has loaded
 				});
-  
-		</script> 
+
+
+		</script>
+        <script type="text/javascript">
+            $('#showslides').nivoSlider({
+                effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
+                slices: 15, // For slice animations
+                boxCols: 8, // For box animations
+                boxRows: 4, // For box animations
+                animSpeed: 500, // Slide transition speed
+                pauseTime: 3000, // How long each slide will show
+                startSlide: 0, // Set starting Slide (0 index)
+                directionNav: true, // Next & Prev navigation
+                controlNav: true, // 1,2,3... navigation
+                controlNavThumbs: false, // Use thumbnails for Control Nav
+                pauseOnHover: true, // Stop animation while hovering
+                manualAdvance: false, // Force manual transitions
+                prevText: 'Prev', // Prev directionNav text
+                nextText: 'Next', // Next directionNav text
+                randomStart: false, // Start on a random slide
+                beforeChange: function(){}, // Triggers before a slide transition
+                afterChange: function(){}, // Triggers after a slide transition
+                slideshowEnd: function(){}, // Triggers after all slides have been shown
+                lastSlide: function(){}, // Triggers when last slide is shown
+                afterLoad: function(){} // Triggers when slider has loaded
+            });
+        </script>
 		<script>
                 CKEDITOR.replace( 'information',{
                     toolbar: 'Full',
@@ -189,7 +214,30 @@
                 });
 
         </script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#buttonForModal").click(function() {
+                    $("#myModal").reveal();
+                });
+            });
+        </script>
 
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#forumbutton").click(function() {
+                    $("#forumbornova").reveal();
+                });
+            });
+        </script>
 
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#forumbuttonen").click(function() {
+                    $("#forumbornovaen").reveal();
+                });
+            });
+        </script>
+
+        </div>
     </body>
 </html>

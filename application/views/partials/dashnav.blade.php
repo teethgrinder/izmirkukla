@@ -1,24 +1,7 @@
   <div class="row"
 		 <nav class="top-bar">
  
-		 
-  <!-- <nav> goes here 
-<div class="three columns pull-nine">
-       <a  class="toggle-topbar fixed" href="{{ URL::to('/') }}">{{HTML::image('laravel/img/2013logo7.png')}}</a> 
-    </div> 
-    
- 
- 
-     <!-- <ul class="nav-bar right button-group">
-        <li><a href="#">Anasayfa</a></li>
-        <li><a href="#">Festival</a></li>
-        <li><a href="#">Workshoplar</a></li>
-        <li><a href="#">İletişim</a></li>
-      </ul>
-  
-  </nav> -->
-  <!-- End Nav
-</div> -->
+
 <!-- Basic Needs -->
 <div class="row">
   <div class="twelve columns">
@@ -27,7 +10,7 @@
         <!-- Title Area -->
         <li class="name">
           <h1>
-            {{ HTML::link_to_action('admin.dashboard@index','Yönetim Paneli') }}
+            {{ HTML::link_to_action('admin.dashboard@index','Yönetim Paneli' ,array(),array('class'=>'name')) }}
           </h1>
         </li>
         <li class="toggle-topbar"><a href="#"></a></li>
@@ -134,7 +117,7 @@
           <li class="divider hide-for-small"></li>
                 <li class="divider"></li>
                 <li class="has-dropdown">
-                <li>{{ HTML::link_to_action('admin.news@index', 'Basın') }}</li>
+                <li>{{ HTML::link_to_action('admin.habers@index', 'Basın') }}</li>
 
                 </li>
                 <li class="divider hide-for-small"></li>
@@ -152,9 +135,9 @@
 
                         <li>{{ HTML::link_to_action('admin.subjects@show', 'Sunuş', array('$slug'=>'sunum')) }}</li>
                         <li>{{ HTML::link_to_action('admin.subjects@show', 'Manifesto', array('$slug'=>'manifesto')) }}</li>
-                        <li>{{ HTML::link_to_action('admin.subjects@show', 'Makaleler', array('$slug'=>'makaleler')) }}</li>
+                        <li>{{ HTML::link_to_action('admin.subjects@articles', 'Makaleler', array('$slug'=>'makaleler')) }}</li>
                         <li>{{ HTML::link_to_action('admin.subjects@show', 'Ekip', array('$slug'=>'ekip')) }}</li>
-                        <li>{{ HTML::link_to_action('admin.subjects@show', 'Basında', array('$slug'=>'basın')) }}</li>
+                        <li>{{ HTML::link_to_action('admin.subjects@show', 'Basında', array('$slug'=>'basin')) }}</li>
                         </ul>
                     </li>
                     <li class="divider"></li>
@@ -168,7 +151,7 @@
 
                         <li>{{ HTML::link_to_action('admin.subjects@show', 'Manifest', array('$slug'=>'manifest')) }}</li>
 
-                        <li>{{ HTML::link_to_action('admin.subjects@show', 'Articles', array('$slug'=>'articles')) }}</li>
+                        <li>{{ HTML::link_to_action('admin.subjects@articles', 'Articles', array('$slug'=>'articles')) }}</li>
 
                         <li>{{ HTML::link_to_action('admin.subjects@show', 'Crew', array('$slug'=>'crew')) }}</li>
 
@@ -190,3 +173,7 @@
     </nav>
   </div>
 </div>
+<br />
+<br />
+<br />
+<br />

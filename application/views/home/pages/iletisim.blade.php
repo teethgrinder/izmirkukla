@@ -20,15 +20,23 @@
 
          <div class="row">
              <hr />
-
-                 <div class="three columns">
+             <div class="two columns push-four">
+                 <div class="titlestyle">
+                     <h2>İletişim</h2>
+                 </div>
+             </div>
+             </div>
+             <div class="row">
+                 <div class="four columns">
                      <address>
-                         <h2>Adres :</h2><br>
-                         Cumhuriyet Bulvarı:<br>
-                         no:249/3 Park Apt<br>
-                         35220<br>
-                         Alsancak/İZMİR<br>
+                         <h2  class="makale">Adres :</h2><br>
+                        <p> Cumhuriyet Bulvarı No: 249 / 3 <br /> Park Apt
+                         35220
+                         Alsancak / İZMİR</p>
 
+                         Tel : +90 232 4652255<br />
+                         Fax : +90 232 4631897<br />
+                         Mail : <a href="mailto:info@izmirkuklagunleri.com"> info@izmirkuklagunleri.com </a><br>
                      </address>
                      <br />
 
@@ -39,9 +47,11 @@
                      <div class="message">
                  <?php echo !empty($error_list) ? $error_list : ''; ?>
              </div>
+                 <br />
+                 <br />
              <div class="six columns push-two">
-                 <h2>Bizimle İletişim İçin</h2>
-             <form id="contact-form" action="" method="post">
+                 <h2 class="makale">İletişim İçin</h2>
+             <form id="contact-form" action="../form/process-form.php" method="post">
 
                  <fieldset>
 
@@ -81,11 +91,11 @@
 
 
 
-         <div class="two columns push-one">
-             <div class="titlestyle">
-                 <h2>İletişim</h2>
-             </div>
-         </div>
+
      </div>
      </div>
-     @endsection
+@endsection
+
+@section('footer')
+@include('partials.footer')
+@endsection

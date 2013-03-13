@@ -2,7 +2,7 @@
 
 class Showing extends \EloquentBaseModel\Base
 {
-    public $includes = array('show');
+
 	public static $accessible = array('performance_date','show_id','theater_id', 'start_time','end_time');
 	
 	public function theater()
@@ -12,7 +12,7 @@ class Showing extends \EloquentBaseModel\Base
 	
 	public function show()
 	{
-		return $this->belongs_to('Show');
+		return $this->has_many_and_belongs_to('Show');
 	}
 	
 	public function get_query_date()
@@ -62,11 +62,11 @@ class Showing extends \EloquentBaseModel\Base
 		'Fri'		=> 'Cum',
 		'Sat'		=> 'Cts',
 		'Sun'		=> 'Paz',
-		'Jan'		=> 'Oca',
-		'Feb'		=> 'Şub',
-		'Mar'		=> 'Mar',
-		'Apr'		=> 'Nis',
-		'Jun'		=> 'Haz',
+		'Jan'		=> 'Ocak',
+		'Feb'		=> 'Şubat',
+		'Mar'		=> 'Mart',
+		'Apr'		=> 'Nisan',
+		'Jun'		=> 'Haziran',
 		'Jul'		=> 'Tem',
 		'Aug'		=> 'Ağu',
 		'Sep'		=> 'Eyl',

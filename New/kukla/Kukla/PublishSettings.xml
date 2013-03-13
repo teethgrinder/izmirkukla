@@ -1,0 +1,61 @@
+﻿<flash_profiles>
+	<flash_profile version="1.0" name="Default">
+		<PublishFormatProperties enabled="true">
+			<defaultNames>1</defaultNames>
+			<flash>1</flash>
+			<flashDefaultName>1</flashDefaultName>
+			<flashFileName>~Kukla.swf</flashFileName>
+		</PublishFormatProperties>
+		<PublishFlashProperties enabled="true">
+			<Version>10</Version>
+			<ExternalPlayer>10</ExternalPlayer>
+			<ActionScriptVersion>3</ActionScriptVersion>
+			<PackageExportFrame>1</PackageExportFrame>
+			<PackagePaths>$(LocalData)/Classes;.</PackagePaths>
+			<AS3PackagePaths>$(AppConfig)/ActionScript 3.0/Classes;$(AppConfig)/Component Source/ActionScript 3.0/User Interface;$(AppConfig)/Component Source/ActionScript 3.0/FLVPlayback;$(AppConfig)/Component Source/ActionScript 3.0/FLVPlaybackCaptioning;.</AS3PackagePaths>
+			<CompressMovie>1</CompressMovie>
+			<DocumentClass>Main</DocumentClass>
+			<AS3ConfigConst>CONFIG::FLASH_AUTHORING=&quot;true&quot;</AS3ConfigConst>
+			<AS3Optimize>1</AS3Optimize>
+			<DefaultLibraryLinkage>rsl</DefaultLibraryLinkage>
+			<RSLPreloaderMethod>wrap</RSLPreloaderMethod>
+			<RSLPreloaderSWF>$(AppConfig)/ActionScript 3.0/rsls/loader_animation.swf</RSLPreloaderSWF>
+			<IncludeXMP>1</IncludeXMP>
+			<AS3Strict>0</AS3Strict>
+			<AS3AutoDeclare>0</AS3AutoDeclare>
+			<AS3Flags>4</AS3Flags>
+			<LibraryPath>
+				<library-path-entry>
+					<swc-path>$(AppConfig)/ActionScript 3.0/libs</swc-path>
+					<linkage>merge</linkage>
+				</library-path-entry>
+				<library-path-entry>
+					<swc-path>$(AppConfig)/ActionScript 3.0/Classes</swc-path>
+					<linkage>external</linkage>
+				</library-path-entry>
+				<library-path-entry>
+					<swc-path>$(AppConfig)/Component Source/ActionScript 3.0/User Interface</swc-path>
+					<linkage>external</linkage>
+				</library-path-entry>
+				<library-path-entry>
+					<swc-path>$(AppConfig)/Component Source/ActionScript 3.0/FLVPlayback</swc-path>
+					<linkage>external</linkage>
+				</library-path-entry>
+				<library-path-entry>
+					<swc-path>$(AppConfig)/Component Source/ActionScript 3.0/FLVPlaybackCaptioning</swc-path>
+					<linkage>external</linkage>
+				</library-path-entry>
+				<library-path-entry>
+					<swc-path>.</swc-path>
+					<linkage>external</linkage>
+				</library-path-entry>
+				<library-path-entry>
+					<swc-path>$(AppConfig)/ActionScript 3.0/libs/11.0/textLayout.swc</swc-path>
+					<linkage usesDefault="true">rsl</linkage>
+					<rsl-url>textLayout_1.0.0.591.swf</rsl-url>
+				</library-path-entry>
+			</LibraryPath>
+			<LibraryVersions/>
+		</PublishFlashProperties>
+	</flash_profile>
+</flash_profiles>

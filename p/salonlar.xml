@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<salonlar>
+	<salon id="1" ad="Salon ABC">
+		<gosteri tarih="2012-03-02" seans="12:30" oyunid="1" koltuk="120" satilan='0' fiyat="20" />
+		<gosteri tarih="2012-03-02" seans="12:30" oyunid="2" koltuk="120" satilan='0' fiyat="20" />
+	</salon>
+	<salon id="2" ad="Salon ABCD" >
+		<gosteri tarih="2012-03-02" seans="12:30" oyunid="2" koltuk="120" satilan='0' fiyat="20" />
+	</salon>
+	<salon id="3" ad="Salon ABCDE" >
+		<gosteri tarih="2012-03-02" seans="12:30" oyunid="1" koltuk="120" satilan='0' fiyat="20" />
+	</salon>
+</salonlar>

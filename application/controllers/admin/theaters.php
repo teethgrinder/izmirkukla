@@ -90,5 +90,8 @@ class Admin_Theaters_Controller extends Base_Controller
 	
 	public function get_delete($id)
 	{
+        $theater = Theater::find($id);
+        $theater->delete();
+        return Redirect::to_action( 'admin.theaters@index')->with('success','Salon Başarı ile silindi');
 	}
 }

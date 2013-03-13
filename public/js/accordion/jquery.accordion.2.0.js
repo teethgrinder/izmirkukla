@@ -27,7 +27,7 @@
             "speed": 200,
             "easing": "swing",
             "canOpenMultiple": false,
-            "canToggle": false,
+            "canToggle": true,
             "activeClassPanel": "open",
             "activeClassLi": "active",
             "lockedClass": "locked",

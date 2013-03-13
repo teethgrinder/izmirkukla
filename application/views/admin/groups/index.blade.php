@@ -34,7 +34,8 @@
             <tr>
               <td><a href="<?php echo URL::to('showgroup/'.$group->id); ?>">{{$group->name}}</a></td>
               <td><a href="<?php echo URL::to('showgroup/'.$group->id); ?>">{{$group->country}}</a></td>
-              <td>{{ HTML::link_to_action('admin.groups@edit', 'Düzenle',array($group->id),array('class'=>'button small radius')) }} {{ HTML::link_to_action('admin.groups@delete', 'Sil',array($group->id),array('class'=>'button alert small radius',"onclick"=>"return confirm('Silmek için onaylayın')")) }}</td>
+              <td>{{ HTML::link_to_action('admin.groups@edit', 'Düzenle',array($group->id),array('class'=>'button small radius')) }}
+                  {{ HTML::link_to_action('admin.groups@delete', 'Sil',array($group->id),array('class'=>'button alert small radius',"onclick"=>"return confirm('Silmek için onaylayın')")) }}</td>
             </tr>
 		@endforeach
 

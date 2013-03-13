@@ -7,6 +7,26 @@ class Home_Pages_Controller extends Base_Controller {
 		$this->filter('before', 'csrf')->on('post');
  
 	}
+    public function get_intro()
+
+    {
+
+        Auth::logout();
+        //$links = DB::table('links')->where('type', '=', '1')->get();
+        //$posts = Post::all();
+
+            $page = DB::table('pages')->where('template', '=', 'intro')->first();
+
+
+        //$types = Type::lists('title', 'id');
+        Section::inject('title', $page->meta_title);
+        Section::inject('description', $page->meta_description);
+        Section::inject('keywords', $page->meta_keywords);
+
+        return View::make('home.pages.intro')->with('page', $page);
+        //->with('page', $page)->with('posts',$posts)->with('links',$links);
+        //->with('types', $types);
+    }
 	public function get_homepage()
 	
 	{
@@ -18,7 +38,7 @@ class Home_Pages_Controller extends Base_Controller {
 		$page = DB::table('pages')->where('template', '=', 'anasayfa')->first();
         else
         $page = DB::table('pages')->where('template', '=', 'homepage')->first();
-        $images = DB::table('images')->where('show_id','>',0)->order_by(DB::raw(''),DB::raw('RAND()'))->get();
+        $images = DB::table('images')->where('show_id','>',0)->order_by(DB::raw(''),DB::raw('RAND()'))->take(8)->get();
 
 
         //$types = Type::lists('title', 'id');
@@ -39,11 +59,11 @@ class Home_Pages_Controller extends Base_Controller {
 		
 	//	$links = DB::table('links')->where('type', '=', '1')->get();
 		$page = DB::table('pages')->where('slug', '=', $slug)->first();
-        $images = DB::table('images')->where('show_id','>',0)->order_by(DB::raw(''),DB::raw('RAND()'))->get();
+        $images = DB::table('images')->where('show_id','>',0)->order_by(DB::raw(''),DB::raw('RAND()'))->take(8)->get();
 		$subject = DB::table('subjects')->where('slug', '=', $slug)->first();
         $subjects = DB::table('subjects')->where('slug', '=', $slug)->get();
         $others = DB::table('others')->where('slug', '=', $slug)->get();
-        $theaters = Theater::all();
+        $theaters = Theater::order_by('name','asc')->get();
         $shows = DB::table('shows')->where('slug','=',$slug)->get();
 
         $showings = DB::table('showings')->where('slug', '=', $slug)->first();

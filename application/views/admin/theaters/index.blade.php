@@ -1,4 +1,4 @@
-@layout('layouts.main')
+@layout('layouts.dashboard')
 @section('navigation')
 	@include('partials.dashnav')
 @endsection
@@ -22,24 +22,28 @@
 		</thead>
    
 
-    <tbody>
-		@foreach($theaters as $theater)
-    <tr>
-      <td><a href="<?php echo URL::to('showtheater/'.$theater->id); ?>">{{$theater->name}}</a></td>
-      <td><a href="<?php echo URL::to('showtheater/'.$theater->id); ?>">{{$theater->adress}}</a></td>
-      <td>{{HTML::link_to_action('admin.theaters@edit', 'Düzenle',array($theater->id),array('class'=>'button radius'))}} </td>
-			<td><a class="alert button" href="<?php echo URL::to('deletetheater/'.$theater->id); ?>" onclick="return confirm('Silmek için onaylayın')">Sil</a></td>
-    </tr>
-		@endforeach
- 
-    </tbody>
- </table>
+        <tbody>
+            @foreach($theaters as $theater)
+            <tr>
+                <td> {{$theater->name}} </td>
+                <td> {{$theater->adress}} </td>
+                <td>{{HTML::link_to_action('admin.theaters@edit', 'Düzenle',array($theater->id),array('class'=>'button radius'))}} </td>
+                <td>{{ HTML::link_to_action('admin.theaters@delete,'Sil',array($theater->id),array('class'=>'alert small radius button',"onclick"=>"return confirm('Silmek için onaylayın')"))) }}</td>
+            </tr>
+            @endforeach
+
+        </tbody>
+    </table>
  
 	<div class="button-bar">
-	 <ul class="button-group radius">
-		 <!--<a class="button radius"href="<?php echo URL::to('newgroup'); ?>">Grup Ekle</a>--> 
-		<li>{{HTML::link_to_action('admin.theaters@add', 'Yeni Salon',array(),array('class'=>'button radius'))}} </li>  
-		</ul>
+         <ul class="button-group radius">
+            <li>{{HTML::link_to_action('admin.theaters@add', 'Yeni Salon',array(),array('class'=>'button radius'))}} </li>
+        </ul>
 	</div>	
 </div>
-@endsection 
+@endsection
+
+
+@section('footer')
+@include('partials.dashfooter')
+@endsection

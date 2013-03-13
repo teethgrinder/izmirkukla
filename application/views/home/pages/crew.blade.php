@@ -18,26 +18,32 @@
      <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
      <div class="nine columns push-three">
 
-
          <hr />
 
-
-
          <div class="row">
-             <div class="eight columns">
+             <div class="crew">
+                 <div class="two columns push-five">
+                     <div class="titlestyle">
+                         <h2>Crew</h2>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="row">
+             <div class="twelve columns">
                  @if($subject)
-                 <h1>{{$subject->title}}</h1>
-                 <p>{{ $subject->content }}</p>
+                 <div class="crew">
+                     <p>{{ $subject->content }}</p>
+                 </div>
                  @endif
 
              </div>
 
-             <div class="two columns push-one">
-                 <div class="titlestyle">
-                     <h2>Ekip</h2>
-                 </div>
 
-             </div>
          </div>
      </div>
+     @endsection
+
+     @section('footer')
+     @include('partials.footer')
      @endsection

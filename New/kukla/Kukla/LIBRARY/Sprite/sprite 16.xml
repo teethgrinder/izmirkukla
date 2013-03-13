@@ -1,0 +1,27 @@
+﻿<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xsi="http://www.w3.org/2001/XMLSchema-instance" sourceLibraryItemHRef="sprite 16" name="Sprite/sprite 16">
+	<timeline>
+		<DOMTimeline name="sprite 16">
+			<layers>
+				<DOMLayer name="Layer 1" color="#FF4FFF">
+					<frames>
+						<DOMFrame index="0" duration="1" motionTweenSnap="false">
+							<elements>
+								<DOMSymbolInstance libraryItemName="Sprite/sprite 15" name="denizic_mc" symbolType="movie clip" loop="loop">
+									<matrix>
+										<Matrix a="1.00000000" d="1.00000000" b="0.00000000" c="0.00000000" tx="0.00" ty="159.00"/>
+									</matrix>
+									<color>
+										<Color alphaMultiplier="1.00000000" redMultiplier="1.00000000" blueMultiplier="1.00000000" greenMultiplier="1.00000000" alphaOffset="0" redOffset="0" blueOffset="0" greenOffset="0"/>
+									</color>
+									<transformationPoint>
+										<Point/>
+									</transformationPoint>
+								</DOMSymbolInstance>
+							</elements>
+						</DOMFrame>
+					</frames>
+				</DOMLayer>
+			</layers>
+		</DOMTimeline>
+	</timeline>
+</DOMSymbolItem>

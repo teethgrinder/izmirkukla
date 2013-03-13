@@ -1,0 +1,72 @@
+﻿<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xsi="http://www.w3.org/2001/XMLSchema-instance" sourceLibraryItemHRef="button 49" symbolType="button" name="Sprite/button 49">
+	<timeline>
+		<DOMTimeline name="button 49">
+			<layers>
+				<DOMLayer name="Layer 1" color="#33CCFF">
+					<frames>
+						<DOMFrame index="0" duration="1" motionTweenSnap="false">
+							<elements>
+								<DOMSymbolInstance libraryItemName="Shape/shape 48" name="" symbolType="graphic" loop="loop">
+									<matrix>
+										<Matrix a="1.00000000" d="1.00000000" b="0.00000000" c="0.00000000" tx="0.00" ty="0.00"/>
+									</matrix>
+									<color>
+										<Color alphaMultiplier="1.00000000" redMultiplier="1.00000000" blueMultiplier="1.00000000" greenMultiplier="1.00000000" alphaOffset="0" redOffset="0" blueOffset="0" greenOffset="0"/>
+									</color>
+									<transformationPoint>
+										<Point/>
+									</transformationPoint>
+								</DOMSymbolInstance>
+							</elements>
+						</DOMFrame>
+						<DOMFrame index="1" duration="1" motionTweenSnap="false">
+							<elements>
+								<DOMSymbolInstance libraryItemName="Shape/shape 48" name="" symbolType="graphic" loop="loop">
+									<matrix>
+										<Matrix a="1.00000000" d="1.00000000" b="0.00000000" c="0.00000000" tx="0.00" ty="0.00"/>
+									</matrix>
+									<color>
+										<Color alphaMultiplier="1.00000000" redMultiplier="1.00000000" blueMultiplier="1.00000000" greenMultiplier="1.00000000" alphaOffset="0" redOffset="0" blueOffset="0" greenOffset="0"/>
+									</color>
+									<transformationPoint>
+										<Point/>
+									</transformationPoint>
+								</DOMSymbolInstance>
+							</elements>
+						</DOMFrame>
+						<DOMFrame index="2" duration="1" motionTweenSnap="false">
+							<elements>
+								<DOMSymbolInstance libraryItemName="Shape/shape 48" name="" symbolType="graphic" loop="loop">
+									<matrix>
+										<Matrix a="1.00000000" d="1.00000000" b="0.00000000" c="0.00000000" tx="0.00" ty="0.00"/>
+									</matrix>
+									<color>
+										<Color alphaMultiplier="1.00000000" redMultiplier="1.00000000" blueMultiplier="1.00000000" greenMultiplier="1.00000000" alphaOffset="0" redOffset="0" blueOffset="0" greenOffset="0"/>
+									</color>
+									<transformationPoint>
+										<Point/>
+									</transformationPoint>
+								</DOMSymbolInstance>
+							</elements>
+						</DOMFrame>
+						<DOMFrame index="3" duration="1" motionTweenSnap="false">
+							<elements>
+								<DOMSymbolInstance libraryItemName="Shape/shape 48" name="" symbolType="graphic" loop="loop">
+									<matrix>
+										<Matrix a="1.00000000" d="1.00000000" b="0.00000000" c="0.00000000" tx="0.00" ty="0.00"/>
+									</matrix>
+									<color>
+										<Color alphaMultiplier="1.00000000" redMultiplier="1.00000000" blueMultiplier="1.00000000" greenMultiplier="1.00000000" alphaOffset="0" redOffset="0" blueOffset="0" greenOffset="0"/>
+									</color>
+									<transformationPoint>
+										<Point/>
+									</transformationPoint>
+								</DOMSymbolInstance>
+							</elements>
+						</DOMFrame>
+					</frames>
+				</DOMLayer>
+			</layers>
+		</DOMTimeline>
+	</timeline>
+</DOMSymbolItem>
