@@ -33,18 +33,42 @@
      
       </div>
         <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+
         <div class="information">
-            <h1 class="welcome">7. Izmir International Puppet Days <br /><br />  Will Start on 7th March...</h1>
+            <h1 class="welcome">7. İzmir Uluslararası Kukla Günleri <br /><br />  7 Mart'ta Başlıyor...</h1>
  </div>
+
+        <div class="row">
+
+
+
+
+
+            <div class="five columns">
+
+                <div class="panel">
+                    <a href="#" data-reveal-id="forumbornovaen">{{HTML::image('laravel/img/banertansas2.png')}}  <h6>Tansaş Kukla Şenliği</h6></a>
+                </div>
+            </div>
+
+            <div class="five columns ">
+
+                <div class="panel">
+
+                    <a href="#" data-reveal-id="forumbornovaen">{{HTML::image('laravel/img/bnrbornova2.png')}}<h6>5th Forum Bornova Puppet Show Contest</h6></a>
+
+
+                </div>
+            </div>
+
+
+
+
+        </div>
     </div>
+
+
+     <!-- End Thumbnails -->
 @endsection
 
 @section('footer')

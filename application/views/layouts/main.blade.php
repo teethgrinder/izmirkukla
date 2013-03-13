@@ -5,10 +5,13 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gte IE 9 ]><html class="no-js ie9" lang="tr"> <![endif]-->
     <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="7. İzmir Uluslararası Kukla Günleri internet sitesi.Festival programı, sergilenecek oyunlar, eski festivaller, iletişim bilgileri ve ihtiyacınız olan herşey.">
+    <meta name="keywords" content="izmir,kukla,günleri,kukla günleri,festival,kukla festivali,puppet,days,puppet festival,turkey,türkiye,selçuk,dinçer,uluslararası,international">
 
         <meta charset="utf-8">
         <!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
-        <title></title>
+        <title>{{ $page->title }}</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         
@@ -221,23 +224,20 @@
                 });
             });
         </script>
-
         <script type="text/javascript">
-            $(document).ready(function() {
-                $("#forumbutton").click(function() {
-                    $("#forumbornova").reveal();
-                });
-            });
-        </script>
 
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $("#forumbuttonen").click(function() {
-                    $("#forumbornovaen").reveal();
-                });
-            });
-        </script>
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-356494-4']);
+			  _gaq.push(['_trackPageview']);
 
-        </div>
+			  (function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
+
+</script>
+
+    </div>
     </body>
 </html>

@@ -133,7 +133,7 @@
                         <a href="#" class="">Türkçe</a>
                         <ul class="dropdown">
 
-                        <li>{{ HTML::link_to_action('admin.subjects@show', 'Sunuş', array('$slug'=>'sunum')) }}</li>
+                        <li>{{ HTML::link_to_action('admin.subjects@show', 'Sunuş', array('$slug'=>'sunus')) }}</li>
                         <li>{{ HTML::link_to_action('admin.subjects@show', 'Manifesto', array('$slug'=>'manifesto')) }}</li>
                         <li>{{ HTML::link_to_action('admin.subjects@articles', 'Makaleler', array('$slug'=>'makaleler')) }}</li>
                         <li>{{ HTML::link_to_action('admin.subjects@show', 'Ekip', array('$slug'=>'ekip')) }}</li>

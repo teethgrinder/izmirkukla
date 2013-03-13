@@ -13,7 +13,7 @@
      <div class="eight columns push-two">
 
 
-         <h3>YENİ Gösteri</h3>
+         <h3>Gösteriyi Tekrar Düzenle</h3>
 
 
          {{ Form::open(URL::to_action('admin.showings@edit',array($showing->id)), 'PUT') }}
@@ -21,18 +21,16 @@
          {{ Form::token() }}
 
 
-         <p>
-             Oyun:
-             {{ Form::select( 'show_id', ( CreateShowingForm::old('show_id') ? CreateShowingForm::show_options() : $showing->show_id )) }}
-             {{ $errors->has( 'show_id' ) ? $errors->first( 'show_id' ) : '' }}
-
-         </p>
-         <p>
-             Salon:
-             {{ Form::select( 'theater_id', CreateShowingForm::old('theater_id') ? CreateShowingForm::theater_options() : $showing->theater_id )  }}
-             {{ $errors->has( 'theater_id' ) ? $errors->first( 'theater_id' ) : '' }}
-
-         </p>
+          <p>
+		Oyun:
+        {{ Form::select( 'show_id', CreateShowingForm::show_options(), CreateShowingForm::old( 'show_id' ) ) }}
+		{{ $errors->has( 'show_id' ) ? $errors->first( 'show_id' ) : '' }}
+	    </p>
+	    <p>
+	    Salon:
+    	{{ Form::select( 'theater_id', CreateShowingForm::theater_options(),CreateShowingForm::old('theater_id') )  }}
+    	{{ $errors->has( 'theater_id' ) ? $errors->first( 'theater_id' ) : '' }}
+    	</p>
          <!--{{ Form::date('performance_date', Input::old('performance_date') )   }} -->
          <div class="row">
              <div class="six columns">

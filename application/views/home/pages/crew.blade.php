@@ -22,28 +22,28 @@
 
          <div class="row">
              <div class="crew">
-                 <div class="two columns push-five">
-                     <div class="titlestyle">
-                         <h2>Crew</h2>
-                     </div>
+             <div class="two columns push-five">
+                 <div class="titlestyle">
+                     <h2>Crew</h2>
+                 </div>
                  </div>
              </div>
          </div>
          <div class="row">
              <div class="twelve columns">
-                 @if($subject)
-                 <div class="crew">
-                     <p>{{ $subject->content }}</p>
-                 </div>
-                 @endif
-
+                     @if($subject)
+            <div class="crew">
+             <p>{{ $subject->content }}</p>
              </div>
+             @endif
+
+                 </div>
 
 
-         </div>
+                </div>
      </div>
-     @endsection
+@endsection
 
-     @section('footer')
-     @include('partials.footer')
-     @endsection
+@section('footer')
+@include('partials.footer')
+@endsection

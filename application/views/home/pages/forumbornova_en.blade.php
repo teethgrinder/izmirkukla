@@ -20,9 +20,9 @@
          <hr />
          <br />
          <div class="row">
-             <div class="six columns">
+            <div class="ten columns offset-by-one">
                  <div class="titlestyle">
-                     <h1>{{$subject->title}}</h1>
+                     <h4>{{$subject->title}}</h4>
                  </div>
              </div>
              </div>

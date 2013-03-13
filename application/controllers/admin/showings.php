@@ -11,7 +11,7 @@ class Admin_Showings_Controller extends Base_Controller{
         $this->filter('before', 'csrf')->on('post');
     }
 
-    public function get_index()
+  public function get_index()
     {
 
         $showings = Showing::all();
@@ -22,6 +22,11 @@ class Admin_Showings_Controller extends Base_Controller{
         return View::make('admin.showings.index')->with('showings',$showings) ;
 
     }
+
+   
+
+
+   
 
 
 

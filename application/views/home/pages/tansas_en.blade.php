@@ -20,12 +20,13 @@
          <hr />
          <br />
          <div class="row">
-             <div class="two columns push-four ">
+          <div class="ten columns offset-by-three">
                  <div class="titlestyle">
-                     <h1>{{$subject->title}}</h1>
+                     <h4>{{$subject->title}}</h4>
+                 </div>
                  </div>
              </div>
-             </div>
+            
          <br />
          <br />
          <br />

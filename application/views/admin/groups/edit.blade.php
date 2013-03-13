@@ -24,7 +24,7 @@
 
 	    <p>
 		Ülke:
-        {{ Form::select( 'country', (Input::old('country') ? (Input::old('country')  : $group->country )) }}
+        {{ Form::text( 'country', (Input::old('country') ? Input::old('country')  : $group->country )) }}
 		{{ $errors->has( 'country' ) ? $errors->first( 'country' ) : '' }}
 	    </p>
 
@@ -33,7 +33,7 @@
 
         <p>
         Country:
-        {{ Form::select( 'country_english', (Input::old('country_english')  ? (Input::old('country_english') : $group->country_english )) }}
+        {{ Form::text( 'country_english', (Input::old('country_english')  ? Input::old('country_english') : $group->country_english )) }}
         {{ $errors->has( 'country' ) ? $errors->first( 'country' ) : '' }}
         </p>
 

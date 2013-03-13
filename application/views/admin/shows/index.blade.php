@@ -17,10 +17,12 @@
       <thead>
         <tr>
           <th>Oyun Adı</th>
+          <th>Grup Adı</th>
           <th>Yaş</th>
           <th>Dil</th>
-          <th>Hakkında</th>
-          <th>İngilizce</th>
+          
+         <!-- <th>Hakkında</th>
+          <th>İngilizce</th>-->
           <th>Düzenle/Sil</th>
 
         </tr>
@@ -32,11 +34,12 @@
 		<tr>
             <td>{{HTML::link_to_action('admin.shows@show',$show->name,array($show->slug)) }} /
                 {{HTML::link_to_action('admin.shows@show',$show->name_english,array($show->slug)) }} </td>
+            <td>{{HTML::link_to_action('admin.shows@show',$show->group->name,array($show->slug)) }}</td>
             <td>{{HTML::link_to_action('admin.shows@show',$show->age,array($show->slug)) }}</td>
             <td>{{HTML::link_to_action('admin.shows@show',$show->language,array($show->slug))}} /
                 {{HTML::link_to_action('admin.shows@show',$show->language_english,array($show->slug))}}</td>
-            <td>{{HTML::link_to_action('admin.shows@show',$show->information,array($show->slug))}}</td>
-            <td>{{HTML::link_to_action('admin.shows@show',$show->information_english,array($show->slug))}}</td>
+        <!--    <td>{{HTML::link_to_action('admin.shows@show',$show->information,array($show->slug))}}</td>
+            <td>{{HTML::link_to_action('admin.shows@show',$show->information_english,array($show->slug))}}</td>-->
             <td>{{HTML::link_to_action('admin.shows@show',$show->type,array($show->slug))}}</td>
 
             <td>{{HTML::link_to_action('admin.shows@edit', 'Düzenle',array($show->slug),array('class' => 'button small radius')) }}

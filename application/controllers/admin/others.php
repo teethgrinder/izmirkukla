@@ -125,6 +125,50 @@ class Admin_Others_Controller extends Base_Controller{
 
         return Redirect::to_action( 'admin.others@index');
     }
+    
+    
+    public function get_edit($id)
+	{
+        CreateOtherForm::forget_input();
+		$other = Other::find($id);
+		return View::make('admin.others.edit')->with('other',$other);
+	}
+	
+	public function put_edit($id)
+	{	 
+		{
+
+        if( !CreateOtherForm::is_valid() )
+        {
+         return Redirect::back()->with_input()->with_errors( CreateOtherForm::$validation );
+        }
+
+		CreateOtherForm::save_input();
+		$other = Other::find($id);
+
+        $other->name = CreateOtherForm::get('name');
+        $other->name_english = CreateOtherForm::get('name_english');
+        $other->date = CreateOtherForm::get('date');
+       
+        $other->place = CreateOtherForm::get('place');
+        $other->actor= CreateOtherForm::get('actor');
+ 
+        $other->information = CreateOtherForm::get('information');
+        $other->information_english = CreateOtherForm::get('information_english');
+    
+
+
+        if(!$other->is_valid())
+        {
+            return Redirect::back()->with_input()->with_errors($other->validation);
+        }
+		$other->save();
+	 
+
+        return Redirect::to_action( 'admin.others@index');
+        }
+
+    }
 
     public function get_delete($id)
     {

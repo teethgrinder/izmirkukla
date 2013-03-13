@@ -32,8 +32,8 @@
         <td>{{ $page-> title }}</td>
         @endif
        <td>{{ $subject-> title }}</td>
-       <td>{{ $subject-> content }}</td>
-       <td>{{ HTML::link_to_action('admin.subjects@edit','Düzenle',array($subject->id),array('class'=>'button small radius')) }}
+       <td>{{  Str::words(strip_tags($subject-> content) ,10)  }}</td>
+       <td>{{ HTML::link_to_action('admin.subjects@edit','Düzenle',array($subject->slug),array('class'=>'button small radius')) }}
            {{HTML::link_to_action('admin.subjects@delete','Sil',array($subject->id),array('class'=>'alert small radius button',"onclick"=>"return confirm('Silmek için onaylayın')"))}}</td>
  
     </tr>

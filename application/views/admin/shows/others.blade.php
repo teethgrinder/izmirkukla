@@ -19,8 +19,8 @@
                  <th>Adı</th>
                  <th>İngilizce Adı</th>
                  <th>Anlatan</th>
-                 <th>Hakkında</th>
-                 <th>İngilizce</th>
+                <!-- <th>Hakkında</th>
+                 <th>İngilizce</th>-->
                  <th>Yer</th>
                  <th>Tarih</th>
                  <th>Düzenle/Sil</th>
@@ -34,8 +34,8 @@
                  <td>{{ $other->name }}</td>
                  <td>{{ $other->name_english }}</td>
                  <td>{{ $other->actor }}</td>
-                 <td>{{ $other->information }}</td>
-                 <td>{{ $other->information_english }}</td>
+                <!-- <td>{{ $other->information }}</td>
+                 <td>{{ $other->information_english }}</td>-->
                  <td>{{ $other->place }}</td>
                  <td>{{ $other->date }}</td>
 

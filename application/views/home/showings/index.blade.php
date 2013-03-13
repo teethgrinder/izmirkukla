@@ -14,7 +14,7 @@
 
              <hr />
          <div class="ten columns">
-             <a href="#" class="buy">{{HTML::image('laravel/img/bilet1.png')}}</a>
+              <a href='<?php echo URL::to('../Program.php');?>' class="buy">{{HTML::image('laravel/img/bilet1.png')}}</a>
          </div>
          <div class="two columns">
              <div class="titlestyle">
@@ -53,7 +53,7 @@
                          <a href="#day09">
                              <span class="day"><strong>09</strong><span>&nbsp;</span></span>
                         <span class="content">
-                            <small>10 Mart</small>
+                            <small>09 Mart</small>
                             <img src="../laravel/img/programs/9mart.jpg" width="126" height="91" alt=""/>
                             <strong>Gün 3</strong>
                         </span>
@@ -64,7 +64,7 @@
                          <a href="#day10">
                              <span class="day"><strong>10</strong><span>&nbsp;</span></span>
                         <span class="content">
-                            <small>11mart</small>
+                            <small>10 Mart</small>
                             <img src="../laravel/img/programs/10mart.jpg" width="126" height="91" alt=""/>
                             <strong>Gün 4</strong>
                         </span>
@@ -224,6 +224,8 @@
                         </span>
                          </a>
                      </li>
+                     
+                   
 
                      <li class="active color3">
                          <a href="#day27">
@@ -274,7 +276,7 @@
                              <span class="day"><strong>31</strong><span>&nbsp;</span></span>
                         <span class="content">
                             <small>31 Mart</small>
-                            <img src="../laravel/img/programs/24mart.jpg"  width="126" height="91" alt=""/>
+                            <img src="../laravel/img/programs/31mart1nisan.jpg"  width="126" height="91" alt=""/>
                             <strong>Gün 23</strong>
                         </span>
                          </a>
@@ -285,7 +287,7 @@
                              <span class="day"><strong>01</strong><span>&nbsp;</span></span>
                         <span class="content">
                             <small>1 Nisan</small>
-                            <img src="../laravel/img/programs/24mart.jpg" width="126" height="91" alt=""/>
+                            <img src="../laravel/img/programs/31mart1nisan.jpg" width="126" height="91" alt=""/>
                             <strong>Gün 24</strong>
                         </span>
                          </a>
@@ -296,7 +298,7 @@
                              <span class="day"><strong>02</strong><span>&nbsp;</span></span>
                         <span class="content">
                             <small>2 Nisan</small>
-                            <img src="../laravel/img/programs/24mart.jpg" width="126" height="91" alt=""/>
+                            <img src="../laravel/img/programs/23nisan.jpg" width="126" height="91" alt=""/>
                             <strong>Gün 25</strong>
                         </span>
                          </a>
@@ -307,7 +309,7 @@
                              <span class="day"><strong>03</strong><span>&nbsp;</span></span>
                         <span class="content">
                             <small>3 Nisan</small>
-                            <img src="../laravel/img/programs/24mart.jpg" width="126" height="91" alt=""/>
+                            <img src="../laravel/img/programs/23nisan.jpg" width="126" height="91" alt=""/>
                             <strong>Gün 24</strong>
                         </span>
                          </a>
@@ -318,7 +320,7 @@
                              <span class="day"><strong>05</strong><span>&nbsp;</span></span>
                         <span class="content">
                             <small>5 Nisan</small>
-                            <img src="../laravel/img/programs/24mart.jpg" width="126" height="91" alt=""/>
+                            <img src="../laravel/img/programs/56nisan.jpg" width="126" height="91" alt=""/>
                             <strong>Gün 25</strong>
                         </span>
                          </a>
@@ -329,7 +331,7 @@
                              <span class="day"><strong>06</strong><span>&nbsp;</span></span>
                         <span class="content">
                             <small>6 Nisan</small>
-                            <img src="../laravel/img/programs/24mart.jpg" width="126" height="91" alt=""/>
+                            <img src="../laravel/img/programs/56nisan.jpg" width="126" height="91" alt=""/>
                             <strong>Gün 26</strong>
                         </span>
                          </a>
@@ -367,13 +369,19 @@
                                              <h4 class="group_name"> {{$showing->show->group->name}}<br />( {{$showing->show->group->country}} )</h4>
 
 
-                                              <p class="theater-name"> {{$showing->theater->name}}
+                                              <p class="theater-name"> {{$showing->theater->name}}</span>
                                                  <br />
-                                               {{ $showing->show_time }}  </span><br />
-                                                {{ $showing->price }}
+                                               {{ $showing->show_time }}  
+                                               
                                              <br />
-                                             <a href="#" class="buy">{{HTML::image('laravel/img/bilet2.png')}}</a>
-                                             </p>
+                                              
+													{{ $showing->price  }}
+													
+													
+                                             <br />
+                                             @if($showing->price === "15.-TL")
+                                             <a href='<?php echo URL::to('../Program.php');?>?id={{ $showing->id }};' class="buy">{{HTML::image('laravel/img/bilet2.png')}}</a>
+											@endif
                                          </div>
                                          </li>
                                          @endforeach

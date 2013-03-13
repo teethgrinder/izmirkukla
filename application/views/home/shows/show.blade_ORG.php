@@ -36,8 +36,8 @@
       <h4>{{ $group->name }}</h4>
           </div>
           <div class="three columns">
-			 
-              <a href= "http://www.izmirkuklagunleri.com/Program.php?id={{ $show->id }}"> {{HTML::image('laravel/img/buybilet.png')}}</a>
+
+               <a href="#" >{{HTML::image('laravel/img/buybilet.png')}}</a>
           </div>
 
           </div>

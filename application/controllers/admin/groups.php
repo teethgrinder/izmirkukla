@@ -208,6 +208,7 @@ class Admin_Groups_Controller extends Base_Controller{
 		$group = Group::find($id);
 		$group-> name = CreateGroupForm::get( 'name' );
 		$group-> country = CreateGroupForm::get( 'country' );
+		$group-> country_english = CreateGroupForm::get( 'country_english' );
 
 		if(!$group->is_valid())
 		{

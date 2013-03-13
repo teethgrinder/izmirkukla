@@ -47,7 +47,7 @@
             <div class="five columns">
 
                 <div class="panel">
-                    <a href="#" data-reveal-id="forumbornovaen">{{HTML::image('laravel/img/banertansas2.png')}}  <h6>Tansaş Puppet Festivaş</h6></a>
+                    <a href="tansas_en">{{HTML::image('laravel/img/banertansas2.png')}}  <h6>Tansaş Puppet Carnival</h6></a>
                 </div>
             </div>
 
@@ -55,7 +55,7 @@
 
                 <div class="panel">
 
-                    <a href="#" data-reveal-id="forumbornovaen">{{HTML::image('laravel/img/bnrbornova2.png')}}<h6>5th Forum Bornova Puppet Show Contest</h6></a>
+                    <a href="forumbornova_en">{{HTML::image('laravel/img/bnrbornova2.png')}}<h6>5th Forum Bornova Puppet Show Contest</h6></a>
 
 
                 </div>

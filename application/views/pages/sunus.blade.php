@@ -36,9 +36,9 @@
         	</div>
         </div>
 	    <hr class="special"/>
-          <div class="information">
-	        <p>{{ $subject->content }}</p>
-          </div>
+             <div class="information">
+                     <p>{{ $subject->content }}</p>
+             </div>
 	    @endif
      </div>
     </div>

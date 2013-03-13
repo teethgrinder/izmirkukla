@@ -35,7 +35,9 @@
          <br/>
 
          <div class="information">
-             <h1 class="welcome">7. İzmir Uluslararası Kukla Günleri <br /><br />  7 Mart'ta Başlıyor...</h1>
+             <h1 class="welcome">Festival başladı…</h1>
+             <p> Festival Sabancı Kültür Merkezi’nde düzenlenen törenle başladı. Festivalin destekçilerine plaketlerinin takdim edilmesinden sonra açılış gösterisi olarak İzmir Kukla Tiyatrosu’nun sergilediği “Ben Yapmadım!” adlı oyun seyirciyle ilk kez buluştu.</p>
+             <p>{{ HTML::image('laravel/img/plaket.jpg') }}</p>
          </div>
          <div class="row">
 
@@ -43,7 +45,8 @@
              <div class="five columns">
 
                  <div class="panel">
-                     <a href="#" data-reveal-id="forumbornova">{{HTML::image('laravel/img/banertansas2.png')}} <h6>Tansaş Kukla Şenliği</h6></a>
+                     <a href="tansas">{{HTML::image('laravel/img/banertansas2.png')}} <h6>Tansaş Kukla Şenliği</h6></a>
+                   
                  </div>
              </div>
 
@@ -51,7 +54,7 @@
 
                  <div class="panel">
 
-                     <a href="#" data-reveal-id="forumbornova">{{HTML::image('laravel/img/bnrbornova2.png')}} <h6>V. Forum Bornova Kukla Oyunu Yarışması</h6></a>
+                     <a href="forumbornova">{{HTML::image('laravel/img/bnrbornova2.png')}} <h6>V. Forum Bornova Kukla Oyunu Yarışması</h6></a>
 
 
                  </div>

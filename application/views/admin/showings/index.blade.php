@@ -26,6 +26,7 @@
 
 
     <tbody>
+	  <tbody>
 		@foreach($showings as $showing)
        <?php  $theater = Theater::find($showing->theater_id);
               $show = Show::find($showing->show_id);

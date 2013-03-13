@@ -19,10 +19,15 @@
              <hr />
 
 
-             <div class="two columns push-four">
+             <div class="two columns offset-by-four">
                  <div class="titlestyle">
                      <h2>Supporters</h2>
                  </div>
+             </div>
+             <div class="row">
+				 <div class="ten columns offset-by-one">
+				{{ HTML::image('laravel/img/sponsorlarweb.jpg') }}
+				</div>
              </div>
          </div>
      </div>

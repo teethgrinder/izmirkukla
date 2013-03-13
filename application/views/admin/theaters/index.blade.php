@@ -28,7 +28,7 @@
                 <td> {{$theater->name}} </td>
                 <td> {{$theater->adress}} </td>
                 <td>{{HTML::link_to_action('admin.theaters@edit', 'Düzenle',array($theater->id),array('class'=>'button radius'))}} </td>
-                <td>{{ HTML::link_to_action('admin.theaters@delete,'Sil',array($theater->id),array('class'=>'alert small radius button',"onclick"=>"return confirm('Silmek için onaylayın')"))) }}</td>
+                 <td>{{ HTML::link_to_action('admin.theaters@delete','Sil',array($theater->id),array('class'=>'alert small radius button',"onclick"=>"return confirm('Silmek için onaylayın')")) }}</td>
             </tr>
             @endforeach
 

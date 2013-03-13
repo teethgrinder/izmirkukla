@@ -51,8 +51,12 @@
                  <br />
              <div class="six columns push-two">
                  <h2 class="makale">İletişim İçin</h2>
-             <form id="contact-form" action="../form/process-form.php" method="post">
-
+                  @if(Session::has('success'))
+					<h6>{{ Session::get('success') }}</h6>
+				  @endif
+                 {{ Form::open(URL::to_action('home.pages@mail'), 'POST') }}
+           <!--  <form id="contact-form" action="../form/process-form.php" method="post">-->
+					{{ Form::token() }}
                  <fieldset>
 
                      <div class="field">

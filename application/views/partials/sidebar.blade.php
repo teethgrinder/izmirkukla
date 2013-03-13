@@ -20,7 +20,7 @@
 
 			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.presentationmenu')->get(),array(Lang::line('izmirkukla.presentation')->get()),array('class'=>'alt'))}}</li>
 			<li> {{HTML::link_to_action('home.shows@index',Lang::line('izmirkukla.showsmenu')->get(),array(Lang::line('izmirkukla.shows')->get()),array('class'=>'alt'))}}</li>
-			<li> {{HTML::link_to_action('home.showings@index',Lang::line('izmirkukla.program')->get())}}</li>
+			<li> {{HTML::link_to_action('home.showings@index',Lang::line('izmirkukla.programmenu')->get(),array(Lang::line('izmirkukla.shows')->get())) }}</li>
 			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.exhibitionsmenu')->get(),array(Lang::line('izmirkukla.exhibitions')->get()))}}</li>
 			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.workshopsmenu')->get(),array(Lang::line('izmirkukla.workshops')->get()))}}</li>
 			<li> {{HTML::link_to_action('home.pages@view',Lang::line('izmirkukla.conferencesmenu')->get(),array(Lang::line('izmirkukla.conferences')->get()))}}</li>
@@ -63,13 +63,17 @@
  </div>
  </div>
     <br />
-    <br />
-    <br />
+    
     @if (Config::get('application.language') == 'tr')
-    <a href="#" class="buy">{{HTML::image('laravel/img/bilet1.png')}}</a>
+     <a href='<?php echo URL::to('../Program.php');?>' class="buy">{{HTML::image('laravel/img/bilet1.png')}}</a>
     @elseif (Config::get('application.language') == 'en')
-    <a href="#" class="buy">{{HTML::image('laravel/img/buyenglish.png')}}</a>
+     <a href='<?php echo URL::to('../Program.php');?>' class="buy">{{HTML::image('laravel/img/buyenglish.png')}}</a>
     @endif
+    <br>
+ 
+    <br>
+    <a href="../7. Izmir Uluslararası Kukla Gunleri basin kiti.rar" target="_blank" class="custombuttons">Basın Kiti</a>
+    <a href="../izmirkuklagunleri2013.pdf"  target="_blank" class="custombuttons">Broşür</a>
   </div>  
  
 </div>

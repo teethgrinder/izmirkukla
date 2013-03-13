@@ -53,8 +53,12 @@
 
              <div class="six columns push-two">
                  <h2   class="makale">Contact Us</h2>
-                 <form id="contact-form" action="" method="post">
-
+                  @if(Session::has('success'))
+					<h6>{{ Session::get('success') }}</h6>
+				  @endif
+				  {{ Form::open(URL::to_action('home.pages@mail_en'), 'POST') }}
+              <!--   <form id="contact-form" action="" method="post"> -->
+				{{ Form::token() }}
                      <fieldset>
 
                          <div class="field">
